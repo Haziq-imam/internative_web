@@ -12,7 +12,7 @@ const HeroSection = () => {
                 <div className="absolute top-[-20%] left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-primary/10 rounded-full blur-[120px] mix-blend-screen" />
 
                 {/* Secondary Colorful Orbs */}
-                <div className="absolute top-[10%] left-[10%] w-[400px] h-[400px] bg-accent-gold/5 rounded-full blur-[100px] mix-blend-screen animate-pulse-slow" />
+                <div className="absolute top-[10%] left-[10%] w-[400px] h-[400px] bg-primary/5 rounded-full blur-[100px] mix-blend-screen animate-pulse-slow" />
                 <div className="absolute bottom-[10%] right-[10%] w-[500px] h-[500px] bg-secondary/10 rounded-full blur-[120px] mix-blend-screen animate-pulse-slow delay-1000" />
 
                 {/* Grid Pattern */}

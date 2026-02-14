@@ -50,8 +50,8 @@ const PerformanceSection = () => {
                     {/* Asset Breakdown */}
                     <div className="grid md:grid-cols-3 gap-6">
                         {[
-                            { title: "Options Signals", winRate: "76%", return: "+31%", total: 89, color: "bg-purple-500" },
-                            { title: "Stock Signals", winRate: "81%", return: "+18%", total: 64, color: "bg-blue-500" },
+                            { title: "Options Signals", winRate: "76%", return: "+31%", total: 89, color: "bg-purple-600" },
+                            { title: "Stock Signals", winRate: "81%", return: "+18%", total: 64, color: "bg-violet-600" },
                             { title: "Crypto Signals", winRate: "74%", return: "+26%", total: 34, color: "bg-orange-500" }
                         ].map((asset, index) => (
                             <div key={index} className="bg-background rounded-2xl p-6 border border-white/5">

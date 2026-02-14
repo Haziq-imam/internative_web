@@ -37,7 +37,7 @@ const SignalTypes = () => {
             ],
             cta: "View Stock Track Record",
             link: "/signals/stocks",
-            color: "from-accent-cyan to-accent-indigo",
+            color: "from-violet-500 to-fuchsia-600",
             badge: "Consistent Gains"
         },
         crypto: {
@@ -77,8 +77,8 @@ const SignalTypes = () => {
                             key={tab.id}
                             onClick={() => setActiveTab(tab.id)}
                             className={`flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 ${activeTab === tab.id
-                                    ? 'bg-white text-background shadow-lg scale-105'
-                                    : 'bg-surface border border-white/10 text-text-secondary hover:text-white hover:border-white/30'
+                                ? 'bg-white text-background shadow-lg scale-105'
+                                : 'bg-surface border border-white/10 text-text-secondary hover:text-white hover:border-white/30'
                                 }`}
                         >
                             <tab.icon className={`w-4 h-4 ${activeTab === tab.id ? 'text-primary' : ''}`} />
@@ -156,8 +156,8 @@ const SignalTypes = () => {
                                                 />
                                                 <defs>
                                                     <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                                                        <stop offset="0%" stopColor="#8B5CF6" stopOpacity="0" />
-                                                        <stop offset="100%" stopColor="#EC4899" />
+                                                        <stop offset="0%" stopColor="#550B77" stopOpacity="0" />
+                                                        <stop offset="100%" stopColor="#C026D3" />
                                                     </linearGradient>
                                                 </defs>
                                             </svg>

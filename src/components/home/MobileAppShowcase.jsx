@@ -76,7 +76,7 @@ const MobileAppShowcase = () => {
                                         {[1, 2, 3].map((i) => (
                                             <div key={i} className="bg-surface p-3 rounded-xl border border-white/5 flex items-center justify-between">
                                                 <div className="flex items-center gap-3">
-                                                    <div className={`w-8 h-8 rounded-lg flex items-center justify-center font-bold text-xs ${i === 1 ? 'bg-orange-500/20 text-orange-500' : i === 2 ? 'bg-blue-500/20 text-blue-500' : 'bg-purple-500/20 text-purple-500'}`}>
+                                                    <div className={`w-8 h-8 rounded-lg flex items-center justify-center font-bold text-xs ${i === 1 ? 'bg-orange-500/20 text-orange-500' : i === 2 ? 'bg-violet-500/20 text-violet-500' : 'bg-fuchsia-500/20 text-fuchsia-500'}`}>
                                                         {i === 1 ? 'BTC' : i === 2 ? 'TSLA' : 'NVDA'}
                                                     </div>
                                                     <div>

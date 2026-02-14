@@ -8,34 +8,39 @@ export default {
     extend: {
       colors: {
         background: {
-          DEFAULT: '#050505', // Ultra dark, almost black
-          secondary: '#0A0A0A', // Slightly lighter
-          tertiary: '#121212', // Card background
-          surface: '#1E1E1E', // Elevate surface
+          DEFAULT: '#0B0F19', // Deep Navy/Slate
+          secondary: '#111827', // Lighter Navy
+          tertiary: '#1F2937', // Card background
+          surface: '#374151', // Elevate surface
         },
         primary: {
-          DEFAULT: '#FF5500', // Vibrant Orange
-          hover: '#FF6A00',   // Lighter Orange
-          light: '#FF8800',   // Bright Orange
-          glow: 'rgba(255, 85, 0, 0.5)'
+          DEFAULT: '#550B77', // Deep Purple
+          hover: '#6D28D9',   // Violet-600
+          light: '#A78BFA',   // Violet-400
+          glow: 'rgba(85, 11, 119, 0.5)'
         },
         secondary: {
-          DEFAULT: '#2563EB', // Royal Blue (Trust/Professionalism)
-          hover: '#1D4ED8',
+          DEFAULT: '#FF5500', // Orange (Current primary as accent)
+          hover: '#FF6A00',
         },
         accent: {
-          green: '#00D68F',   // Success/Win
-          red: '#FF3B30',     // Loss/Risk
-          gold: '#FFD700',    // Premium/VIP
+          purple: '#550B77',
+          blue: '#3B82F6',
+          green: '#10B981',
+          red: '#EF4444',
+          gold: '#F59E0B',
         },
+        success: '#10B981',
+        warning: '#F59E0B',
+        danger: '#EF4444',
         text: {
           primary: '#FFFFFF',
-          secondary: '#A1A1AA', // Zinc-400
-          muted: '#71717A',     // Zinc-500
+          secondary: '#9CA3AF', // Gray-400
+          muted: '#6B7280',     // Gray-500
         },
         border: {
-          DEFAULT: '#27272A', // Zinc-800
-          hover: '#3F3F46',   // Zinc-700
+          DEFAULT: '#1F2937', // Gray-800
+          hover: '#374151',   // Gray-700
         }
       },
       fontFamily: {
@@ -43,12 +48,12 @@ export default {
         display: ['Outfit', 'Inter', 'system-ui', 'sans-serif'],
       },
       backgroundImage: {
-        'brand-gradient': 'linear-gradient(135deg, #FF5500 0%, #FF8800 100%)',
-        'brand-gradient-hover': 'linear-gradient(135deg, #FF6A00 0%, #FFA200 100%)',
+        'brand-gradient': 'linear-gradient(135deg, #550B77 0%, #7C3AED 100%)',
+        'brand-gradient-hover': 'linear-gradient(135deg, #6D28D9 0%, #4C1D95 100%)',
         'glass': 'linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%)',
         'glass-hover': 'linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.03) 100%)',
-        'card-gradient': 'linear-gradient(180deg, #121212 0%, #0A0A0A 100%)',
-        'hero-glow': 'radial-gradient(circle at 50% 50%, rgba(255, 85, 0, 0.15) 0%, transparent 50%)',
+        'card-gradient': 'linear-gradient(180deg, #111827 0%, #0B0F19 100%)',
+        'hero-glow': 'radial-gradient(circle at 50% 50%, rgba(85, 11, 119, 0.15) 0%, transparent 50%)',
       },
       boxShadow: {
         'neon': '0 0 20px rgba(255, 85, 0, 0.2)',

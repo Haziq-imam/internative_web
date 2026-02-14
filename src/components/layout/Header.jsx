@@ -113,7 +113,7 @@ const Header = () => {
 
                                                 {/* Promo Column (Left) */}
                                                 <div className="col-span-4 relative overflow-hidden group/promo">
-                                                    <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-primary/5 to-transparent z-10" />
+                                                    <div className="absolute inset-0 bg-gradient-to-br from-primary/40 via-primary/20 to-transparent z-10" />
                                                     <img
                                                         src={link.promo.image}
                                                         alt={link.promo.title}
