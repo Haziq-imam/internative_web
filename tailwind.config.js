@@ -8,9 +8,9 @@ export default {
     extend: {
       colors: {
         background: {
-          DEFAULT: '#0B0F19', // Deep Navy/Slate
-          secondary: '#111827', // Lighter Navy
-          tertiary: '#1F2937', // Card background
+          DEFAULT: '#0a000eff', // Deep Navy/Slate
+          secondary: '#2d0b31ff', // Lighter Navy
+          tertiary: '#070707ff', // Card background
           surface: '#374151', // Elevate surface
         },
         primary: {
