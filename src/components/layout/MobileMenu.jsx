@@ -18,42 +18,58 @@ const MobileMenu = ({ isOpen, onClose }) => {
             megaMenu: true,
             columns: [
                 {
-                    title: 'Options Trading',
-                    items: [
-                        { label: 'Lotto Options Alerts', href: '/signals/options-signals?type=lotto' },
-                        { label: '0DTE Options Signals', href: '/signals/options-signals?type=0dte' },
-                        { label: 'Weekly Options Signals', href: '/signals/options-signals?type=weekly' },
-                        { label: 'Options Scalping', href: '/signals/options-signals?type=scalping' },
-                        { label: 'Options Flow', href: '/signals/options-signals?type=flow' },
-                        { label: 'Unusual Activity', href: '/signals/options-signals?type=unusual' },
-                        { label: 'Institutional Trades', href: '/signals/options-signals?type=institutional' },
-                        { label: 'Risk Management', href: '/education/risk-management' },
-                    ]
-                },
-                {
-                    title: 'Stock Trading',
+                    title: 'Stock Trading Signals',
                     items: [
                         { label: 'Day Trading Stocks', href: '/signals/stocks/day-trading' },
-                        { label: 'Momentum Signals', href: '/signals/stocks/momentum' },
-                        { label: 'Swing Trading', href: '/signals/stocks/swing' },
-                        { label: 'Gap Up / Down', href: '/signals/stocks/gap' },
+                        { label: 'Momentum Stock Signals', href: '/signals/stocks/momentum' },
+                        { label: 'Swing Trading Stocks', href: '/signals/stocks/swing' },
+                        { label: 'Earnings Trading Strategy', href: '/signals/stocks/earnings' },
+                        { label: 'Gap Up / Gap Down Stocks', href: '/signals/stocks/gap' },
                     ]
                 },
                 {
-                    title: 'Resources',
+                    title: 'Swing Trading Signals',
                     items: [
-                        { label: 'Swing Signals', href: '/signals/swing' },
-                        { label: 'Education Hub', href: '/education' },
-                        { label: 'For Beginners', href: '/beginners' },
-                        { label: 'Advanced Options', href: '/advanced-options' },
+                        { label: 'View Swing Signals', href: '/signals/swing' },
+                    ]
+                },
+                {
+                    title: 'Trading Education',
+                    items: [
+                        { label: 'What Are Trading Signals', href: '/education/what-are-trading-signals' },
+                        { label: 'How Options Trading Works', href: '/education/how-options-trading-works' },
+                        { label: 'What Is Lotto Options', href: '/education/what-is-lotto-options' },
+                        { label: '0DTE Options Explained', href: '/education/0dte-options-explained' },
+                        { label: 'How To Use Trading Signals', href: '/education/how-to-use-trading-signals' },
+                    ]
+                },
+                {
+                    title: 'Compare Trading Signals',
+                    items: [
+                        { label: 'Best Options Trading Signals', href: '/compare/best-options-trading-signals' },
+                        { label: 'Best Trading Signals Platform', href: '/compare/best-trading-signals-platform' },
+                        { label: 'Signals vs Copy Trading', href: '/compare/options-trading-signals-vs-copy-trading' },
+                        { label: 'Free vs Paid Signals', href: '/compare/free-vs-paid-trading-signals' },
+                    ]
+                },
+                {
+                    title: 'Trading Tools & Access',
+                    items: [
+                        { label: 'Signals For Beginners', href: '/tools/beginners' },
+                        { label: 'Advanced Options Trading', href: '/tools/advanced-options' },
+                        { label: 'Trading Signals Risk Guide', href: '/tools/risk-guide' },
+                        { label: 'Trading Signals App', href: '/tools/app' },
+                        { label: 'Real-Time Trading Alerts', href: '/tools/real-time-alerts' },
                     ]
                 }
             ]
         },
+        { label: 'About', href: '/about' },
         { label: 'How It Works', href: '/#how-it-works' },
         { label: 'Pricing', href: '/pricing' },
-        { label: 'FAQ', href: '/#faq' },
+        { label: 'FAQ', href: '/faq' },
         { label: 'Contact', href: '/contact' },
+        { label: 'Risk Disclosure', href: '/risk-disclosure' },
     ];
 
     return (

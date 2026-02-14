@@ -1,61 +1,143 @@
 import React from 'react';
-import Section from '../components/ui/Section';
-import GlassCard from '../components/ui/GlassCard';
 import { Helmet } from 'react-helmet-async';
+import { TrendingUp, Bell, Users } from 'lucide-react';
+import GlassCard from '../components/ui/GlassCard';
+import Button from '../components/ui/Button';
 
 const About = () => {
-    return (
-        <>
-            <Helmet>
-                <title>About Us | InterNative</title>
-                <meta name="description" content="Learn about InterNative and our mission to democratize professional trading intelligence." />
-            </Helmet>
-            <Section className="bg-background relative pt-48 pb-32 overflow-hidden">
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary/10 via-transparent to-transparent blur-3xl opacity-50" />
+    const features = [
+        {
+            icon: <TrendingUp className="w-12 h-12 text-primary" />,
+            title: "Expert Analysts",
+            description: "Get precise trading signals about the market."
+        },
+        {
+            icon: <Bell className="w-12 h-12 text-primary" />,
+            title: "Reliable Alerts",
+            description: "Daily alerts for ups and downs directly on your phone."
+        },
+        {
+            icon: <Users className="w-12 h-12 text-primary" />,
+            title: "Client Satisfaction",
+            description: "Exceptional support and guaranteed satisfaction."
+        }
+    ];
 
-                <div className="max-w-5xl mx-auto relative z-10">
-                    <div className="text-center mb-24">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-primary text-[10px] font-black uppercase tracking-[0.2em] mb-8">
-                            Our Mission
-                        </div>
-                        <h1 className="text-6xl md:text-9xl font-black mb-8 text-white leading-[1.1] tracking-tighter font-display">
-                            The New Standard in <br />
-                            <span className="text-gradient">Trading Intelligence.</span>
+    return (
+        <div className="min-h-screen bg-background text-text-primary">
+            <Helmet>
+                <title>About Us - InterNative Traders</title>
+                <meta name="description" content="Learn about InterNative Traders - your leading source for accurate and trustworthy trading signals." />
+            </Helmet>
+
+            {/* Hero Section */}
+            <section className="relative pt-32 pb-20 overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-b from-primary/10 via-transparent to-transparent" />
+                <div className="container mx-auto px-4 relative z-10">
+                    <div className="max-w-4xl mx-auto text-center">
+                        <h1 className="text-5xl md:text-7xl font-black text-white mb-6 leading-tight">
+                            About <span className="text-gradient">Us</span>
                         </h1>
-                        <p className="text-xl md:text-2xl text-text-secondary max-w-3xl mx-auto font-medium leading-relaxed">
-                            Democratizing access to institutional-grade tools and institutional alpha for retail traders worldwide.
+                        <p className="text-xl text-text-secondary leading-relaxed">
+                            Your leading, reliable source for traders and investors of all experience levels
                         </p>
                     </div>
-
-                    <GlassCard className="p-12 md:p-24 leading-relaxed text-xl text-text-secondary space-y-10 rounded-[4rem] border-white/10 bg-background-secondary/40 backdrop-blur-3xl">
-                        <p className="font-medium">
-                            InterNative was founded with a singular, uncompromising mission: <span className="text-white font-black">to level the playing field.</span> we believe that every trader, regardless of capital size, deserves access to the same quality of data, analysis, and execution speed that Tier-1 Wall Street desks rely on.
-                        </p>
-                        <p className="font-medium">
-                            Our collective consists of veteran volatility traders, quantitative data scientists, and former institutional analysts who have spent decades navigating the complexities of global financial markets. We combine human intuition with proprietary algorithms to identify high-probability opportunities in real-time.
-                        </p>
-                        <p className="font-medium">
-                            Whether you're trading short-dated options, swing trading equities, or navigating the 24/7 crypto markets, our goal is to provide the <span className="text-primary font-black">tactical edge</span> needed for consistent performance. We don't just provide signals; we build professional traders.
-                        </p>
-
-                        <div className="pt-10 flex flex-col md:flex-row gap-12 border-t border-white/5">
-                            <div>
-                                <div className="text-4xl font-black text-white mb-2 font-display">5,000+</div>
-                                <div className="text-xs font-black text-white/40 uppercase tracking-widest">Active Traders</div>
-                            </div>
-                            <div>
-                                <div className="text-4xl font-black text-white mb-2 font-display">$500M+</div>
-                                <div className="text-xs font-black text-white/40 uppercase tracking-widest">Trade Volume Notional</div>
-                            </div>
-                            <div>
-                                <div className="text-4xl font-black text-white mb-2 font-display">99.9%</div>
-                                <div className="text-xs font-black text-white/40 uppercase tracking-widest">Alert Uptime</div>
-                            </div>
-                        </div>
-                    </GlassCard>
                 </div>
-            </Section>
-        </>
+            </section>
+
+            {/* Who We Are Section */}
+            <section className="py-20 bg-background-secondary/30">
+                <div className="container mx-auto px-4">
+                    <div className="max-w-5xl mx-auto">
+                        <GlassCard className="p-8 md:p-12">
+                            <h2 className="text-3xl md:text-4xl font-black text-white mb-6">
+                                Who is InterNative Traders?
+                            </h2>
+                            <div className="space-y-6 text-text-secondary text-lg leading-relaxed">
+                                <p>
+                                    We are a leading, reliable source for traders and investors of all experience levels seeking accurate and trustworthy trading signals. We provide real-time trading signals for stocks listed on Nasdaq, S&P 500, Dow Jones, and Russell 2000.
+                                </p>
+                            </div>
+                        </GlassCard>
+                    </div>
+                </div>
+            </section>
+
+            {/* What Makes Us Different Section */}
+            <section className="py-20">
+                <div className="container mx-auto px-4">
+                    <div className="max-w-5xl mx-auto">
+                        <GlassCard className="p-8 md:p-12">
+                            <h2 className="text-3xl md:text-4xl font-black text-white mb-6">
+                                There are many trading apps in the market - What makes us different?
+                            </h2>
+                            <div className="space-y-6 text-text-secondary text-lg leading-relaxed">
+                                <p>
+                                    There is more to successful trading than just luck or instinct. We offer our clients up-to-date trading signals supported by in-depth research and analysis. We aim to give traders the information they need to capitalize on market insight and make profitable trading decisions without missing a beat!
+                                </p>
+                                <p>
+                                    With our help, you can understand the markets and get instant notifications when price data reaches a certain threshold.
+                                </p>
+                                <p className="font-bold text-white">
+                                    Result? You can confidently reach your goals by making wise, prudent financial decisions in the future.
+                                </p>
+                            </div>
+                        </GlassCard>
+                    </div>
+                </div>
+            </section>
+
+            {/* Features Section */}
+            <section className="py-20 bg-background-secondary/30">
+                <div className="container mx-auto px-4">
+                    <div className="max-w-6xl mx-auto">
+                        <div className="grid md:grid-cols-3 gap-8">
+                            {features.map((feature, idx) => (
+                                <GlassCard key={idx} className="p-8 text-center" hoverEffect>
+                                    <div className="flex justify-center mb-6">
+                                        {feature.icon}
+                                    </div>
+                                    <h3 className="text-2xl font-bold text-white mb-4">{feature.title}</h3>
+                                    <p className="text-text-secondary">{feature.description}</p>
+                                </GlassCard>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Stock Image Section */}
+            <section className="py-20">
+                <div className="container mx-auto px-4">
+                    <div className="max-w-5xl mx-auto">
+                        <GlassCard className="overflow-hidden">
+                            <img
+                                src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=2070&auto=format&fit=crop"
+                                alt="Trading Analytics"
+                                className="w-full h-[400px] object-cover"
+                            />
+                        </GlassCard>
+                    </div>
+                </div>
+            </section>
+
+            {/* CTA Section */}
+            <section className="py-20 bg-background-secondary/30">
+                <div className="container mx-auto px-4">
+                    <div className="max-w-4xl mx-auto text-center">
+                        <h2 className="text-4xl md:text-5xl font-black text-white mb-6">
+                            Ready to Start Trading Smarter?
+                        </h2>
+                        <p className="text-xl text-text-secondary mb-8">
+                            Join thousands of traders who trust InterNative for accurate, real-time trading signals.
+                        </p>
+                        <Button size="lg" className="shadow-neon">
+                            Get Started Today
+                        </Button>
+                    </div>
+                </div>
+            </section>
+        </div>
     );
 };
 

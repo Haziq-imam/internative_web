@@ -4,6 +4,7 @@ import { Menu, TrendingUp, ChevronDown, BarChart2, BookOpen } from 'lucide-react
 import { cn } from '../../lib/utils';
 import Button from '../ui/Button';
 import MobileMenu from './MobileMenu';
+import Logo from '../../assets/internative logo.svg';
 
 const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -21,55 +22,78 @@ const Header = () => {
     const navLinks = [
         {
             label: 'Trading Signals',
-            href: '/signals/options-signals',
+            href: '/signals/options',
             megaMenu: true,
             promo: {
                 title: "Options Trading Signals",
                 subtitle: "Professional alerts for maximum leverage & returns.",
                 image: "https://images.unsplash.com/photo-1611974765275-e4277a78c346?q=80&w=3270&auto=format&fit=crop",
-                link: "/signals/options-signals"
+                link: "/signals/options"
             },
             columns: [
                 {
-                    title: 'Options Trading',
-                    href: '/signals/options-signals',
-                    icon: 'TrendingUp',
-                    items: [
-                        { label: 'Lotto Options Alerts', href: '/signals/options-signals?type=lotto', desc: 'High risk, high reward plays' },
-                        { label: '0DTE Options Signals', href: '/signals/options-signals?type=0dte', desc: 'Daily expiration setups' },
-                        { label: 'Weekly Options Signals', href: '/signals/options-signals?type=weekly', desc: 'Standard weekly expiry' },
-                        { label: 'Options Scalping', href: '/signals/options-signals?type=scalping', desc: 'Quick in & out trades' },
-                        { label: 'Unusual Activity', href: '/signals/options-signals?type=unusual', desc: 'Institutional anomalies' },
-                    ]
-                },
-                {
-                    title: 'Stock Trading',
+                    title: 'Stock Trading Signals',
                     href: '/signals/stocks',
                     icon: 'BarChart2',
                     items: [
                         { label: 'Day Trading Stocks', href: '/signals/stocks/day-trading', desc: 'Intraday volatility' },
-                        { label: 'Momentum Signals', href: '/signals/stocks/momentum', desc: 'Ride the trend' },
-                        { label: 'Swing Trading', href: '/signals/stocks/swing', desc: 'Multi-day holds' },
-                        { label: 'Gap Up / Down', href: '/signals/stocks/gap', desc: 'Pre-market movers' },
+                        { label: 'Momentum Stock Signals', href: '/signals/stocks/momentum', desc: 'Ride the trend' },
+                        { label: 'Swing Trading Stocks', href: '/signals/stocks/swing', desc: 'Multi-day holds' },
+                        { label: 'Earnings Trading Strategy', href: '/signals/stocks/earnings', desc: 'Earnings plays' },
+                        { label: 'Gap Up / Gap Down Stocks', href: '/signals/stocks/gap', desc: 'Pre-market movers' },
                     ]
                 },
                 {
-                    title: 'Resources',
+                    title: 'Swing Trading Signals',
+                    href: '/signals/swing',
+                    icon: 'TrendingUp',
+                    items: [
+                        { label: 'View Swing Signals', href: '/signals/swing', desc: 'Capture major moves' },
+                    ]
+                },
+                {
+                    title: 'Trading Education',
                     href: '/education',
                     icon: 'BookOpen',
                     items: [
-                        { label: 'Swing Signals', href: '/signals/swing', desc: 'Capture major moves' },
-                        { label: 'Education Hub', href: '/education', desc: 'Master the markets' },
-                        { label: 'Beginners Guide', href: '/beginners', desc: 'Start your journey' },
-                        { label: 'Risk Management', href: '/education/risk-management', desc: 'Protect your capital' },
+                        { label: 'What Are Trading Signals', href: '/education/what-are-trading-signals', desc: 'Learn the basics' },
+                        { label: 'How Options Trading Works', href: '/education/how-options-trading-works', desc: 'Options fundamentals' },
+                        { label: 'What Is Lotto Options', href: '/education/what-is-lotto-options', desc: 'High-risk plays' },
+                        { label: '0DTE Options Explained', href: '/education/0dte-options-explained', desc: 'Same-day expiry' },
+                        { label: 'How To Use Trading Signals', href: '/education/how-to-use-trading-signals', desc: 'Maximize results' },
+                    ]
+                },
+                {
+                    title: 'Compare Trading Signals',
+                    href: '/compare',
+                    icon: 'BarChart2',
+                    items: [
+                        { label: 'Best Options Trading Signals', href: '/compare/best-options-trading-signals', desc: 'Top providers' },
+                        { label: 'Best Trading Signals Platform', href: '/compare/best-trading-signals-platform', desc: 'Platform comparison' },
+                        { label: 'Signals vs Copy Trading', href: '/compare/options-trading-signals-vs-copy-trading', desc: 'Which is better?' },
+                        { label: 'Free vs Paid Signals', href: '/compare/free-vs-paid-trading-signals', desc: 'Value analysis' },
+                    ]
+                },
+                {
+                    title: 'Trading Tools & Access',
+                    href: '/tools',
+                    icon: 'BookOpen',
+                    items: [
+                        { label: 'Signals For Beginners', href: '/tools/beginners', desc: 'Start your journey' },
+                        { label: 'Advanced Options Trading', href: '/tools/advanced-options', desc: 'Expert strategies' },
+                        { label: 'Trading Signals Risk Guide', href: '/tools/risk-guide', desc: 'Protect capital' },
+                        { label: 'Trading Signals App', href: '/tools/app', desc: 'Mobile access' },
+                        { label: 'Real-Time Trading Alerts', href: '/tools/real-time-alerts', desc: 'Instant notifications' },
                     ]
                 }
             ]
         },
+        { label: 'About', href: '/about' },
         { label: 'How It Works', href: '/#how-it-works' },
         { label: 'Pricing', href: '/pricing' },
-        { label: 'FAQ', href: '/#faq' },
+        { label: 'FAQ', href: '/faq' },
         { label: 'Contact', href: '/contact' },
+        { label: 'Risk Disclosure', href: '/risk-disclosure' },
     ];
 
     return (
@@ -83,13 +107,12 @@ const Header = () => {
                 <div className="container mx-auto px-4 md:px-6">
                     <div className="flex items-center justify-between">
                         {/* Logo */}
-                        <Link to="/" className="flex items-center gap-3 group">
-                            <div className="h-10 w-10 rounded-xl bg-primary flex items-center justify-center text-white shadow-neon group-hover:scale-110 transition-transform duration-300">
-                                <TrendingUp size={24} strokeWidth={2.5} />
-                            </div>
-                            <span className="text-2xl font-bold font-display tracking-tight text-white group-hover:text-primary transition-colors duration-300">
-                                InterNative
-                            </span>
+                        <Link to="/" className="flex items-center group">
+                            <img
+                                src={Logo}
+                                alt="InterNative Traders"
+                                className="h-10 md:h-12 w-auto transition-transform duration-300 group-hover:scale-105"
+                            />
                         </Link>
 
                         {/* Desktop Nav */}
@@ -108,54 +131,54 @@ const Header = () => {
 
                                     {/* Mega Menu Dropdown */}
                                     {link.megaMenu && (
-                                        <div className="absolute top-full left-1/2 -translate-x-1/2 w-[900px] pt-4 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 ease-out">
+                                        <div className="absolute top-full left-1/2 -translate-x-1/2 w-[1200px] pt-4 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 ease-out">
                                             <div className="bg-[#0A0A0A]/95 backdrop-blur-2xl border border-white/10 rounded-2xl p-0 shadow-2xl overflow-hidden grid grid-cols-12 ring-1 ring-white/5">
 
                                                 {/* Promo Column (Left) */}
-                                                <div className="col-span-4 relative overflow-hidden group/promo">
+                                                <div className="col-span-3 relative overflow-hidden group/promo">
                                                     <div className="absolute inset-0 bg-gradient-to-br from-primary/40 via-primary/20 to-transparent z-10" />
                                                     <img
                                                         src={link.promo.image}
                                                         alt={link.promo.title}
                                                         className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover/promo:scale-105 transition-transform duration-700"
                                                     />
-                                                    <div className="relative z-20 h-full flex flex-col justify-end p-8">
-                                                        <h3 className="text-xl font-bold text-white mb-2">{link.promo.title}</h3>
-                                                        <p className="text-sm text-white/80 mb-6">{link.promo.subtitle}</p>
+                                                    <div className="relative z-20 h-full flex flex-col justify-end p-6">
+                                                        <h3 className="text-lg font-bold text-white mb-2">{link.promo.title}</h3>
+                                                        <p className="text-xs text-white/80 mb-4">{link.promo.subtitle}</p>
                                                         <Link
                                                             to={link.promo.link}
-                                                            className="inline-flex items-center justify-center px-4 py-2 rounded-lg bg-primary text-white text-sm font-bold hover:bg-primary-hover transition-colors shadow-lg"
+                                                            className="inline-flex items-center justify-center px-3 py-2 rounded-lg bg-primary text-white text-xs font-bold hover:bg-primary-hover transition-colors shadow-lg"
                                                         >
                                                             Explore Signals
                                                         </Link>
                                                     </div>
                                                 </div>
 
-                                                {/* Links Columns (Right) */}
-                                                <div className="col-span-8 p-8 grid grid-cols-3 gap-8 bg-background/50">
+                                                {/* Links Columns (Right) - 5 columns */}
+                                                <div className="col-span-9 p-6 grid grid-cols-5 gap-4 bg-background/50">
                                                     {link.columns.map((col, idx) => (
                                                         <div key={idx} className="relative z-10">
                                                             <Link to={col.href} className="block group/title">
-                                                                <h4 className="text-xs font-black text-white/60 uppercase tracking-[0.2em] mb-4 border-b border-white/5 pb-2 hover:text-primary transition-colors flex items-center gap-2">
+                                                                <h4 className="text-[10px] font-black text-white/60 uppercase tracking-[0.15em] mb-3 border-b border-white/5 pb-2 hover:text-primary transition-colors flex items-center gap-1">
                                                                     {col.title}
-                                                                    <ChevronDown className="-rotate-90 w-3 h-3 opacity-0 group-hover/title:opacity-100 transition-opacity text-primary" />
+                                                                    <ChevronDown className="-rotate-90 w-2.5 h-2.5 opacity-0 group-hover/title:opacity-100 transition-opacity text-primary" />
                                                                 </h4>
                                                             </Link>
-                                                            <div className="flex flex-col gap-1">
+                                                            <div className="flex flex-col gap-0.5">
                                                                 {col.items.map((item) => (
                                                                     <Link
                                                                         key={item.label}
                                                                         to={item.href}
-                                                                        className="group/item flex flex-col p-2 -mx-2 rounded-lg hover:bg-white/5 transition-colors"
+                                                                        className="group/item flex flex-col p-1.5 -mx-1.5 rounded-lg hover:bg-white/5 transition-colors"
                                                                     >
-                                                                        <div className="flex items-center gap-2">
+                                                                        <div className="flex items-center gap-1.5">
                                                                             <div className="w-1 h-1 rounded-full bg-primary/50 group-hover/item:bg-primary transition-colors" />
-                                                                            <span className="text-sm font-medium text-text-secondary group-hover/item:text-white transition-colors">
+                                                                            <span className="text-xs font-medium text-text-secondary group-hover/item:text-white transition-colors leading-tight">
                                                                                 {item.label}
                                                                             </span>
                                                                         </div>
                                                                         {item.desc && (
-                                                                            <span className="text-[10px] text-text-muted pl-3 mt-0.5 opacity-0 group-hover/item:opacity-100 transition-opacity">
+                                                                            <span className="text-[9px] text-text-muted pl-2.5 mt-0.5 opacity-0 group-hover/item:opacity-100 transition-opacity">
                                                                                 {item.desc}
                                                                             </span>
                                                                         )}
