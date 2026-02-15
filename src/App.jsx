@@ -9,41 +9,40 @@ import FAQ from './pages/FAQ';
 import RiskDisclosure from './pages/RiskDisclosure';
 import HowItWorksPage from './pages/HowItWorks';
 
-// Signals - Options Trading
-import OptionsTradingSignals from './pages/Signals/OptionsTrading/OptionsTradingSignals';
+// Signals
+import OptionsTradingSignals from './pages/Signals/OptionsTradingSignals';
+import StockTradingSignals from './pages/Signals/StockTradingSignals';
+import SwingTradingSignals from './pages/Signals/SwingTradingSignals';
+import TradingEducation from './pages/Signals/TradingEducation';
+import CompareTradingSignals from './pages/Signals/CompareTradingSignals';
+import TradingToolsAndAccess from './pages/Signals/TradingToolsAndAccess';
 
-// Signals - Stock Trading
-import StockSignals from './pages/Signals/StockSignals/StockSignals';
-import DayTrading from './pages/Signals/StockSignals/DayTrading';
-import Momentum from './pages/Signals/StockSignals/Momentum';
-import StockSwing from './pages/Signals/StockSignals/Swing';
-import Earnings from './pages/Signals/StockSignals/Earnings';
-import Gap from './pages/Signals/StockSignals/Gap';
+// Signals Sub-pages - Stock
+import DayTradingStocks from './pages/Signals/StockTradingSignals/DayTradingStocks';
+import MomentumStockSignals from './pages/Signals/StockTradingSignals/MomentumStockSignals';
+import SwingTradingStocks from './pages/Signals/StockTradingSignals/SwingTradingStocks';
+import EarningsTradingStrategy from './pages/Signals/StockTradingSignals/EarningsTradingStrategy';
+import GapUpGapDownStocks from './pages/Signals/StockTradingSignals/GapUpGapDownStocks';
 
-// Signals - Swing Trading
-import SwingSignals from './pages/Signals/SwingTrading/SwingSignals';
+// Signals Sub-pages - Education
+import WhatAreTradingSignals from './pages/Signals/TradingEducation/WhatAreTradingSignals';
+import HowOptionsTradingWorks from './pages/Signals/TradingEducation/HowOptionsTradingWorks';
+import WhatIsLottoOptions from './pages/Signals/TradingEducation/WhatIsLottoOptions';
+import ZeroDTEOptionsExplained from './pages/Signals/TradingEducation/ZeroDTEOptionsExplained';
+import HowToUseSignals from './pages/Signals/TradingEducation/HowToUseSignals';
 
-// Education
-import EducationHub from './pages/Education/EducationHub';
-import ArticlePage from './pages/Education/ArticlePage';
-import WhatAreTradingSignals from './pages/Education/WhatAreTradingSignals';
-import HowOptionsTradingWorks from './pages/Education/HowOptionsTradingWorks';
-import WhatIsLottoOptions from './pages/Education/WhatIsLottoOptions';
-import ZeroDTEOptionsExplained from './pages/Education/ZeroDTEOptionsExplained';
-import HowToUseSignals from './pages/Education/HowToUseSignals';
+// Signals Sub-pages - Compare
+import BestOptionsTradingSignals from './pages/Signals/CompareTradingSignals/BestOptionsTradingSignals';
+import BestTradingSignalsPlatform from './pages/Signals/CompareTradingSignals/BestTradingSignalsPlatform';
+import OptionsTradingSignalsVsCopyTrading from './pages/Signals/CompareTradingSignals/OptionsTradingSignalsVsCopyTrading';
+import FreeVsPaidTradingSignals from './pages/Signals/CompareTradingSignals/FreeVsPaidTradingSignals';
 
-// Compare Trading
-import BestOptionsSignals from './pages/CompareTrading/BestOptionsSignals';
-import BestPlatform from './pages/CompareTrading/BestPlatform';
-import VsCopyTrading from './pages/CompareTrading/VsCopyTrading';
-import FreeVsPaid from './pages/CompareTrading/FreeVsPaid';
-
-// Trading Tools
-import BeginnersGuide from './pages/TradingTools/BeginnersGuide';
-import AdvancedOptions from './pages/TradingTools/AdvancedOptions';
-import RiskGuide from './pages/TradingTools/RiskGuide';
-import TradingApp from './pages/TradingTools/TradingApp';
-import RealTimeAlerts from './pages/TradingTools/RealTimeAlerts';
+// Signals Sub-pages - Tools
+import TradingSignalsForBeginners from './pages/Signals/TradingToolsAndAccess/TradingSignalsForBeginners';
+import AdvancedOptionsTrading from './pages/Signals/TradingToolsAndAccess/AdvancedOptionsTrading';
+import TradingSignalsRiskGuide from './pages/Signals/TradingToolsAndAccess/TradingSignalsRiskGuide';
+import TradingSignalsApp from './pages/Signals/TradingToolsAndAccess/TradingSignalsApp';
+import RealTimeTradingAlerts from './pages/Signals/TradingToolsAndAccess/RealTimeTradingAlerts';
 
 function App() {
   return (
@@ -58,45 +57,44 @@ function App() {
         <Route path="/faq" element={<FAQ />} />
         <Route path="/risk-disclosure" element={<RiskDisclosure />} />
 
-        {/* Signals - Options */}
+        {/* Signals - Main Categories */}
         <Route path="/products/options-signals" element={<OptionsTradingSignals />} />
+        <Route path="/products/stock-signals" element={<StockTradingSignals />} />
+        <Route path="/products/swing-trading-signals" element={<SwingTradingSignals />} />
+        <Route path="/education" element={<TradingEducation />} />
+        <Route path="/compare" element={<CompareTradingSignals />} />
+        <Route path="/tools" element={<TradingToolsAndAccess />} />
 
-        {/* Signals - Stock Trading */}
-        <Route path="/products/stock-signals" element={<StockSignals />} />
-        <Route path="/products/stock-signals/day-trading" element={<DayTrading />} />
-        <Route path="/products/stock-signals/momentum" element={<Momentum />} />
-        <Route path="/products/stock-signals/swing" element={<StockSwing />} />
-        <Route path="/products/stock-signals/earnings" element={<Earnings />} />
-        <Route path="/products/stock-signals/gap" element={<Gap />} />
+        {/* Signals - Stock Sub-pages */}
+        <Route path="/products/stock-signals/day-trading" element={<DayTradingStocks />} />
+        <Route path="/products/stock-signals/momentum" element={<MomentumStockSignals />} />
+        <Route path="/products/stock-signals/swing" element={<SwingTradingStocks />} />
+        <Route path="/products/stock-signals/earnings" element={<EarningsTradingStrategy />} />
+        <Route path="/products/stock-signals/gap" element={<GapUpGapDownStocks />} />
 
-        {/* Signals - Other */}
-        <Route path="/products/swing-trading-signals" element={<SwingSignals />} />
-
-        {/* Trading Education */}
-        <Route path="/education" element={<EducationHub />} />
+        {/* Signals - Education Sub-pages */}
         <Route path="/education/what-are-trading-signals" element={<WhatAreTradingSignals />} />
         <Route path="/education/how-options-trading-works" element={<HowOptionsTradingWorks />} />
         <Route path="/education/what-is-lotto-options" element={<WhatIsLottoOptions />} />
         <Route path="/education/0dte-options-explained" element={<ZeroDTEOptionsExplained />} />
         <Route path="/education/how-to-use-trading-signals" element={<HowToUseSignals />} />
-        <Route path="/education/:slug" element={<ArticlePage />} />
 
-        {/* Compare Trading Signals */}
-        <Route path="/compare/best-options-trading-signals" element={<BestOptionsSignals />} />
-        <Route path="/compare/best-trading-signals-platform" element={<BestPlatform />} />
-        <Route path="/compare/options-trading-signals-vs-copy-trading" element={<VsCopyTrading />} />
-        <Route path="/compare/free-vs-paid-trading-signals" element={<FreeVsPaid />} />
+        {/* Signals - Compare Sub-pages */}
+        <Route path="/compare/best-options-trading-signals" element={<BestOptionsTradingSignals />} />
+        <Route path="/compare/best-trading-signals-platform" element={<BestTradingSignalsPlatform />} />
+        <Route path="/compare/options-trading-signals-vs-copy-trading" element={<OptionsTradingSignalsVsCopyTrading />} />
+        <Route path="/compare/free-vs-paid-trading-signals" element={<FreeVsPaidTradingSignals />} />
 
-        {/* Trading Tools & Access */}
-        <Route path="/tools/beginners" element={<BeginnersGuide />} />
-        <Route path="/tools/advanced-options" element={<AdvancedOptions />} />
-        <Route path="/tools/risk-guide" element={<RiskGuide />} />
-        <Route path="/tools/app" element={<TradingApp />} />
-        <Route path="/tools/real-time-alerts" element={<RealTimeAlerts />} />
+        {/* Signals - Tools Sub-pages */}
+        <Route path="/tools/beginners" element={<TradingSignalsForBeginners />} />
+        <Route path="/tools/advanced-options" element={<AdvancedOptionsTrading />} />
+        <Route path="/tools/risk-guide" element={<TradingSignalsRiskGuide />} />
+        <Route path="/tools/app" element={<TradingSignalsApp />} />
+        <Route path="/tools/real-time-alerts" element={<RealTimeTradingAlerts />} />
 
         {/* Legacy Routes for Compatibility */}
-        <Route path="/beginners" element={<BeginnersGuide />} />
-        <Route path="/advanced-options" element={<AdvancedOptions />} />
+        <Route path="/beginners" element={<TradingSignalsForBeginners />} />
+        <Route path="/advanced-options" element={<AdvancedOptionsTrading />} />
 
         {/* Fallback */}
         <Route path="*" element={<Home />} />

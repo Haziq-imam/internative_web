@@ -48,6 +48,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
                 {
                     title: 'Compare Trading Signals',
                     items: [
+                        { label: 'View Comparison', href: '/compare' },
                         { label: 'Best Options Trading Signals', href: '/compare/best-options-trading-signals' },
                         { label: 'Best Trading Signals Platform', href: '/compare/best-trading-signals-platform' },
                         { label: 'Options Trading Signals vs Copy Trading', href: '/compare/options-trading-signals-vs-copy-trading' },
@@ -57,6 +58,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
                 {
                     title: 'Trading Tools & Access',
                     items: [
+                        { label: 'View All Tools', href: '/tools' },
                         { label: 'Trading Signals For Beginners', href: '/tools/beginners' },
                         { label: 'Advanced Options Trading', href: '/tools/advanced-options' },
                         { label: 'Trading Signals Risk Guide', href: '/tools/risk-guide' },

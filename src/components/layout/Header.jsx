@@ -54,7 +54,7 @@ const Header = () => {
                 },
                 {
                     title: 'Compare Trading Signals',
-                    href: '/compare/best-options-trading-signals',
+                    href: '/compare',
                     items: [
                         { label: 'Best Options Trading Signals', href: '/compare/best-options-trading-signals', desc: 'Top-rated picks' },
                         { label: 'Best Trading Signals Platform', href: '/compare/best-trading-signals-platform', desc: 'Tool comparison' },
@@ -64,7 +64,7 @@ const Header = () => {
                 },
                 {
                     title: 'Trading Tools & Access',
-                    href: '/tools/beginners',
+                    href: '/tools',
                     items: [
                         { label: 'Trading Signals For Beginners', href: '/tools/beginners', desc: 'Getting started' },
                         { label: 'Advanced Options Trading', href: '/tools/advanced-options', desc: 'Expert techniques' },
