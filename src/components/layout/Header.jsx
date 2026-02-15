@@ -22,62 +22,49 @@ const Header = () => {
     const navLinks = [
         {
             label: 'Signals',
-            href: '/signals/options',
+            href: '/products/options-signals',
             megaMenu: true,
             columns: [
                 {
-                    title: 'Stock Trading Signals',
-                    href: '/signals/stocks',
-                    icon: 'BarChart2',
+                    title: 'Options Trading Signals',
+                    href: '/products/options-signals',
                     items: [
-                        { label: 'Day Trading Stocks', href: '/signals/stocks/day-trading', desc: 'Intraday volatility' },
-                        { label: 'Momentum Stock Signals', href: '/signals/stocks/momentum', desc: 'Ride the trend' },
-                        { label: 'Swing Trading Stocks', href: '/signals/stocks/swing', desc: 'Multi-day holds' },
-                        { label: 'Earnings Trading Strategy', href: '/signals/stocks/earnings', desc: 'Earnings plays' },
-                        { label: 'Gap Up / Gap Down Stocks', href: '/signals/stocks/gap', desc: 'Pre-market movers' },
+                        { label: 'View All Options Signals', href: '/products/options-signals', desc: 'Scalps, Swings & Lottos' },
+                        { label: 'Day Trading Options', href: '/products/options-signals/day-trading', desc: 'Fast-paced entries' },
+                        { label: '0DTE SPY Signals', href: '/products/options-signals/0dte', desc: 'Same-day expiry' },
+                    ]
+                },
+                {
+                    title: 'Stock Trading Signals',
+                    href: '/products/stock-signals',
+                    items: [
+                        { label: 'View All Stock Signals', href: '/products/stock-signals', desc: 'Equity momentum' },
+                        { label: 'Day Trading Stocks', href: '/products/stock-signals/day-trading', desc: 'Intraday volatility' },
+                        { label: 'Earnings Plays', href: '/products/stock-signals/earnings', desc: 'Quarterly triggers' },
                     ]
                 },
                 {
                     title: 'Swing Trading Signals',
-                    href: '/signals/swing',
-                    icon: 'TrendingUp',
+                    href: '/products/swing-trading-signals',
                     items: [
-                        { label: 'View Swing Signals', href: '/signals/swing', desc: 'Capture major moves' },
+                        { label: 'View Swing Signals', href: '/products/swing-trading-signals', desc: 'Multi-day holds' },
+                        { label: 'Crypto Swings', href: '/products/swing-trading-signals?tab=crypto', desc: 'Major crypto moves' },
                     ]
                 },
                 {
-                    title: 'Trading Education',
+                    title: 'Crypto Trading Signals',
+                    href: '/products/crypto-signals',
+                    items: [
+                        { label: 'BTC & ETH Signals', href: '/products/crypto-signals/major', desc: 'Top assets' },
+                        { label: 'Altcoin Alerts', href: '/products/crypto-signals/altcoins', desc: 'High volatility' },
+                    ]
+                },
+                {
+                    title: 'Resources',
                     href: '/education',
-                    icon: 'BookOpen',
                     items: [
-                        { label: 'What Are Trading Signals', href: '/education/what-are-trading-signals', desc: 'Learn the basics' },
-                        { label: 'How Options Trading Works', href: '/education/how-options-trading-works', desc: 'Options fundamentals' },
-                        { label: 'What Is Lotto Options', href: '/education/what-is-lotto-options', desc: 'High-risk plays' },
-                        { label: '0DTE Options Explained', href: '/education/0dte-options-explained', desc: 'Same-day expiry' },
-                        { label: 'How To Use Trading Signals', href: '/education/how-to-use-trading-signals', desc: 'Maximize results' },
-                    ]
-                },
-                {
-                    title: 'Compare Trading Signals',
-                    href: '/compare',
-                    icon: 'BarChart2',
-                    items: [
-                        { label: 'Best Options Trading Signals', href: '/compare/best-options-trading-signals', desc: 'Top providers' },
-                        { label: 'Best Trading Signals Platform', href: '/compare/best-trading-signals-platform', desc: 'Platform comparison' },
-                        { label: 'Signals vs Copy Trading', href: '/compare/options-trading-signals-vs-copy-trading', desc: 'Which is better?' },
-                        { label: 'Free vs Paid Signals', href: '/compare/free-vs-paid-trading-signals', desc: 'Value analysis' },
-                    ]
-                },
-                {
-                    title: 'Trading Tools & Access',
-                    href: '/tools',
-                    icon: 'BookOpen',
-                    items: [
-                        { label: 'Signals For Beginners', href: '/tools/beginners', desc: 'Start your journey' },
-                        { label: 'Advanced Options Trading', href: '/tools/advanced-options', desc: 'Expert strategies' },
-                        { label: 'Trading Signals Risk Guide', href: '/tools/risk-guide', desc: 'Protect capital' },
-                        { label: 'Trading Signals App', href: '/tools/app', desc: 'Mobile access' },
-                        { label: 'Real-Time Trading Alerts', href: '/tools/real-time-alerts', desc: 'Instant notifications' },
+                        { label: 'Education Hub', href: '/education', desc: 'Learning guides' },
+                        { label: 'Trading App', href: '/tools/app', desc: 'Mobile access' },
                     ]
                 }
             ]

@@ -14,7 +14,7 @@ const SignalTypes = () => {
             description: "High-leverage plays on major indices and tech stocks (SPY, QQQ, NVDA, TSLA).",
             strategies: ["Scalps (10-30%)", "Day Trades (20-50%)", "Swings (50-200%+)"],
             color: "text-primary",
-            link: "/signals/options"
+            link: "/products/options-signals"
         },
         {
             icon: Hash,
@@ -22,7 +22,7 @@ const SignalTypes = () => {
             description: "Equity trades for steady growth without expiration pressure.",
             strategies: ["Momentum Breakouts", "Earnings Plays", "Gap Ups/Down"],
             color: "text-success",
-            link: "/signals/stocks"
+            link: "/products/stock-signals"
         },
         {
             icon: Bitcoin,
@@ -30,7 +30,7 @@ const SignalTypes = () => {
             description: "24/7 market coverage for Bitcoin, Ethereum, and top altcoins.",
             strategies: ["Trend Following", "Reversals", "Spot & Futures"],
             color: "text-warning",
-            link: "/signals/crypto"
+            link: "/products/crypto-signals"
         }
     ];
 

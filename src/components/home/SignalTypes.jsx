@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowRight, BarChart2, TrendingUp, Bitcoin } from 'lucide-react';
+import { ArrowRight, BarChart2, TrendingUp, Bitcoin, Clock } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const SignalTypes = () => {
@@ -8,49 +8,64 @@ const SignalTypes = () => {
     const tabs = [
         { id: 'options', label: 'Options Signals', icon: BarChart2 },
         { id: 'stocks', label: 'Stock Signals', icon: TrendingUp },
+        { id: 'swing', label: 'Swing Signals', icon: Clock },
         { id: 'crypto', label: 'Crypto Signals', icon: Bitcoin },
     ];
 
     const content = {
         options: {
             title: "Master the Options Market",
-            description: "Our options signals cover calls, puts, spreads, and high-leverage lotto plays on major indices like S&P 500, Nasdaq, and Dow Jones.",
+            description: "High-leverage call and put alerts on SPY, QQQ, and top growth stocks. Designed for traders looking for explosive moves and 0DTE opportunities.",
             features: [
                 "Strike price and expiration clearly stated",
-                "Optimal entry price range",
+                "Scalp, Day Trade, and Lotto strategies",
                 "Precise stop-loss to limit downside",
-                "TP1, TP2, TP3 profit targets for scaling out"
+                "82% historical win rate"
             ],
             cta: "See Options Performance",
-            link: "/signals/options",
+            link: "/products/options-signals",
             color: "from-primary to-secondary",
             badge: "High Leverage"
         },
         stocks: {
             title: "Precision Picks for Equity Traders",
-            description: "Swing and day trading signals for high-volume stocks across all major exchanges. From blue-chip to growth stocks.",
+            description: "Institutional-grade stock picks for momentum breakouts and earnings plays. Zero expiration pressure, pure price action.",
             features: [
                 "Exact entry price or zone",
                 "Stop-loss below key support levels",
-                "Hold duration (day trade vs swing)",
-                "Fundamental and technical catalyst"
+                "Fundamental and technical catalysts",
+                "81% success rate on stock alerts"
             ],
             cta: "View Stock Track Record",
-            link: "/signals/stocks",
+            link: "/products/stock-signals",
             color: "from-violet-500 to-fuchsia-600",
             badge: "Consistent Gains"
         },
+        swing: {
+            title: "The Professional's Sweet Spot",
+            description: "Multi-day positions designed for busy professionals. Hold 3-21 days and capture the meat of major market moves without watching screens 24/7.",
+            features: [
+                "3-21 Day average hold time",
+                "79% win rate on swing positions",
+                "Perfect for part-time traders",
+                "Multi-asset: Stocks, Options, Crypto"
+            ],
+            cta: "Explore Swing Signals",
+            link: "/products/swing-trading-signals",
+            color: "from-emerald-500 to-teal-600",
+            badge: "Time Efficient"
+        },
         crypto: {
             title: "Navigate Crypto Volatility",
-            description: "Bitcoin, Ethereum, and altcoin signals designed for the unique pace of crypto markets. 24/7 coverage when markets never sleep.",
+            description: "Bitcoin, Ethereum, and altcoin signals designed for the 24/7 pace of crypto. Use institutional grade signals in the wild west of finance.",
             features: [
-                "Entry price in USD or BTC pairs",
+                "Entry price in USD pairs",
                 "Tiered stop-loss for volatile markets",
                 "Risk level clearly indicated",
                 "Market sentiment context"
             ],
             cta: "Check Crypto Results",
-            link: "/signals/crypto",
+            link: "/products/crypto-signals",
             color: "from-[#F7931A] to-[#E2761B]",
             badge: "24/7 Market"
         }
@@ -59,7 +74,7 @@ const SignalTypes = () => {
     const activeContent = content[activeTab];
 
     return (
-        <section className="py-24 bg-background-secondary border-y border-white/5">
+        <section id="signals" className="py-24 bg-background-secondary border-y border-white/5">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-6">
@@ -136,6 +151,7 @@ const SignalTypes = () => {
                                             <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${activeContent.color} flex items-center justify-center text-white shadow-lg`}>
                                                 {activeTab === 'options' && <BarChart2 />}
                                                 {activeTab === 'stocks' && <TrendingUp />}
+                                                {activeTab === 'swing' && <Clock />}
                                                 {activeTab === 'crypto' && <Bitcoin />}
                                             </div>
                                             <div className="text-right">

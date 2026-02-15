@@ -20,10 +20,10 @@ const Footer = () => {
         {
             title: "Signal Types",
             links: [
-                { label: "Options Signals", href: "/signals/options" },
-                { label: "Stock Signals", href: "/signals/stocks" },
-                { label: "Crypto Signals", href: "/signals/crypto" },
-                { label: "Swing Trading", href: "/signals/swing" },
+                { label: "Options Signals", href: "/products/options-signals" },
+                { label: "Stock Signals", href: "/products/stock-signals" },
+                { label: "Crypto Signals", href: "/products/crypto-signals" },
+                { label: "Swing Trading", href: "/products/swing-trading-signals" },
                 { label: "Day Trading", href: "/signals/day-trading" },
             ]
         },

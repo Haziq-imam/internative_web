@@ -17,7 +17,7 @@ const BenefitsSection = () => {
             title: "Portfolio Optimization",
             description: "Mix lotto plays, swing trades, and day trades to create a balanced strategy.",
             stat: "Dyamic Mix",
-            link: "/signals/swing",
+            link: "/products/swing-trading-signals",
             cta: "Explore Strategies"
         },
         {

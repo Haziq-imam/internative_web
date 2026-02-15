@@ -33,19 +33,19 @@ function App() {
         <Route path="/risk-disclosure" element={<RiskDisclosure />} />
 
         {/* Signals - Options */}
-        <Route path="/signals/options" element={<OptionsTradingSignals />} />
-        <Route path="/signals/options-signals" element={<OptionsTradingSignals />} />
+        <Route path="/products/options-signals" element={<OptionsTradingSignals />} />
 
         {/* Signals - Stock Trading */}
-        <Route path="/signals/stocks" element={<StockSignals />} />
-        <Route path="/signals/stocks/day-trading" element={<StockSignals type="day-trading" />} />
-        <Route path="/signals/stocks/momentum" element={<StockSignals type="momentum" />} />
-        <Route path="/signals/stocks/swing" element={<StockSignals type="swing" />} />
-        <Route path="/signals/stocks/earnings" element={<StockSignals type="earnings" />} />
-        <Route path="/signals/stocks/gap" element={<StockSignals type="gap" />} />
+        <Route path="/products/stock-signals" element={<StockSignals />} />
+        <Route path="/products/stock-signals/day-trading" element={<StockSignals type="day-trading" />} />
+        <Route path="/products/stock-signals/momentum" element={<StockSignals type="momentum" />} />
+        <Route path="/products/stock-signals/earnings" element={<StockSignals type="earnings" />} />
+        <Route path="/products/stock-signals/gap" element={<StockSignals type="gap" />} />
 
         {/* Signals - Other */}
-        <Route path="/signals/swing" element={<SwingSignals />} />
+        <Route path="/products/swing-trading-signals" element={<SwingSignals />} />
+        <Route path="/products/crypto-signals" element={<Home />} /> {/* Temporary fallback or specific page if exists */}
+        <Route path="/products/futures-signals" element={<Home />} />
 
         {/* Trading Education */}
         <Route path="/education/what-are-trading-signals" element={<ArticlePage slug="what-are-trading-signals" />} />

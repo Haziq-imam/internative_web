@@ -19,48 +19,33 @@ const MobileMenu = ({ isOpen, onClose }) => {
             megaMenu: true,
             columns: [
                 {
-                    title: 'Stock Trading Signals',
+                    title: 'Options Signals',
                     items: [
-                        { label: 'Day Trading Stocks', href: '/signals/stocks/day-trading' },
-                        { label: 'Momentum Stock Signals', href: '/signals/stocks/momentum' },
-                        { label: 'Swing Trading Stocks', href: '/signals/stocks/swing' },
-                        { label: 'Earnings Trading Strategy', href: '/signals/stocks/earnings' },
-                        { label: 'Gap Up / Gap Down Stocks', href: '/signals/stocks/gap' },
+                        { label: 'View All Options', href: '/products/options-signals' },
+                        { label: 'Day Trading Options', href: '/products/options-signals/day-trading' },
+                        { label: '0DTE Alerts', href: '/products/options-signals/0dte' },
                     ]
                 },
                 {
-                    title: 'Swing Trading Signals',
+                    title: 'Stock Signals',
                     items: [
-                        { label: 'View Swing Signals', href: '/signals/swing' },
+                        { label: 'View All Stocks', href: '/products/stock-signals' },
+                        { label: 'Day Trading Stocks', href: '/products/stock-signals/day-trading' },
+                        { label: 'Earnings Plays', href: '/products/stock-signals/earnings' },
                     ]
                 },
                 {
-                    title: 'Trading Education',
+                    title: 'Swing Signals',
                     items: [
-                        { label: 'What Are Trading Signals', href: '/education/what-are-trading-signals' },
-                        { label: 'How Options Trading Works', href: '/education/how-options-trading-works' },
-                        { label: 'What Is Lotto Options', href: '/education/what-is-lotto-options' },
-                        { label: '0DTE Options Explained', href: '/education/0dte-options-explained' },
-                        { label: 'How To Use Trading Signals', href: '/education/how-to-use-trading-signals' },
+                        { label: 'View Swing Signals', href: '/products/swing-trading-signals' },
+                        { label: 'Crypto Swings', href: '/products/swing-trading-signals?tab=crypto' },
                     ]
                 },
                 {
-                    title: 'Compare Trading Signals',
+                    title: 'Crypto Signals',
                     items: [
-                        { label: 'Best Options Trading Signals', href: '/compare/best-options-trading-signals' },
-                        { label: 'Best Trading Signals Platform', href: '/compare/best-trading-signals-platform' },
-                        { label: 'Signals vs Copy Trading', href: '/compare/options-trading-signals-vs-copy-trading' },
-                        { label: 'Free vs Paid Signals', href: '/compare/free-vs-paid-trading-signals' },
-                    ]
-                },
-                {
-                    title: 'Trading Tools & Access',
-                    items: [
-                        { label: 'Signals For Beginners', href: '/tools/beginners' },
-                        { label: 'Advanced Options Trading', href: '/tools/advanced-options' },
-                        { label: 'Trading Signals Risk Guide', href: '/tools/risk-guide' },
-                        { label: 'Trading Signals App', href: '/tools/app' },
-                        { label: 'Real-Time Trading Alerts', href: '/tools/real-time-alerts' },
+                        { label: 'Major Market Alerts', href: '/products/crypto-signals' },
+                        { label: 'Altcoin Signals', href: '/products/crypto-signals/altcoins' },
                     ]
                 }
             ]
