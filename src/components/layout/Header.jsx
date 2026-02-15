@@ -159,10 +159,12 @@ const Header = () => {
 
                         {/* Actions */}
                         <div className="hidden xl:flex items-center gap-6">
-                            <button className="text-sm font-semibold text-white hover:text-primary transition-colors duration-300 whitespace-nowrap">
+                            <Link to="/pricing" className="text-sm font-semibold text-white hover:text-primary transition-colors duration-300 whitespace-nowrap">
                                 Log in
-                            </button>
-                            <Button size="default" className="shadow-neon whitespace-nowrap">Get Started</Button>
+                            </Link>
+                            <Link to="/pricing">
+                                <Button size="default" className="shadow-neon whitespace-nowrap">Get Started</Button>
+                            </Link>
                         </div>
 
                         {/* Mobile Toggle */}

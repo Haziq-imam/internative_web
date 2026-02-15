@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 import Section from '../ui/Section';
 import Button from '../ui/Button';
 import { CheckCircle2, ArrowRight } from 'lucide-react';
@@ -52,10 +52,12 @@ const FinalCTA = () => {
                         <div className="w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
 
                         <div className="flex flex-col items-center gap-8">
-                            <Button size="lg" className="px-16 py-8 text-xl font-black uppercase tracking-widest shadow-neon group">
-                                Start Free 7-Day Trial
-                                <ArrowRight className="ml-3 w-6 h-6 group-hover:translate-x-1 transition-transform" />
-                            </Button>
+                            <Link to="/pricing">
+                                <Button size="lg" className="px-16 py-8 text-xl font-black uppercase tracking-widest shadow-neon group">
+                                    Start Free 7-Day Trial
+                                    <ArrowRight className="ml-3 w-6 h-6 group-hover:translate-x-1 transition-transform" />
+                                </Button>
+                            </Link>
 
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-4 text-left">
                                 {list.map((item, i) => (

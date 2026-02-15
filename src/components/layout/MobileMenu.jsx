@@ -177,12 +177,14 @@ const MobileMenu = ({ isOpen, onClose }) => {
                             </div>
 
                             <div className="p-8 border-t border-white/5 bg-background-secondary/50 relative z-10 space-y-6">
-                                <Button className="w-full py-6 text-xl shadow-neon" size="lg">Start Free Trial</Button>
+                                <Link to="/pricing" onClick={onClose} className="block">
+                                    <Button className="w-full py-6 text-xl shadow-neon" size="lg">Start Free Trial</Button>
+                                </Link>
                                 <div className="text-center">
                                     <span className="text-text-muted font-medium">Already a member? </span>
-                                    <button className="font-bold text-primary hover:text-primary-hover transition-colors">
+                                    <Link to="/pricing" onClick={onClose} className="font-bold text-primary hover:text-primary-hover transition-colors">
                                         Log in
-                                    </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
