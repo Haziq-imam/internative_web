@@ -9,7 +9,6 @@ const SignalTypes = () => {
         { id: 'options', label: 'Options Signals', icon: BarChart2 },
         { id: 'stocks', label: 'Stock Signals', icon: TrendingUp },
         { id: 'swing', label: 'Swing Signals', icon: Clock },
-        { id: 'crypto', label: 'Crypto Signals', icon: Bitcoin },
     ];
 
     const content = {
@@ -54,20 +53,6 @@ const SignalTypes = () => {
             link: "/products/swing-trading-signals",
             color: "from-emerald-500 to-teal-600",
             badge: "Time Efficient"
-        },
-        crypto: {
-            title: "Navigate Crypto Volatility",
-            description: "Bitcoin, Ethereum, and altcoin signals designed for the 24/7 pace of crypto. Use institutional grade signals in the wild west of finance.",
-            features: [
-                "Entry price in USD pairs",
-                "Tiered stop-loss for volatile markets",
-                "Risk level clearly indicated",
-                "Market sentiment context"
-            ],
-            cta: "Check Crypto Results",
-            link: "/products/crypto-signals",
-            color: "from-[#F7931A] to-[#E2761B]",
-            badge: "24/7 Market"
         }
     };
 
@@ -152,7 +137,6 @@ const SignalTypes = () => {
                                                 {activeTab === 'options' && <BarChart2 />}
                                                 {activeTab === 'stocks' && <TrendingUp />}
                                                 {activeTab === 'swing' && <Clock />}
-                                                {activeTab === 'crypto' && <Bitcoin />}
                                             </div>
                                             <div className="text-right">
                                                 <div className="text-sm text-text-muted">Profit Potential</div>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BarChart2, Zap, Search, Activity, ArrowRight } from 'lucide-react';
+import { BarChart2, Zap, ArrowRight } from 'lucide-react';
 import Section from '../ui/Section';
 import GlassCard from '../ui/GlassCard';
 import Button from '../ui/Button';
@@ -10,15 +10,13 @@ const SignalTabs = () => {
     const tabs = [
         { id: 'stocks', label: 'Stocks', icon: BarChart2 },
         { id: 'options', label: 'Options', icon: Zap },
-        { id: 'crypto', label: 'Crypto', icon: Search },
-        { id: 'futures', label: 'Futures', icon: Activity },
     ];
 
     return (
         <Section className="py-24 bg-background-secondary border-y border-white/5">
             <div className="container mx-auto px-4">
                 <div className="text-center max-w-3xl mx-auto mb-16">
-                    <h2 className="text-3xl md:text-5xl font-black text-white mb-6">Swing Signals Across Four Asset Classes</h2>
+                    <h2 className="text-3xl md:text-5xl font-black text-white mb-6">Swing Signals Across Key Asset Classes</h2>
                     <p className="text-text-secondary text-lg">Diversified Opportunities for Every Market Condition</p>
                 </div>
 
@@ -124,96 +122,6 @@ const SignalTabs = () => {
                                     <div className="p-6 rounded-2xl bg-primary/10 border border-primary/20 text-center">
                                         <div className="text-sm font-black text-white mb-1">Hold Time</div>
                                         <div className="text-[10px] text-primary font-bold uppercase tracking-widest">9.7 Days Average</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </GlassCard>
-                    )}
-                    {activeTab === 'crypto' && (
-                        <GlassCard className="p-8 md:p-12 rounded-[2.5rem] border-white/10 bg-[#0A051A]/80">
-                            <div className="flex flex-col lg:flex-row gap-12">
-                                <div className="flex-1 space-y-6">
-                                    <div className="inline-block px-3 py-1 bg-white/10 rounded-lg text-[10px] font-black text-white uppercase tracking-widest">24/7 Market Edge</div>
-                                    <h3 className="text-3xl font-black text-white">Crypto Swing Signals</h3>
-                                    <p className="text-text-secondary leading-relaxed font-medium">Holding Bitcoin, Ethereum, or altcoins for 5-21 days (spot or conservative leverage) to capture crypto volatility. 24/7 markets mean weekend opportunities.</p>
-
-                                    <div className="grid md:grid-cols-2 gap-6 pt-4">
-                                        <div>
-                                            <h5 className="text-white font-bold text-sm mb-3 underline decoration-primary underline-offset-4">Coverage:</h5>
-                                            <ul className="space-y-2 text-sm text-text-muted font-medium">
-                                                <li className="flex items-center gap-2"><ArrowRight className="w-3 h-3 text-primary" /> Bitcoin & Ethereum</li>
-                                                <li className="flex items-center gap-2"><ArrowRight className="w-3 h-3 text-primary" /> Top 20 Alts (SOL, AVAX, LINK)</li>
-                                                <li className="flex items-center gap-2"><ArrowRight className="w-3 h-3 text-primary" /> Emerging Potential Plays</li>
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <h5 className="text-white font-bold text-sm mb-3 underline decoration-primary underline-offset-4">Recent Wins:</h5>
-                                            <ul className="space-y-2 text-sm font-bold">
-                                                <li className="text-success">Bitcoin: +28.4% (Spot)</li>
-                                                <li className="text-success">Solana: +67.3% (Spot)</li>
-                                                <li className="text-success">Cardano: +42.8% (Spot)</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <Button className="w-full md:w-auto shadow-neon">Get Crypto Swing Signals →</Button>
-                                </div>
-                                <div className="lg:w-80 space-y-4">
-                                    <div className="p-6 rounded-2xl bg-white/5 border border-white/10 text-center">
-                                        <div className="text-4xl font-black text-white mb-1">74%</div>
-                                        <div className="text-[10px] text-text-muted font-bold uppercase tracking-widest">Win Rate</div>
-                                    </div>
-                                    <div className="p-6 rounded-2xl bg-white/5 border border-white/10 text-center">
-                                        <div className="text-4xl font-black text-white mb-1">+38.9%</div>
-                                        <div className="text-[10px] text-text-muted font-bold uppercase tracking-widest">Average Winner</div>
-                                    </div>
-                                    <div className="p-6 rounded-2xl bg-primary/10 border border-primary/20 text-center">
-                                        <div className="text-sm font-black text-white mb-1">Best For</div>
-                                        <div className="text-[10px] text-primary font-bold uppercase tracking-widest">24/7 Profit Hunters</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </GlassCard>
-                    )}
-                    {activeTab === 'futures' && (
-                        <GlassCard className="p-8 md:p-12 rounded-[2.5rem] border-white/10 bg-[#0A051A]/80">
-                            <div className="flex flex-col lg:flex-row gap-12">
-                                <div className="flex-1 space-y-6">
-                                    <div className="inline-block px-3 py-1 bg-white/10 rounded-lg text-[10px] font-black text-white uppercase tracking-widest">Macro Leverage</div>
-                                    <h3 className="text-3xl font-black text-white">Futures Swing Signals</h3>
-                                    <p className="text-text-secondary leading-relaxed font-medium">Holding futures contracts for 2-10 days to capture intermediate trends with built-in leverage. E-mini S&P, crude oil, gold - professional markets for serious traders.</p>
-
-                                    <div className="grid md:grid-cols-2 gap-6 pt-4">
-                                        <div>
-                                            <h5 className="text-white font-bold text-sm mb-3 underline decoration-primary underline-offset-4">Asset Types:</h5>
-                                            <ul className="space-y-2 text-sm text-text-muted font-medium">
-                                                <li className="flex items-center gap-2"><ArrowRight className="w-3 h-3 text-primary" /> Index Futures (/ES, /NQ)</li>
-                                                <li className="flex items-center gap-2"><ArrowRight className="w-3 h-3 text-primary" /> Commodities (/CL, /GC)</li>
-                                                <li className="flex items-center gap-2"><ArrowRight className="w-3 h-3 text-primary" /> Currency Futures (/6E)</li>
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <h5 className="text-white font-bold text-sm mb-3 underline decoration-primary underline-offset-4">Recent Wins:</h5>
-                                            <ul className="space-y-2 text-sm font-bold">
-                                                <li className="text-success">/ES S&P: +89 pts</li>
-                                                <li className="text-success">/GC Gold: +$84/oz</li>
-                                                <li className="text-success">/NQ Nasdaq: +387 pts</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <Button className="w-full md:w-auto shadow-neon">Get Futures Swing Signals →</Button>
-                                </div>
-                                <div className="lg:w-80 space-y-4">
-                                    <div className="p-6 rounded-2xl bg-white/5 border border-white/10 text-center">
-                                        <div className="text-4xl font-black text-white mb-1">73%</div>
-                                        <div className="text-[10px] text-text-muted font-bold uppercase tracking-widest">Win Rate</div>
-                                    </div>
-                                    <div className="p-6 rounded-2xl bg-white/5 border border-white/10 text-center">
-                                        <div className="text-4xl font-black text-white mb-1">$3.2k+</div>
-                                        <div className="text-[10px] text-text-muted font-bold uppercase tracking-widest">Avg Profit/Contract</div>
-                                    </div>
-                                    <div className="p-6 rounded-2xl bg-primary/10 border border-primary/20 text-center">
-                                        <div className="text-sm font-black text-white mb-1">Leverage</div>
-                                        <div className="text-[10px] text-primary font-bold uppercase tracking-widest">High Margin Edge</div>
                                     </div>
                                 </div>
                             </div>

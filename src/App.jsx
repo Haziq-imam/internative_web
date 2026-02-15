@@ -7,17 +7,43 @@ import PricingPage from './pages/Pricing';
 import Contact from './pages/Contact';
 import FAQ from './pages/FAQ';
 import RiskDisclosure from './pages/RiskDisclosure';
-
-// Signals
-import OptionsTradingSignals from './pages/Signals/OptionsTradingSignals';
-import StockSignals from './pages/Signals/StockSignals';
-import SwingSignals from './pages/Signals/SwingSignals';
 import HowItWorksPage from './pages/HowItWorks';
 
+// Signals - Options Trading
+import OptionsTradingSignals from './pages/Signals/OptionsTrading/OptionsTradingSignals';
+
+// Signals - Stock Trading
+import StockSignals from './pages/Signals/StockSignals/StockSignals';
+import DayTrading from './pages/Signals/StockSignals/DayTrading';
+import Momentum from './pages/Signals/StockSignals/Momentum';
+import StockSwing from './pages/Signals/StockSignals/Swing';
+import Earnings from './pages/Signals/StockSignals/Earnings';
+import Gap from './pages/Signals/StockSignals/Gap';
+
+// Signals - Swing Trading
+import SwingSignals from './pages/Signals/SwingTrading/SwingSignals';
+
 // Education
+import EducationHub from './pages/Education/EducationHub';
 import ArticlePage from './pages/Education/ArticlePage';
-import Beginners from './pages/Education/Beginners';
-import AdvancedOptions from './pages/Education/AdvancedOptions';
+import WhatAreTradingSignals from './pages/Education/WhatAreTradingSignals';
+import HowOptionsTradingWorks from './pages/Education/HowOptionsTradingWorks';
+import WhatIsLottoOptions from './pages/Education/WhatIsLottoOptions';
+import ZeroDTEOptionsExplained from './pages/Education/ZeroDTEOptionsExplained';
+import HowToUseSignals from './pages/Education/HowToUseSignals';
+
+// Compare Trading
+import BestOptionsSignals from './pages/CompareTrading/BestOptionsSignals';
+import BestPlatform from './pages/CompareTrading/BestPlatform';
+import VsCopyTrading from './pages/CompareTrading/VsCopyTrading';
+import FreeVsPaid from './pages/CompareTrading/FreeVsPaid';
+
+// Trading Tools
+import BeginnersGuide from './pages/TradingTools/BeginnersGuide';
+import AdvancedOptions from './pages/TradingTools/AdvancedOptions';
+import RiskGuide from './pages/TradingTools/RiskGuide';
+import TradingApp from './pages/TradingTools/TradingApp';
+import RealTimeAlerts from './pages/TradingTools/RealTimeAlerts';
 
 function App() {
   return (
@@ -37,39 +63,39 @@ function App() {
 
         {/* Signals - Stock Trading */}
         <Route path="/products/stock-signals" element={<StockSignals />} />
-        <Route path="/products/stock-signals/day-trading" element={<StockSignals type="day-trading" />} />
-        <Route path="/products/stock-signals/momentum" element={<StockSignals type="momentum" />} />
-        <Route path="/products/stock-signals/earnings" element={<StockSignals type="earnings" />} />
-        <Route path="/products/stock-signals/gap" element={<StockSignals type="gap" />} />
+        <Route path="/products/stock-signals/day-trading" element={<DayTrading />} />
+        <Route path="/products/stock-signals/momentum" element={<Momentum />} />
+        <Route path="/products/stock-signals/swing" element={<StockSwing />} />
+        <Route path="/products/stock-signals/earnings" element={<Earnings />} />
+        <Route path="/products/stock-signals/gap" element={<Gap />} />
 
         {/* Signals - Other */}
         <Route path="/products/swing-trading-signals" element={<SwingSignals />} />
-        <Route path="/products/crypto-signals" element={<Home />} /> {/* Temporary fallback or specific page if exists */}
-        <Route path="/products/futures-signals" element={<Home />} />
 
         {/* Trading Education */}
-        <Route path="/education/what-are-trading-signals" element={<ArticlePage slug="what-are-trading-signals" />} />
-        <Route path="/education/how-options-trading-works" element={<ArticlePage slug="how-options-trading-works" />} />
-        <Route path="/education/what-is-lotto-options" element={<ArticlePage slug="what-is-lotto-options" />} />
-        <Route path="/education/0dte-options-explained" element={<ArticlePage slug="0dte-options-explained" />} />
-        <Route path="/education/how-to-use-trading-signals" element={<ArticlePage slug="how-to-use-trading-signals" />} />
+        <Route path="/education" element={<EducationHub />} />
+        <Route path="/education/what-are-trading-signals" element={<WhatAreTradingSignals />} />
+        <Route path="/education/how-options-trading-works" element={<HowOptionsTradingWorks />} />
+        <Route path="/education/what-is-lotto-options" element={<WhatIsLottoOptions />} />
+        <Route path="/education/0dte-options-explained" element={<ZeroDTEOptionsExplained />} />
+        <Route path="/education/how-to-use-trading-signals" element={<HowToUseSignals />} />
         <Route path="/education/:slug" element={<ArticlePage />} />
 
         {/* Compare Trading Signals */}
-        <Route path="/compare/best-options-trading-signals" element={<ArticlePage slug="best-options-trading-signals" />} />
-        <Route path="/compare/best-trading-signals-platform" element={<ArticlePage slug="best-trading-signals-platform" />} />
-        <Route path="/compare/options-trading-signals-vs-copy-trading" element={<ArticlePage slug="options-trading-signals-vs-copy-trading" />} />
-        <Route path="/compare/free-vs-paid-trading-signals" element={<ArticlePage slug="free-vs-paid-trading-signals" />} />
+        <Route path="/compare/best-options-trading-signals" element={<BestOptionsSignals />} />
+        <Route path="/compare/best-trading-signals-platform" element={<BestPlatform />} />
+        <Route path="/compare/options-trading-signals-vs-copy-trading" element={<VsCopyTrading />} />
+        <Route path="/compare/free-vs-paid-trading-signals" element={<FreeVsPaid />} />
 
         {/* Trading Tools & Access */}
-        <Route path="/tools/beginners" element={<Beginners />} />
+        <Route path="/tools/beginners" element={<BeginnersGuide />} />
         <Route path="/tools/advanced-options" element={<AdvancedOptions />} />
-        <Route path="/tools/risk-guide" element={<ArticlePage slug="risk-guide" />} />
-        <Route path="/tools/app" element={<ArticlePage slug="trading-app" />} />
-        <Route path="/tools/real-time-alerts" element={<ArticlePage slug="real-time-alerts" />} />
+        <Route path="/tools/risk-guide" element={<RiskGuide />} />
+        <Route path="/tools/app" element={<TradingApp />} />
+        <Route path="/tools/real-time-alerts" element={<RealTimeAlerts />} />
 
         {/* Legacy Routes for Compatibility */}
-        <Route path="/beginners" element={<Beginners />} />
+        <Route path="/beginners" element={<BeginnersGuide />} />
         <Route path="/advanced-options" element={<AdvancedOptions />} />
 
         {/* Fallback */}

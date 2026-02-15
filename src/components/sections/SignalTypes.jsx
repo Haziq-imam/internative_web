@@ -23,14 +23,6 @@ const SignalTypes = () => {
             strategies: ["Momentum Breakouts", "Earnings Plays", "Gap Ups/Down"],
             color: "text-success",
             link: "/products/stock-signals"
-        },
-        {
-            icon: Bitcoin,
-            title: "Crypto Signals",
-            description: "24/7 market coverage for Bitcoin, Ethereum, and top altcoins.",
-            strategies: ["Trend Following", "Reversals", "Spot & Futures"],
-            color: "text-warning",
-            link: "/products/crypto-signals"
         }
     ];
 

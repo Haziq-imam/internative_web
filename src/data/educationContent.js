@@ -56,9 +56,9 @@ export const educationContent = {
             { title: "Free vs Paid Trading Signals", slug: "free-vs-paid-trading-signals" }
         ],
         tools: [
-            { title: "Trading Signals Risk Guide", slug: "trading-signals-risk-guide" },
-            { title: "Trading Signals App", slug: "trading-signals-app" },
-            { title: "Real-Time Trading Alerts", slug: "real-time-trading-alerts" }
+            { title: "Trading Signals Risk Guide", slug: "risk-guide" },
+            { title: "Trading Signals App", slug: "trading-app" },
+            { title: "Real-Time Trading Alerts", slug: "real-time-alerts" }
         ]
     }
 };

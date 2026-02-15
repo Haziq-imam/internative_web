@@ -22,7 +22,6 @@ const Footer = () => {
             links: [
                 { label: "Options Signals", href: "/products/options-signals" },
                 { label: "Stock Signals", href: "/products/stock-signals" },
-                { label: "Crypto Signals", href: "/products/crypto-signals" },
                 { label: "Swing Trading", href: "/products/swing-trading-signals" },
                 { label: "Day Trading", href: "/signals/day-trading" },
             ]
@@ -66,7 +65,7 @@ const Footer = () => {
                             />
                         </Link>
                         <p className="text-text-muted mb-8 max-w-sm leading-relaxed font-bold text-sm">
-                            Your trusted source for real-time trading signals across options, stocks, and crypto markets. Join 10,000+ elite traders.
+                            Your trusted source for real-time trading signals across options, stocks, and swing strategies. Join 10,000+ elite traders.
                         </p>
 
                         <div className="space-y-4">
