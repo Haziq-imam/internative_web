@@ -21,7 +21,7 @@ const OptionsTradingSignals = () => {
     return (
         <>
             <Helmet>
-                <title>Options Trading Signals - 82% Win Rate | InterNative Traders</title>
+                <title>Options Trading Signals | InterNative Traders</title>
                 <meta name="description" content="Get professional options trading signals with precise entry/exit points. Calls, puts, lottos, swings on SPY, QQQ, NVDA, TSLA. 82% win rate. Try free 7 days." />
             </Helmet>
 

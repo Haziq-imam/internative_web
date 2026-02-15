@@ -12,6 +12,7 @@ import RiskDisclosure from './pages/RiskDisclosure';
 import OptionsTradingSignals from './pages/Signals/OptionsTradingSignals';
 import StockSignals from './pages/Signals/StockSignals';
 import SwingSignals from './pages/Signals/SwingSignals';
+import HowItWorksPage from './pages/HowItWorks';
 
 // Education
 import ArticlePage from './pages/Education/ArticlePage';
@@ -25,6 +26,7 @@ function App() {
         {/* Main Pages */}
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/how-it-works" element={<HowItWorksPage />} />
         <Route path="/pricing" element={<PricingPage />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/faq" element={<FAQ />} />

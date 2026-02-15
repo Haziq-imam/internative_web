@@ -31,9 +31,9 @@ const PainPoints = () => {
                     <h2 className="text-4xl md:text-5xl font-black text-white mb-6">Why Options Traders Lose Money <br /><span className="text-gradient">(And How We Fix It)</span></h2>
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-8">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {points.map((item, idx) => (
-                        <GlassCard key={idx} className="p-8 rounded-3xl h-full flex flex-col" hoverEffect>
+                        <GlassCard key={idx} className={`p-8 rounded-3xl h-full flex flex-col ${idx === 2 ? 'md:col-span-2 lg:col-span-1 md:w-3/4 md:mx-auto lg:w-full' : ''}`} hoverEffect>
                             <div className="text-4xl mb-6">{item.icon}</div>
                             <h3 className="text-xl font-bold text-white mb-4">{item.title}</h3>
                             <div className="bg-red-500/10 p-4 rounded-xl border border-red-500/20 mb-4 flex-1">

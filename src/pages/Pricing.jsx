@@ -33,7 +33,7 @@ const PricingPage = () => {
     return (
         <>
             <Helmet>
-                <title>Pricing Plans | InterNative Traders</title>
+                <title>Pricing | InterNative Traders</title>
                 <meta name="description" content="Choose the perfect trading signal plan for your needs. Professional-grade signals with proven results." />
             </Helmet>
 

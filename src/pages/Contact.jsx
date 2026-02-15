@@ -61,7 +61,7 @@ const Contact = () => {
     return (
         <div className="min-h-screen bg-background text-text-main">
             <Helmet>
-                <title>Contact Us - InterNative Traders</title>
+                <title>Contact | InterNative Traders</title>
                 <meta name="description" content="Get in touch with InterNative Traders. We're here to help with your trading signals questions." />
             </Helmet>
 

@@ -1,8 +1,9 @@
 import React from 'react';
 import Section from '../ui/Section';
-import GlassCard from '../ui/GlassCard';
+import { Plus, Minus } from 'lucide-react';
 
 const FAQ = () => {
+    const [openIndex, setOpenIndex] = React.useState(0);
     const faqs = [
         {
             q: "Do I need a lot of money to trade options signals?",
@@ -49,12 +50,30 @@ const FAQ = () => {
                     <h2 className="text-4xl font-black text-white mb-4 uppercase tracking-tighter">Options Signals Questions Answered</h2>
                 </div>
 
-                <div className="grid gap-4">
+                <div className="space-y-4">
                     {faqs.map((faq, idx) => (
-                        <GlassCard key={idx} className="p-8 rounded-2xl group transition-all" hoverEffect>
-                            <h4 className="text-lg font-bold text-white mb-4 group-hover:text-primary transition-colors">{faq.q}</h4>
-                            <p className="text-text-secondary leading-relaxed">{faq.a}</p>
-                        </GlassCard>
+                        <div
+                            key={idx}
+                            className={`bg-surface border rounded-2xl overflow-hidden transition-all duration-300 ${openIndex === idx ? 'border-primary/50 shadow-lg' : 'border-white/5 hover:border-white/10'}`}
+                        >
+                            <button
+                                onClick={() => setOpenIndex(idx === openIndex ? -1 : idx)}
+                                className="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none"
+                            >
+                                <span className="text-lg font-bold text-white pr-4">{faq.q}</span>
+                                <div className={`p-2 rounded-full transition-colors flex-shrink-0 ${openIndex === idx ? 'bg-primary text-white' : 'bg-white/5 text-text-secondary'}`}>
+                                    {openIndex === idx ? <Minus className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
+                                </div>
+                            </button>
+
+                            <div
+                                className={`px-6 overflow-hidden transition-all duration-300 ease-in-out ${openIndex === idx ? 'max-h-[500px] pb-6 opacity-100' : 'max-h-0 opacity-0'}`}
+                            >
+                                <p className="text-text-secondary leading-relaxed text-sm">
+                                    {faq.a}
+                                </p>
+                            </div>
+                        </div>
                     ))}
                 </div>
             </div>

@@ -10,7 +10,7 @@ const Beginners = () => {
     return (
         <>
             <Helmet>
-                <title>Trading for Beginners | InterNative</title>
+                <title>Signals For Beginners | InterNative Traders</title>
                 <meta name="description" content="Your first steps into professional trading. Avoid common mistakes and learn the right way to start." />
             </Helmet>
 

@@ -10,7 +10,7 @@ const SwingSignals = () => {
     return (
         <>
             <Helmet>
-                <title>Swing Trading Signals | InterNative</title>
+                <title>Swing Trading Signals | InterNative Traders</title>
                 <meta name="description" content="Catch bigger moves with less screen time. Our swing trading signals are designed for working professionals." />
             </Helmet>
 

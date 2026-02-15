@@ -83,7 +83,7 @@ const Header = () => {
             ]
         },
         { label: 'About', href: '/about' },
-        { label: 'How It Works', href: '/#how-it-works' },
+        { label: 'How It Works', href: '/how-it-works' },
         { label: 'Pricing', href: '/pricing' },
         { label: 'FAQ', href: '/faq' },
         { label: 'Contact', href: '/contact' },
@@ -94,55 +94,54 @@ const Header = () => {
         <>
             <header
                 className={cn(
-                    "fixed top-0 left-0 right-0 z-40 transition-all duration-500",
-                    isScrolled ? "bg-[#060410]/80 backdrop-blur-2xl border-b border-primary/20 py-4 shadow-neon" : "bg-transparent py-6"
+                    "fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-[1920px] z-40 transition-all duration-500 rounded-full",
+                    isScrolled ? "bg-[#030014]/80 backdrop-blur-md border border-white/5 py-3 shadow-lg" : "bg-transparent py-6"
                 )}
             >
-                <div className="container mx-auto px-4 md:px-6 relative">
+                <div className="px-6 md:px-12 relative">
                     <div className="flex items-center justify-between">
                         {/* Logo */}
                         <Link to="/" className="flex items-center group">
                             <img
                                 src={Logo}
                                 alt="InterNative Traders"
-                                className="h-10 md:h-12 w-auto transition-transform duration-300 group-hover:scale-105"
+                                className="h-8 md:h-10 w-auto transition-transform duration-300 group-hover:scale-105"
                             />
                         </Link>
 
                         {/* Desktop Nav */}
-                        <nav className="hidden md:flex items-center gap-6">
+                        <nav className="hidden xl:flex items-center gap-1 2xl:gap-2">
                             {navLinks.map((link) => (
                                 <div key={link.label} className="group">
                                     <Link
                                         to={link.href}
-                                        className="relative px-4 py-2 text-sm font-semibold text-text-main hover:text-white transition-all duration-300 flex items-center gap-1 group-hover:bg-primary/10 rounded-full border border-transparent group-hover:border-primary/20"
+                                        className="relative px-3 py-2 text-xs 2xl:text-sm font-semibold text-text-secondary hover:text-white transition-all duration-300 flex items-center gap-1 hover:bg-white/5 rounded-full"
                                     >
-                                        <span className="relative z-10">{link.label}</span>
-                                        {link.megaMenu && (
+                                        <span className="relative z-10 whitespace-nowrap">{link.label}</span>
+                                        {link.columns && (
                                             <ChevronDown className="w-3 h-3 transition-transform duration-300 group-hover:rotate-180 text-primary" />
                                         )}
                                     </Link>
 
                                     {/* Mega Menu Dropdown */}
-                                    {link.megaMenu && (
-                                        <div className="absolute top-full left-1/2 -translate-x-1/2 w-[90vw] lg:w-[70vw] max-w-6xl pt-4 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 ease-out">
-                                            <div className="bg-[#0F0924]/95 backdrop-blur-3xl border border-primary/20 rounded-3xl p-0 shadow-2xl overflow-hidden ring-1 ring-white/10">
+                                    {link.columns && (
+                                        <div className="absolute top-full left-0 w-full pt-4 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 ease-out z-50 flex justify-center">
+                                            <div className="w-[85vw] max-w-5xl bg-[#0A051A]/95 backdrop-blur-3xl border border-white/5 rounded-3xl p-1 shadow-2xl overflow-hidden ring-1 ring-white/5 mx-auto">
                                                 {/* Links Columns */}
-                                                <div className="p-10 grid grid-cols-5 gap-10 bg-gradient-to-br from-primary/[0.05] to-transparent">
+                                                <div className="p-8 grid grid-cols-5 gap-6 bg-gradient-to-b from-white/[0.02] to-transparent rounded-[20px]">
                                                     {link.columns.map((col, idx) => (
                                                         <div key={idx} className="relative z-10 flex flex-col gap-4">
                                                             <Link to={col.href} className="block group/title">
-                                                                <h4 className="text-base font-bold text-white mb-2 flex items-center gap-2 group-hover/title:text-primary transition-colors text-nowrap">
+                                                                <h4 className="text-sm font-bold text-white mb-2 flex items-center gap-2 group-hover/title:text-primary transition-colors whitespace-nowrap">
                                                                     {col.title}
-                                                                    <ChevronDown className="-rotate-90 w-4 h-4 opacity-0 group-hover/title:opacity-100 transition-all -translate-x-1 group-hover/title:translate-x-0" />
                                                                 </h4>
                                                             </Link>
-                                                            <div className="flex flex-col gap-1.5">
+                                                            <div className="flex flex-col gap-1">
                                                                 {col.items.map((item) => (
                                                                     <Link
                                                                         key={item.label}
                                                                         to={item.href}
-                                                                        className="group/item flex flex-col py-2 px-3 -mx-3 rounded-xl hover:bg-white/5 transition-all duration-300"
+                                                                        className="group/item flex flex-col py-1.5 px-3 -mx-3 rounded-lg hover:bg-white/5 transition-all duration-300"
                                                                     >
                                                                         <span className="text-sm font-medium text-text-secondary group-hover/item:text-white transition-colors">
                                                                             {item.label}
@@ -166,16 +165,16 @@ const Header = () => {
                         </nav>
 
                         {/* Actions */}
-                        <div className="hidden md:flex items-center gap-6">
-                            <button className="text-sm font-semibold text-white hover:text-primary transition-colors duration-300">
+                        <div className="hidden xl:flex items-center gap-6">
+                            <button className="text-sm font-semibold text-white hover:text-primary transition-colors duration-300 whitespace-nowrap">
                                 Log in
                             </button>
-                            <Button size="default" className="shadow-neon">Get Started</Button>
+                            <Button size="default" className="shadow-neon whitespace-nowrap">Get Started</Button>
                         </div>
 
                         {/* Mobile Toggle */}
                         <button
-                            className="md:hidden p-2 text-text-secondary"
+                            className="xl:hidden p-2 text-text-secondary hover:text-white transition-colors"
                             onClick={() => setIsMobileMenuOpen(true)}
                         >
                             <Menu size={24} />

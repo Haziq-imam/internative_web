@@ -9,7 +9,7 @@ const AdvancedOptions = () => {
     return (
         <>
             <Helmet>
-                <title>Advanced Options Strategies | InterNative</title>
+                <title>Advanced Options Trading | InterNative Traders</title>
                 <meta name="description" content="Institutional strategies for experienced traders. Spreads, Iron Condors, and Greeks management." />
             </Helmet>
 

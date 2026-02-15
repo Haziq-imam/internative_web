@@ -37,11 +37,11 @@ const Advantages = () => {
                     <h2 className="text-4xl md:text-5xl font-black text-white mb-6">The InterNative Advantage: <br /><span className="text-gradient">Built Different</span></h2>
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-8">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {advantages.map((adv, i) => (
-                        <GlassCard key={i} className="p-8 rounded-3xl" hoverEffect>
+                        <GlassCard key={i} className="p-8 rounded-3xl flex flex-col h-full" hoverEffect>
                             <h3 className="text-xl font-bold text-white mb-4">{adv.title}</h3>
-                            <p className="text-sm text-text-secondary leading-relaxed">{adv.desc}</p>
+                            <p className="text-sm text-text-secondary leading-relaxed flex-grow">{adv.desc}</p>
                         </GlassCard>
                     ))}
                 </div>

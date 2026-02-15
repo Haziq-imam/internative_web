@@ -32,9 +32,9 @@ const SocialProof = () => {
                     <h2 className="text-4xl md:text-5xl font-black text-white mb-6">Trusted by Thousands of <br /><span className="text-gradient">Options Traders</span></h2>
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-8">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {testimonials.map((test, i) => (
-                        <GlassCard key={i} className="p-8 rounded-[2.5rem]" hoverEffect>
+                        <GlassCard key={i} className={`p-8 rounded-[2.5rem] flex flex-col ${i === 2 ? 'md:col-span-2 lg:col-span-1 md:w-3/4 md:mx-auto lg:w-full' : ''}`} hoverEffect>
                             <div className="flex gap-1 mb-6">
                                 {[...Array(5)].map((_, i) => <Star key={i} size={16} className="text-primary" fill="currentColor" />)}
                             </div>

@@ -7,6 +7,8 @@ import Section from '../../components/ui/Section';
 import GlassCard from '../../components/ui/GlassCard';
 import FinalCTA from '../../components/sections/FinalCTA';
 
+import { Helmet } from 'react-helmet-async';
+
 const ArticlePage = () => {
     const { slug } = useParams();
 
@@ -20,6 +22,10 @@ const ArticlePage = () => {
 
     return (
         <>
+            <Helmet>
+                <title>{`${title} | InterNative Traders`}</title>
+                <meta name="description" content={description} />
+            </Helmet>
             <Section className="bg-background relative pt-48 pb-32 overflow-hidden">
                 <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[120px] pointer-events-none translate-x-1/2 -translate-y-1/2" />
 

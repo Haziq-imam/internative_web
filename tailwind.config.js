@@ -8,25 +8,24 @@ export default {
     extend: {
       colors: {
         background: {
-          DEFAULT: 'var(--bg-main)',
-          secondary: 'var(--bg-card)',
-          tertiary: '#070707ff', // Keep for deep contrast if needed
-          surface: 'var(--bg-surface)',
+          DEFAULT: '#020010', // Almost black, deep space purple
+          secondary: '#0A051A', // Slightly lighter for cards
+          tertiary: '#0F0924', // Even lighter for accents
+          surface: '#150D2E', // Surface color
         },
         primary: {
-          DEFAULT: 'var(--primary)',
-          hover: '#9333EA',   // More vibrant purple
-          light: 'var(--text-muted)',
-          glow: 'rgba(168, 85, 247, 0.5)'
+          DEFAULT: '#8B5CF6', // Violet-500
+          hover: '#7C3AED',   // Violet-600
+          light: '#A78BFA',   // Violet-400
+          glow: 'rgba(139, 92, 246, 0.5)'
         },
         secondary: {
-          DEFAULT: 'var(--secondary)',
-          hover: '#DB2777',
+          DEFAULT: '#EC4899', // Pink-500
+          hover: '#DB2777',   // Pink-600
         },
         accent: {
-          purple: 'var(--primary)',
-          blue: '#3B82F6',
-          cyan: 'var(--accent-cyan)',
+          purple: '#8B5CF6',
+          cyan: '#06B6D4',
           green: '#10B981',
           red: '#EF4444',
           gold: '#F59E0B',
@@ -35,14 +34,15 @@ export default {
         warning: '#F59E0B',
         danger: '#EF4444',
         text: {
-          primary: 'var(--text-heading)',
-          main: 'var(--text-main)',
-          secondary: 'var(--text-muted)',
-          muted: 'var(--text-muted)',
+          primary: '#FFFFFF',
+          main: '#E0E7FF',
+          secondary: '#94A3B8',
+          muted: '#64748B',
         },
         border: {
-          DEFAULT: 'rgba(168, 85, 247, 0.1)', // Subtle purple tint in border
-          hover: 'rgba(168, 85, 247, 0.3)',
+          DEFAULT: 'rgba(255, 255, 255, 0.03)',
+          hover: 'rgba(139, 92, 246, 0.2)',
+          highlight: 'rgba(139, 92, 246, 0.1)',
         }
       },
       fontFamily: {
@@ -50,19 +50,19 @@ export default {
         display: ['Outfit', 'Inter', 'system-ui', 'sans-serif'],
       },
       backgroundImage: {
-        'brand-gradient': 'linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%)',
-        'brand-gradient-vibrant': 'linear-gradient(135deg, #A855F7 0%, #EC4899 100%)', // Hard neon
-        'glass': 'linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%)',
-        'glass-hover': 'linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.03) 100%)',
-        'card-gradient': 'linear-gradient(180deg, #0F0924 0%, #060410 100%)',
-        'hero-glow': 'radial-gradient(circle at 50% 50%, rgba(168, 85, 247, 0.2) 0%, transparent 60%)',
+        'brand-gradient': 'linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%)',
+        'brand-gradient-vibrant': 'linear-gradient(135deg, #7C3AED 0%, #DB2777 100%)',
+        'glass': 'linear-gradient(180deg, rgba(15, 10, 40, 0.6) 0%, rgba(10, 5, 25, 0.8) 100%)',
+        'glass-hover': 'linear-gradient(180deg, rgba(20, 15, 50, 0.7) 0%, rgba(15, 10, 35, 0.9) 100%)',
+        'card-gradient': 'linear-gradient(180deg, #0A051A 0%, #020010 100%)',
+        'hero-glow': 'radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.15) 0%, transparent 60%)',
       },
       boxShadow: {
-        'neon': '0 0 20px rgba(168, 85, 247, 0.3)',
-        'neon-hover': '0 0 40px rgba(168, 85, 247, 0.6)',
-        'neon-pink': '0 0 20px rgba(236, 72, 153, 0.3)',
-        'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.8)',
-        'card': '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
+        'neon': '0 0 20px rgba(139, 92, 246, 0.15)',
+        'neon-hover': '0 0 30px rgba(139, 92, 246, 0.3)',
+        'neon-pink': '0 0 20px rgba(236, 72, 153, 0.15)',
+        'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.6)',
+        'card': '0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.15)',
       },
       keyframes: {
         float: {

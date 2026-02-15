@@ -38,9 +38,9 @@ const AnalystProfiles = () => {
                     <h2 className="text-4xl md:text-5xl font-black text-white mb-6">Meet the Team Behind <br /><span className="text-gradient">Your Options Alerts</span></h2>
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-8">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {analysts.map((analyst, i) => (
-                        <GlassCard key={i} className="p-8 rounded-[2.5rem] flex flex-col h-full bg-background" hoverEffect>
+                        <GlassCard key={i} className={`p-8 rounded-[2.5rem] flex flex-col h-full bg-background ${i === 2 ? 'md:col-span-2 lg:col-span-1 md:w-3/4 md:mx-auto lg:w-full' : ''}`} hoverEffect>
                             <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center text-primary font-black text-2xl mb-6">
                                 {analyst.name.split(' ')[0][0]}{analyst.name.split(' ')[1][0]}
                             </div>

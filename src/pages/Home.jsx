@@ -13,10 +13,15 @@ import PerformanceSection from '../components/home/PerformanceSection';
 import FAQSection from '../components/home/FAQSection';
 import ComparisonTable from '../components/home/ComparisonTable';
 import TrustBadges from '../components/home/TrustBadges';
+import { Helmet } from 'react-helmet-async';
 
 const Home = () => {
     return (
         <div className="min-h-screen bg-background text-text-main font-sans selection:bg-primary/30">
+            <Helmet>
+                <title>InterNative Traders</title>
+                <meta name="description" content="Institutional-grade stock and options trading signals with an 82% win rate. Join thousands of traders using our real-time alerts." />
+            </Helmet>
             <HeroSection />
             <SocialProof />
             <ProblemSection />

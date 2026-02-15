@@ -7,7 +7,7 @@ const RiskDisclosure = () => {
     return (
         <>
             <Helmet>
-                <title>Risk Disclosure | InterNative</title>
+                <title>Risk Disclosure | InterNative Traders</title>
                 <meta name="description" content="Important risk disclosure information regarding trading financial instruments." />
             </Helmet>
             <Section className="bg-background relative pt-48 pb-32 overflow-hidden">

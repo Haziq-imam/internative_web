@@ -65,7 +65,7 @@ const FAQ = () => {
     return (
         <div className="min-h-screen bg-background text-text-main">
             <Helmet>
-                <title>FAQ - InterNative Traders</title>
+                <title>FAQ | InterNative Traders</title>
                 <meta name="description" content="Frequently asked questions about InterNative Traders trading signals service." />
             </Helmet>
 
