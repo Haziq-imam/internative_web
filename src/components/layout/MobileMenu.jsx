@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronRight, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Button from '../ui/Button';
+import Logo from '../../assets/internative logo.svg';
 
 const MobileMenu = ({ isOpen, onClose }) => {
     const [openSubmenu, setOpenSubmenu] = React.useState(null);
@@ -95,7 +96,13 @@ const MobileMenu = ({ isOpen, onClose }) => {
                             <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl pointer-events-none -translate-y-1/2 translate-x-1/2" />
 
                             <div className="flex items-center justify-between p-6 border-b border-white/5 relative z-10">
-                                <span className="text-2xl font-black text-white font-display tracking-tight">InterNative</span>
+                                <Link to="/" onClick={onClose}>
+                                    <img
+                                        src={Logo}
+                                        alt="InterNative Traders"
+                                        className="h-10 w-auto"
+                                    />
+                                </Link>
                                 <button
                                     onClick={onClose}
                                     className="p-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 transition-colors"

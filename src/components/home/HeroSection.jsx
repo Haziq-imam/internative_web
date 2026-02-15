@@ -9,17 +9,17 @@ const HeroSection = () => {
             {/* Background Effects */}
             <div className="absolute inset-0 pointer-events-none">
                 {/* Main Spotlight */}
-                <div className="absolute top-[-20%] left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-primary/10 rounded-full blur-[120px] mix-blend-screen" />
+                <div className="absolute top-[-20%] left-1/2 -translate-x-1/2 w-[1000px] h-[1000px] bg-primary/20 rounded-full blur-[150px] mix-blend-screen" />
 
                 {/* Secondary Colorful Orbs */}
-                <div className="absolute top-[10%] left-[10%] w-[400px] h-[400px] bg-primary/5 rounded-full blur-[100px] mix-blend-screen animate-pulse-slow" />
-                <div className="absolute bottom-[10%] right-[10%] w-[500px] h-[500px] bg-secondary/10 rounded-full blur-[120px] mix-blend-screen animate-pulse-slow delay-1000" />
+                <div className="absolute top-[10%] left-[10%] w-[500px] h-[500px] bg-primary/10 rounded-full blur-[120px] mix-blend-screen animate-pulse-slow" />
+                <div className="absolute bottom-[10%] right-[10%] w-[600px] h-[600px] bg-secondary/20 rounded-full blur-[150px] mix-blend-screen animate-pulse-slow delay-1000" />
 
                 {/* Grid Pattern */}
                 <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-[0.05] bg-[size:40px_40px]" />
 
                 {/* Radial Overlay to fade edges */}
-                <div className="absolute inset-0 bg-background/80 bg-[radial-gradient(ellipse_at_center,transparent_0%,var(--color-background)_100%)]" />
+                <div className="absolute inset-0 bg-background/80 bg-[radial-gradient(ellipse_at_center,transparent_0%,#0F0B1F_100%)]" />
             </div>
 
             <div className="container mx-auto px-4 relative z-10">
@@ -76,32 +76,32 @@ const HeroSection = () => {
                             <div className="absolute inset-0 bg-brand-gradient opacity-20 blur-3xl -z-10 rounded-full" />
 
                             {/* Mockup Content - Simulating App Interface */}
-                            <div className="bg-background rounded-[1.5rem] overflow-hidden border border-white/5 relative aspect-[10/18] max-h-[600px] mx-auto">
+                            <div className="bg-[#060410] rounded-[1.5rem] overflow-hidden border border-primary/20 relative aspect-[10/18] max-h-[600px] mx-auto shadow-2xl">
                                 {/* Status Bar */}
-                                <div className="h-10 bg-surface/50 flex items-center justify-between px-6 z-20 relative">
-                                    <span className="text-[10px] font-medium text-text-secondary">9:41</span>
+                                <div className="h-10 bg-white/[0.02] flex items-center justify-between px-6 z-20 relative">
+                                    <span className="text-[10px] font-bold text-text-muted">9:41</span>
                                     <div className="flex gap-1.5">
-                                        <div className="w-3 h-3 rounded-full bg-white/20" />
-                                        <div className="w-3 h-3 rounded-full bg-white/20" />
+                                        <div className="w-3 h-3 rounded-full bg-primary/20" />
+                                        <div className="w-3 h-3 rounded-full bg-primary/40" />
                                     </div>
                                 </div>
 
                                 {/* Floating "New Signal" Notification - Top */}
                                 <div className="absolute top-14 left-3 right-3 z-30 animate-slide-down">
-                                    <div className="bg-surface/90 backdrop-blur-md border border-white/10 p-3 rounded-xl shadow-2xl">
+                                    <div className="bg-[#0F0924]/90 backdrop-blur-xl border border-primary/30 p-3 rounded-xl shadow-neon">
                                         <div className="flex items-start gap-3">
-                                            <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center shrink-0 shadow-lg shadow-primary/20">
+                                            <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center shrink-0 shadow-lg shadow-primary/40">
                                                 <Smartphone className="w-4 h-4 text-white" />
                                             </div>
                                             <div className="flex-1 min-w-0">
                                                 <div className="flex justify-between items-start">
-                                                    <h5 className="text-white font-bold text-xs truncate">InterNative Utils</h5>
-                                                    <span className="text-[10px] text-text-muted">Now</span>
+                                                    <h5 className="text-white font-bold text-[10px] uppercase tracking-wider truncate">InterNative Utils</h5>
+                                                    <span className="text-[8px] text-text-muted font-bold">Now</span>
                                                 </div>
-                                                <p className="text-xs text-text-secondary truncate font-medium mt-0.5">New Signal Alert: NVDA Call</p>
+                                                <p className="text-[11px] text-text-main truncate font-bold mt-0.5">NVDA Call Signal Alert</p>
                                                 <div className="flex items-center gap-2 mt-1">
-                                                    <span className="text-[10px] bg-accent-green/10 text-accent-green px-1.5 py-0.5 rounded font-mono">Entry: $890</span>
-                                                    <span className="text-[10px] bg-primary/10 text-primary px-1.5 py-0.5 rounded font-mono">Target: $910</span>
+                                                    <span className="text-[9px] bg-accent-green/20 text-accent-green px-1.5 py-0.5 rounded font-bold border border-accent-green/30">Entry: $890</span>
+                                                    <span className="text-[9px] bg-primary/20 text-primary px-1.5 py-0.5 rounded font-bold border border-primary/30">Target: $910</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -112,45 +112,45 @@ const HeroSection = () => {
                                 <div className="p-5 pb-2 pt-32">
                                     <div className="flex items-center justify-between mb-6">
                                         <div>
-                                            <h3 className="text-white font-display font-bold text-lg">Active Signals</h3>
-                                            <p className="text-accent-green text-[10px] flex items-center gap-1 font-bold uppercase tracking-wider">
-                                                <span className="w-1.5 h-1.5 rounded-full bg-accent-green animate-pulse" />
+                                            <h3 className="text-white font-display font-black text-lg">Active Signals</h3>
+                                            <p className="text-accent-green text-[9px] flex items-center gap-1.5 font-black uppercase tracking-[0.2em]">
+                                                <span className="w-2 h-2 rounded-full bg-accent-green animate-pulse shadow-[0_0_8px_rgba(16,185,129,0.8)]" />
                                                 Market Open
                                             </p>
                                         </div>
-                                        <div className="w-8 h-8 rounded-full bg-surface border border-white/10 flex items-center justify-center">
-                                            <Smartphone className="w-4 h-4 text-primary" />
+                                        <div className="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center">
+                                            <Smartphone className="w-4 h-4 text-primary shadow-neon" />
                                         </div>
                                     </div>
 
                                     {/* Signal Card 1 */}
-                                    <div className="bg-surface border border-white/5 rounded-xl p-3 mb-3 shadow-lg group hover:border-primary/30 transition-colors">
-                                        <div className="flex justify-between items-start mb-2">
-                                            <div className="flex items-center gap-2">
-                                                <div className="w-8 h-8 rounded bg-[#DE350B]/10 flex items-center justify-center text-[#DE350B] font-bold text-[10px] border border-[#DE350B]/20">
+                                    <div className="bg-white/[0.03] border border-primary/20 rounded-2xl p-4 mb-3 shadow-lg group hover:border-primary/50 transition-all duration-300">
+                                        <div className="flex justify-between items-start mb-3">
+                                            <div className="flex items-center gap-3">
+                                                <div className="w-10 h-10 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary font-black text-[10px] border border-secondary/20 shadow-neon-pink">
                                                     NFLX
                                                 </div>
                                                 <div>
-                                                    <h4 className="font-bold text-white text-sm">Netflix Put</h4>
-                                                    <span className="text-[10px] text-text-muted">Options • 5m ago</span>
+                                                    <h4 className="font-bold text-white text-xs">Netflix Put</h4>
+                                                    <span className="text-[9px] text-text-muted font-bold">5m ago</span>
                                                 </div>
                                             </div>
-                                            <span className="bg-accent-green/10 text-accent-green px-1.5 py-0.5 rounded text-[10px] font-bold border border-accent-green/20">
+                                            <span className="bg-primary/20 text-primary px-2 py-0.5 rounded-full text-[8px] font-black border border-primary/30 shadow-neon">
                                                 ACTIVE
                                             </span>
                                         </div>
-                                        <div className="space-y-1.5 mb-2">
-                                            <div className="flex justify-between text-xs">
-                                                <span className="text-text-secondary">Entry</span>
-                                                <span className="text-white font-mono">$480.50</span>
+                                        <div className="space-y-2 mb-3">
+                                            <div className="flex justify-between text-[10px]">
+                                                <span className="text-text-muted font-bold">Entry</span>
+                                                <span className="text-white font-black tracking-wider">$480.50</span>
                                             </div>
-                                            <div className="flex justify-between text-xs">
-                                                <span className="text-text-secondary">Target</span>
-                                                <span className="text-accent-green font-mono">$475.00</span>
+                                            <div className="flex justify-between text-[10px]">
+                                                <span className="text-text-muted font-bold">Target</span>
+                                                <span className="text-accent-green font-black tracking-wider">$475.00</span>
                                             </div>
                                         </div>
-                                        <div className="w-full h-1 bg-white/5 rounded-full overflow-hidden">
-                                            <div className="w-[60%] h-full bg-brand-gradient" />
+                                        <div className="w-full h-1.5 bg-white/5 rounded-full overflow-hidden">
+                                            <div className="w-[60%] h-full bg-brand-gradient-vibrant shadow-neon" />
                                         </div>
                                     </div>
 

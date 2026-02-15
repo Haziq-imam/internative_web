@@ -2,13 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --bg-main: #060410;
+  --bg-card: #0F0924;
+  --bg-surface: #160D35;
+  --primary: #A855F7;
+  --secondary: #EC4899;
+  --accent-cyan: #22D3EE;
+  --text-main: #E2D9FF;
+  --text-muted: #A855F7;
+  --text-heading: #FFFFFF;
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
   }
 
   body {
-    @apply antialiased text-text-primary bg-background;
+    @apply antialiased text-text-main bg-background;
     font-family: 'Inter', sans-serif;
   }
 
@@ -18,7 +30,7 @@
   h4,
   h5,
   h6 {
-    @apply font-display tracking-tight;
+    @apply font-display tracking-tight text-white;
   }
 }
 

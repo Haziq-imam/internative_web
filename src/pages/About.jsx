@@ -24,7 +24,7 @@ const About = () => {
     ];
 
     return (
-        <div className="min-h-screen bg-background text-text-primary">
+        <div className="min-h-screen bg-background text-text-main">
             <Helmet>
                 <title>About Us - InterNative Traders</title>
                 <meta name="description" content="Learn about InterNative Traders - your leading source for accurate and trustworthy trading signals." />

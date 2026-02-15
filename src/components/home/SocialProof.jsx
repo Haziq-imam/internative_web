@@ -20,17 +20,21 @@ const SocialProof = () => {
     const scrollTickers = [...tickers, ...tickers, ...tickers, ...tickers];
 
     return (
-        <section className="bg-background-secondary border-y border-white/5 py-8 overflow-hidden relative z-10">
-            <div className="container mx-auto px-4 mb-8">
-                <p className="text-center text-text-muted text-sm font-medium uppercase tracking-wider">
-                    Trusted Analysis For Leading Markets
-                </p>
+        <section className="bg-[#060410] border-y border-primary/20 py-12 overflow-hidden relative z-10">
+            <div className="container mx-auto px-4 mb-10">
+                <div className="flex items-center justify-center gap-4">
+                    <div className="h-px w-12 bg-gradient-to-r from-transparent to-primary/50" />
+                    <p className="text-center text-primary text-xs font-black uppercase tracking-[0.3em]">
+                        Institutional Grade Analysis
+                    </p>
+                    <div className="h-px w-12 bg-gradient-to-l from-transparent to-primary/50" />
+                </div>
             </div>
 
             <div className="relative flex overflow-hidden group">
                 {/* Gradient Masks */}
-                <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-background-secondary to-transparent z-10" />
-                <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-background-secondary to-transparent z-10" />
+                <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-[#060410] to-transparent z-10" />
+                <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-[#060410] to-transparent z-10" />
 
                 <div className="flex animate-scroll whitespace-nowrap py-4">
                     {scrollTickers.map((ticker, index) => (

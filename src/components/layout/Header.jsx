@@ -95,7 +95,7 @@ const Header = () => {
             <header
                 className={cn(
                     "fixed top-0 left-0 right-0 z-40 transition-all duration-500",
-                    isScrolled ? "bg-background/80 backdrop-blur-xl border-b border-white/5 py-4" : "bg-transparent py-6"
+                    isScrolled ? "bg-[#060410]/80 backdrop-blur-2xl border-b border-primary/20 py-4 shadow-neon" : "bg-transparent py-6"
                 )}
             >
                 <div className="container mx-auto px-4 md:px-6 relative">
@@ -115,20 +115,20 @@ const Header = () => {
                                 <div key={link.label} className="group">
                                     <Link
                                         to={link.href}
-                                        className="relative px-4 py-2 text-sm font-medium text-text-secondary hover:text-white transition-colors duration-300 flex items-center gap-1 group-hover:bg-white/5 rounded-lg border border-transparent group-hover:border-white/5"
+                                        className="relative px-4 py-2 text-sm font-semibold text-text-main hover:text-white transition-all duration-300 flex items-center gap-1 group-hover:bg-primary/10 rounded-full border border-transparent group-hover:border-primary/20"
                                     >
                                         <span className="relative z-10">{link.label}</span>
                                         {link.megaMenu && (
-                                            <ChevronDown className="w-3 h-3 transition-transform duration-300 group-hover:rotate-180" />
+                                            <ChevronDown className="w-3 h-3 transition-transform duration-300 group-hover:rotate-180 text-primary" />
                                         )}
                                     </Link>
 
                                     {/* Mega Menu Dropdown */}
                                     {link.megaMenu && (
                                         <div className="absolute top-full left-1/2 -translate-x-1/2 w-[90vw] lg:w-[70vw] max-w-6xl pt-4 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 ease-out">
-                                            <div className="bg-[#0A0A0A]/98 backdrop-blur-3xl border border-white/10 rounded-2xl p-0 shadow-2xl overflow-hidden ring-1 ring-white/5">
+                                            <div className="bg-[#0F0924]/95 backdrop-blur-3xl border border-primary/20 rounded-3xl p-0 shadow-2xl overflow-hidden ring-1 ring-white/10">
                                                 {/* Links Columns */}
-                                                <div className="p-10 grid grid-cols-5 gap-10 bg-gradient-to-br from-white/[0.02] to-transparent">
+                                                <div className="p-10 grid grid-cols-5 gap-10 bg-gradient-to-br from-primary/[0.05] to-transparent">
                                                     {link.columns.map((col, idx) => (
                                                         <div key={idx} className="relative z-10 flex flex-col gap-4">
                                                             <Link to={col.href} className="block group/title">
