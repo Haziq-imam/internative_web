@@ -13,7 +13,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
 
     const menuItems = [
         {
-            label: 'Trading Signals',
+            label: 'Signals',
             href: '/#signals',
             megaMenu: true,
             columns: [
@@ -127,17 +127,17 @@ const MobileMenu = ({ isOpen, onClose }) => {
                                                                 transition={{ duration: 0.3 }}
                                                                 className="overflow-hidden bg-black/20"
                                                             >
-                                                                <div className="flex flex-col py-4 gap-6 px-6">
+                                                                <div className="flex flex-col py-6 gap-8 px-8">
                                                                     {item.columns.map((col, cIdx) => (
-                                                                        <div key={cIdx} className="space-y-2">
-                                                                            <h5 className="text-xs font-black uppercase tracking-widest text-primary/80">{col.title}</h5>
-                                                                            <div className="flex flex-col gap-1 border-l border-white/10 pl-4">
+                                                                        <div key={cIdx} className="space-y-3">
+                                                                            <h5 className="text-base font-bold text-white">{col.title}</h5>
+                                                                            <div className="flex flex-col gap-2 border-l border-white/10 pl-4">
                                                                                 {col.items.map((child) => (
                                                                                     <Link
                                                                                         key={child.label}
                                                                                         to={child.href}
                                                                                         onClick={onClose}
-                                                                                        className="py-1.5 text-sm font-medium text-text-muted hover:text-white transition-colors"
+                                                                                        className="py-1 text-sm font-medium text-text-muted hover:text-white transition-colors"
                                                                                     >
                                                                                         {child.label}
                                                                                     </Link>

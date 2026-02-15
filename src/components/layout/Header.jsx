@@ -21,15 +21,9 @@ const Header = () => {
 
     const navLinks = [
         {
-            label: 'Trading Signals',
+            label: 'Signals',
             href: '/signals/options',
             megaMenu: true,
-            promo: {
-                title: "Options Trading Signals",
-                subtitle: "Professional alerts for maximum leverage & returns.",
-                image: "https://images.unsplash.com/photo-1611974765275-e4277a78c346?q=80&w=3270&auto=format&fit=crop",
-                link: "/signals/options"
-            },
             columns: [
                 {
                     title: 'Stock Trading Signals',
@@ -104,7 +98,7 @@ const Header = () => {
                     isScrolled ? "bg-background/80 backdrop-blur-xl border-b border-white/5 py-4" : "bg-transparent py-6"
                 )}
             >
-                <div className="container mx-auto px-4 md:px-6">
+                <div className="container mx-auto px-4 md:px-6 relative">
                     <div className="flex items-center justify-between">
                         {/* Logo */}
                         <Link to="/" className="flex items-center group">
@@ -118,7 +112,7 @@ const Header = () => {
                         {/* Desktop Nav */}
                         <nav className="hidden md:flex items-center gap-6">
                             {navLinks.map((link) => (
-                                <div key={link.label} className="relative group">
+                                <div key={link.label} className="group">
                                     <Link
                                         to={link.href}
                                         className="relative px-4 py-2 text-sm font-medium text-text-secondary hover:text-white transition-colors duration-300 flex items-center gap-1 group-hover:bg-white/5 rounded-lg border border-transparent group-hover:border-white/5"
@@ -131,54 +125,30 @@ const Header = () => {
 
                                     {/* Mega Menu Dropdown */}
                                     {link.megaMenu && (
-                                        <div className="absolute top-full left-1/2 -translate-x-1/2 w-[1200px] pt-4 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 ease-out">
-                                            <div className="bg-[#0A0A0A]/95 backdrop-blur-2xl border border-white/10 rounded-2xl p-0 shadow-2xl overflow-hidden grid grid-cols-12 ring-1 ring-white/5">
-
-                                                {/* Promo Column (Left) */}
-                                                <div className="col-span-3 relative overflow-hidden group/promo">
-                                                    <div className="absolute inset-0 bg-gradient-to-br from-primary/40 via-primary/20 to-transparent z-10" />
-                                                    <img
-                                                        src={link.promo.image}
-                                                        alt={link.promo.title}
-                                                        className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover/promo:scale-105 transition-transform duration-700"
-                                                    />
-                                                    <div className="relative z-20 h-full flex flex-col justify-end p-6">
-                                                        <h3 className="text-lg font-bold text-white mb-2">{link.promo.title}</h3>
-                                                        <p className="text-xs text-white/80 mb-4">{link.promo.subtitle}</p>
-                                                        <Link
-                                                            to={link.promo.link}
-                                                            className="inline-flex items-center justify-center px-3 py-2 rounded-lg bg-primary text-white text-xs font-bold hover:bg-primary-hover transition-colors shadow-lg"
-                                                        >
-                                                            Explore Signals
-                                                        </Link>
-                                                    </div>
-                                                </div>
-
-                                                {/* Links Columns (Right) - 5 columns */}
-                                                <div className="col-span-9 p-6 grid grid-cols-5 gap-4 bg-background/50">
+                                        <div className="absolute top-full left-1/2 -translate-x-1/2 w-[90vw] lg:w-[70vw] max-w-6xl pt-4 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 ease-out">
+                                            <div className="bg-[#0A0A0A]/98 backdrop-blur-3xl border border-white/10 rounded-2xl p-0 shadow-2xl overflow-hidden ring-1 ring-white/5">
+                                                {/* Links Columns */}
+                                                <div className="p-10 grid grid-cols-5 gap-10 bg-gradient-to-br from-white/[0.02] to-transparent">
                                                     {link.columns.map((col, idx) => (
-                                                        <div key={idx} className="relative z-10">
+                                                        <div key={idx} className="relative z-10 flex flex-col gap-4">
                                                             <Link to={col.href} className="block group/title">
-                                                                <h4 className="text-[10px] font-black text-white/60 uppercase tracking-[0.15em] mb-3 border-b border-white/5 pb-2 hover:text-primary transition-colors flex items-center gap-1">
+                                                                <h4 className="text-base font-bold text-white mb-2 flex items-center gap-2 group-hover/title:text-primary transition-colors text-nowrap">
                                                                     {col.title}
-                                                                    <ChevronDown className="-rotate-90 w-2.5 h-2.5 opacity-0 group-hover/title:opacity-100 transition-opacity text-primary" />
+                                                                    <ChevronDown className="-rotate-90 w-4 h-4 opacity-0 group-hover/title:opacity-100 transition-all -translate-x-1 group-hover/title:translate-x-0" />
                                                                 </h4>
                                                             </Link>
-                                                            <div className="flex flex-col gap-0.5">
+                                                            <div className="flex flex-col gap-1.5">
                                                                 {col.items.map((item) => (
                                                                     <Link
                                                                         key={item.label}
                                                                         to={item.href}
-                                                                        className="group/item flex flex-col p-1.5 -mx-1.5 rounded-lg hover:bg-white/5 transition-colors"
+                                                                        className="group/item flex flex-col py-2 px-3 -mx-3 rounded-xl hover:bg-white/5 transition-all duration-300"
                                                                     >
-                                                                        <div className="flex items-center gap-1.5">
-                                                                            <div className="w-1 h-1 rounded-full bg-primary/50 group-hover/item:bg-primary transition-colors" />
-                                                                            <span className="text-xs font-medium text-text-secondary group-hover/item:text-white transition-colors leading-tight">
-                                                                                {item.label}
-                                                                            </span>
-                                                                        </div>
+                                                                        <span className="text-sm font-medium text-text-secondary group-hover/item:text-white transition-colors">
+                                                                            {item.label}
+                                                                        </span>
                                                                         {item.desc && (
-                                                                            <span className="text-[9px] text-text-muted pl-2.5 mt-0.5 opacity-0 group-hover/item:opacity-100 transition-opacity">
+                                                                            <span className="text-xs text-text-muted mt-0.5 group-hover/item:text-text-secondary transition-colors line-clamp-1">
                                                                                 {item.desc}
                                                                             </span>
                                                                         )}
