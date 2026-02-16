@@ -5,6 +5,8 @@ import GlassCard from '../ui/GlassCard';
 import Button from '../ui/Button';
 import GradientText from '../ui/GradientText';
 
+import { Link } from 'react-router-dom';
+
 const EarningsHero = () => {
     return (
         <Section className="pt-32 pb-20 md:pt-48 md:pb-32 relative overflow-hidden">
@@ -36,8 +38,12 @@ const EarningsHero = () => {
                         </div>
 
                         <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
-                            <Button size="lg" className="w-full sm:w-auto px-8 py-4 text-base shadow-neon">Get Earnings Signals - Try Free 7 Days</Button>
-                            <Button size="lg" variant="outline" className="w-full sm:w-auto px-8 py-4 text-base">View Earnings Calendar</Button>
+                            <Link to="/pricing">
+                                <Button size="lg" className="w-full sm:w-auto px-8 py-4 text-base shadow-neon">Get Earnings Signals - Try Free 7 Days</Button>
+                            </Link>
+                            <Link to="/products/stock-signals">
+                                <Button size="lg" variant="outline" className="w-full sm:w-auto px-8 py-4 text-base">View Earnings Calendar</Button>
+                            </Link>
                         </div>
                     </div>
 

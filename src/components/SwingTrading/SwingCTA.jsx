@@ -4,6 +4,7 @@ import Section from '../ui/Section';
 import GlassCard from '../ui/GlassCard';
 import Button from '../ui/Button';
 import GradientText from '../ui/GradientText';
+import { Link } from 'react-router-dom';
 
 const SwingCTA = () => {
     const features = [
@@ -70,9 +71,11 @@ const SwingCTA = () => {
                             <div className="text-center">
                                 <div className="text-4xl font-black text-white mb-2">7-Day Free Trial</div>
                                 <p className="text-text-secondary mb-6">Experience professional swing trading alerts risk-free</p>
-                                <Button size="lg" className="w-full shadow-neon mb-4">
-                                    Start Free Trial
-                                </Button>
+                                <Link to="/pricing">
+                                    <Button size="lg" className="w-full shadow-neon mb-4">
+                                        Start Free Trial
+                                    </Button>
+                                </Link>
                                 <div className="space-y-2 text-left">
                                     <div className="flex items-center gap-2 text-sm text-text-secondary">
                                         <CheckCircle2 className="w-4 h-4 text-success shrink-0" />
@@ -98,9 +101,11 @@ const SwingCTA = () => {
                             <div className="text-center">
                                 <div className="text-4xl font-black text-white mb-2">Premium Access</div>
                                 <p className="text-text-secondary mb-6">Comprehensive swing trading coverage for serious traders</p>
-                                <Button size="lg" variant="outline" className="w-full mb-4">
-                                    View Pricing
-                                </Button>
+                                <Link to="/pricing">
+                                    <Button size="lg" variant="outline" className="w-full mb-4">
+                                        View Pricing
+                                    </Button>
+                                </Link>
                                 <div className="space-y-2 text-left">
                                     <div className="flex items-center gap-2 text-sm text-text-secondary">
                                         <CheckCircle2 className="w-4 h-4 text-success shrink-0" />

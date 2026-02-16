@@ -5,6 +5,8 @@ import GlassCard from '../ui/GlassCard';
 import Button from '../ui/Button';
 import GradientText from '../ui/GradientText';
 
+import { Link } from 'react-router-dom';
+
 const MomentumCTA = () => {
     return (
         <Section className="py-24 relative overflow-hidden">
@@ -20,12 +22,16 @@ const MomentumCTA = () => {
                     </p>
 
                     <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
-                        <Button size="lg" className="shadow-neon bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full transition-all transform hover:scale-105">
-                            Start 14-Day Free Trial
-                        </Button>
-                        <Button size="lg" variant="outline" className="border-blue-500/30 text-blue-300 hover:bg-blue-500/10">
-                            View Performance Log
-                        </Button>
+                        <Link to="/pricing">
+                            <Button size="lg" className="shadow-neon bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full transition-all transform hover:scale-105">
+                                Start 14-Day Free Trial
+                            </Button>
+                        </Link>
+                        <Link to="/products/stock-signals">
+                            <Button size="lg" variant="outline" className="border-blue-500/30 text-blue-300 hover:bg-blue-500/10">
+                                View Performance Log
+                            </Button>
+                        </Link>
                     </div>
 
                     <div className="grid md:grid-cols-3 gap-6 text-left">

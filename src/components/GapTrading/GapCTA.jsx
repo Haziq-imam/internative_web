@@ -5,6 +5,8 @@ import GlassCard from '../ui/GlassCard';
 import Button from '../ui/Button';
 import GradientText from '../ui/GradientText';
 
+import { Link } from 'react-router-dom';
+
 const GapCTA = () => {
     const features = [
         {
@@ -63,12 +65,16 @@ const GapCTA = () => {
                         </div>
 
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                            <Button size="lg" className="w-full sm:w-auto px-8 py-4 text-base shadow-neon">
-                                Start 7-Day Free Trial
-                            </Button>
-                            <Button size="lg" variant="outline" className="w-full sm:w-auto px-8 py-4 text-base">
-                                View Pricing Plans
-                            </Button>
+                            <Link to="/pricing">
+                                <Button size="lg" className="w-full sm:w-auto px-8 py-4 text-base shadow-neon">
+                                    Start 7-Day Free Trial
+                                </Button>
+                            </Link>
+                            <Link to="/pricing">
+                                <Button size="lg" variant="outline" className="w-full sm:w-auto px-8 py-4 text-base">
+                                    View Pricing Plans
+                                </Button>
+                            </Link>
                         </div>
 
                         <div className="mt-8 text-center">

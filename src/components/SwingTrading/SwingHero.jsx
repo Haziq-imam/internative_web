@@ -5,6 +5,8 @@ import GlassCard from '../ui/GlassCard';
 import Button from '../ui/Button';
 import GradientText from '../ui/GradientText';
 
+import { Link } from 'react-router-dom';
+
 const SwingHero = () => {
     return (
         <Section className="pt-32 pb-24 relative overflow-hidden">
@@ -39,12 +41,16 @@ const SwingHero = () => {
 
                         {/* CTA Buttons */}
                         <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                            <Button size="lg" className="shadow-neon">
-                                Get Swing Trading Signals
-                            </Button>
-                            <Button size="lg" variant="outline">
-                                View Sample Setups
-                            </Button>
+                            <Link to="/pricing">
+                                <Button size="lg" className="shadow-neon">
+                                    Get Swing Trading Signals
+                                   </Button>
+                            </Link>
+                            <Link to="/products/stock-signals">
+                                <Button size="lg" variant="outline">
+                                    View Sample Setups
+                                </Button>
+                            </Link>
                         </div>
                     </div>
 

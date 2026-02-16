@@ -5,6 +5,8 @@ import GlassCard from '../ui/GlassCard';
 import Button from '../ui/Button';
 import GradientText from '../ui/GradientText';
 
+import { Link } from 'react-router-dom';
+
 const MomentumHero = () => {
     return (
         <Section className="pt-32 pb-24 relative overflow-hidden">
@@ -43,12 +45,16 @@ const MomentumHero = () => {
 
                         {/* CTA Buttons */}
                         <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                            <Button size="lg" className="shadow-neon bg-gradient-to-r from-blue-600 to-purple-600 border-none">
-                                Get Momentum Signals
-                            </Button>
-                            <Button size="lg" variant="outline">
-                                View Recent Winners
-                            </Button>
+                            <Link to="/pricing">
+                                <Button size="lg" className="shadow-neon bg-gradient-to-r from-blue-600 to-purple-600 border-none">
+                                    Get Momentum Signals
+                                </Button>
+                            </Link>
+                            <Link to="/products/stock-signals">
+                                <Button size="lg" variant="outline">
+                                    View Recent Winners
+                                </Button>
+                            </Link>
                         </div>
                     </div>
 

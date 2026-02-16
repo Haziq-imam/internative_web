@@ -4,6 +4,8 @@ import Section from '../ui/Section';
 import GlassCard from '../ui/GlassCard';
 import Button from '../ui/Button';
 
+import { Link } from 'react-router-dom';
+
 const SignalTypes = () => {
     return (
         <Section className="py-24 bg-background-secondary border-y border-white/5">
@@ -21,7 +23,8 @@ const SignalTypes = () => {
                             desc: "Multi-day positions holding for 3-14 days. Designed to capture 10-25% moves in high-momentum stocks.",
                             rating: "84% Win Rate",
                             features: ["Low monitoring required", "Perfect for small accounts", "NYSE & NASDAQ focuses"],
-                            color: "text-primary"
+                            color: "text-primary",
+                            link: "/products/stock-signals/swing"
                         },
                         {
                             title: "Day Trade Scalps",
@@ -29,25 +32,27 @@ const SignalTypes = () => {
                             desc: "In-and-out trades held for minutes to hours. High frequency alerts for active traders during market hours.",
                             rating: "76% Win Rate",
                             features: ["High frequency alerts", "Precise entry/exit windows", "Momentum & Gap focus"],
-                            color: "text-secondary"
+                            color: "text-secondary",
+                            link: "/products/stock-signals/day-trading"
                         },
                         {
-                            title: "Growth Portfolios",
+                            title: "Momentum Signals",
                             icon: TrendingUp,
-                            desc: "Longer-term holds (1-6 months) focusing on massive winners in emerging tech and disruptive sectors.",
+                            desc: "High-velocity breakout trades focusing on massive winners in emerging sectors and news catalysts.",
                             rating: "312% Avg Annual Return",
-                            features: ["Low turnover strategy", "Focus on 10X potential", "Quarterly rebalancing"],
-                            color: "text-success"
+                            features: ["Trend following strategy", "Focus on 10X potential", "Breakout & Gap setups"],
+                            color: "text-success",
+                            link: "/products/stock-signals/momentum"
                         }
                     ].map((tier, i) => (
-                        <GlassCard key={i} className="p-8 flex flex-col items-center text-center hoverEffect">
-                            <div className={`w-16 h-16 rounded-2xl bg-white/5 flex items-center justify-center mb-6 border border-white/10 ${tier.color}`}>
+                        <GlassCard key={i} className="p-8 flex flex-col items-center text-center hoverEffect group">
+                            <div className={`w-16 h-16 rounded-2xl bg-white/5 flex items-center justify-center mb-6 border border-white/10 ${tier.color} group-hover:scale-110 transition-transform`}>
                                 <tier.icon className="w-8 h-8" />
                             </div>
                             <h3 className="text-2xl font-black text-white mb-2">{tier.title}</h3>
                             <div className={`text-sm font-black uppercase tracking-widest mb-4 ${tier.color}`}>{tier.rating}</div>
                             <p className="text-text-secondary text-sm leading-relaxed mb-8">{tier.desc}</p>
-                            <ul className="space-y-3 mb-8 w-full">
+                            <ul className="space-y-3 mb-8 w-full flex-grow">
                                 {tier.features.map((f, idx) => (
                                     <li key={idx} className="flex items-center gap-2 text-xs font-bold text-text-muted justify-center">
                                         <ArrowRight className="w-3 h-3 text-primary" />
@@ -55,7 +60,9 @@ const SignalTypes = () => {
                                     </li>
                                 ))}
                             </ul>
-                            <Button variant="outline" className="w-full mt-auto">Learn More →</Button>
+                            <Link to={tier.link} className="w-full mt-auto">
+                                <Button variant="outline" className="w-full group-hover:bg-white/10 hover:border-white/30">Learn More →</Button>
+                            </Link>
                         </GlassCard>
                     ))}
                 </div>

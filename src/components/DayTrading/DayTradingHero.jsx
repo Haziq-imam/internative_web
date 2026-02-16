@@ -5,6 +5,8 @@ import GlassCard from '../ui/GlassCard';
 import Button from '../ui/Button';
 import GradientText from '../ui/GradientText';
 
+import { Link } from 'react-router-dom';
+
 const DayTradingHero = () => {
     return (
         <Section className="pt-32 pb-24 relative overflow-hidden">
@@ -43,12 +45,16 @@ const DayTradingHero = () => {
 
                         {/* CTA Buttons */}
                         <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                            <Button size="lg" className="shadow-neon bg-gradient-to-r from-orange-600 to-pink-600 border-none">
-                                Start Day Trading
-                            </Button>
-                            <Button size="lg" variant="outline">
-                                View Requirements
-                            </Button>
+                            <Link to="/pricing">
+                                <Button size="lg" className="shadow-neon bg-gradient-to-r from-orange-600 to-pink-600 border-none">
+                                    Start Day Trading
+                                </Button>
+                            </Link>
+                            <Link to="/tools/beginners">
+                                <Button size="lg" variant="outline">
+                                    View Requirements
+                                </Button>
+                            </Link>
                         </div>
                     </div>
 
