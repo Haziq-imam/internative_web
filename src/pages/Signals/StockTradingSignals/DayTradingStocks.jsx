@@ -1,22 +1,30 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import Hero from '../../../components/StockSignals/Hero';
-import SignalTypes from '../../../components/StockSignals/SignalTypes';
-import Pricing from '../../../components/StockSignals/Pricing';
-import FinalCTA from '../../../components/StockSignals/FinalCTA';
+import DayTradingHero from '../../../components/DayTrading/DayTradingHero';
+import DayStrategies from '../../../components/DayTrading/DayStrategies';
+import DayTradingRisk from '../../../components/DayTrading/DayTradingRisk';
+import DayTradingTools from '../../../components/DayTrading/DayTradingTools';
+import BestStocksDayTrading from '../../../components/DayTrading/BestStocksDayTrading';
+import WhoShouldDayTrade from '../../../components/DayTrading/WhoShouldDayTrade';
+import DayTradingFAQ from '../../../components/DayTrading/DayTradingFAQ';
+import DayTradingCTA from '../../../components/DayTrading/DayTradingCTA';
 
 const DayTradingStocks = () => {
     return (
-        <div className="min-h-screen bg-background text-white">
+        <>
             <Helmet>
-                <title>Day Trading Stock Signals | InterNative Traders</title>
-                <meta name="description" content="Intraday stock trading signals for high volatility moves." />
+                <title>Day Trading Stocks: Intraday Strategies & High-Speed Execution | InterNative Traders</title>
+                <meta name="description" content="Master intraday stock trading with our comprehensive guide. Learn Momentum, Scalping, and Gap Trading strategies. Understand the risks ($25k PDT Rule) and tools needed for success." />
             </Helmet>
-            <Hero title="Day Trading Stocks" sub="Intraday volatility plays for consistent daily gains." />
-            <SignalTypes />
-            <Pricing />
-            <FinalCTA />
-        </div>
+            <DayTradingHero />
+            <DayStrategies />
+            <DayTradingRisk />
+            <DayTradingTools />
+            <BestStocksDayTrading />
+            <WhoShouldDayTrade />
+            <DayTradingFAQ />
+            <DayTradingCTA />
+        </>
     );
 };
 

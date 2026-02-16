@@ -1,22 +1,32 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import Hero from '../../../components/StockSignals/Hero';
-import SignalTypes from '../../../components/StockSignals/SignalTypes';
-import Pricing from '../../../components/StockSignals/Pricing';
-import FinalCTA from '../../../components/StockSignals/FinalCTA';
+import MomentumHero from '../../../components/MomentumTrading/MomentumHero';
+import MomentumStrategies from '../../../components/MomentumTrading/MomentumStrategies';
+import MomentumIndicators from '../../../components/MomentumTrading/MomentumIndicators';
+import MomentumScanning from '../../../components/MomentumTrading/MomentumScanning';
+import BestStocksMomentum from '../../../components/MomentumTrading/BestStocksMomentum';
+import MomentumRisk from '../../../components/MomentumTrading/MomentumRisk';
+import WhoShouldTradeMomentum from '../../../components/MomentumTrading/WhoShouldTradeMomentum';
+import MomentumFAQ from '../../../components/MomentumTrading/MomentumFAQ';
+import MomentumCTA from '../../../components/MomentumTrading/MomentumCTA';
 
 const MomentumStockSignals = () => {
     return (
-        <div className="min-h-screen bg-background text-white">
+        <>
             <Helmet>
-                <title>Momentum Stock Signals | InterNative Traders</title>
-                <meta name="description" content="High-velocity stock signals focused on momentum breakouts and volume spikes." />
+                <title>Momentum Stock Signals: Trend Following & Breakout Trading | InterNative Traders</title>
+                <meta name="description" content="Capture high-velocity market moves with professional momentum trading signals. Master breakout strategies, gap-and-go setups, and relative strength trading with disciplined risk management." />
             </Helmet>
-            <Hero />
-            <SignalTypes />
-            <Pricing />
-            <FinalCTA />
-        </div>
+            <MomentumHero />
+            <MomentumStrategies />
+            <MomentumIndicators />
+            <MomentumScanning />
+            <BestStocksMomentum />
+            <MomentumRisk />
+            <WhoShouldTradeMomentum />
+            <MomentumFAQ />
+            <MomentumCTA />
+        </>
     );
 };
 
