@@ -1,5 +1,5 @@
 import React from 'react';
-import { TrendingUp, CheckCircle, ArrowRight } from 'lucide-react';
+import { TrendingUp, CheckCircle, ArrowRight, Target } from 'lucide-react';
 import Button from '../ui/Button';
 
 const Hero = () => {
@@ -68,7 +68,7 @@ const Hero = () => {
                                         <div className="w-full bg-white/10 rounded-full h-1.5 mb-1">
                                             <div className="bg-green-500 h-1.5 rounded-full" style={{ width: '85%' }}></div>
                                         </div>
-                                        <div className="text-[10px] text-text-muted text-right">Target 2 Hit 🎯</div>
+                                        <div className="text-[10px] text-text-muted text-right flex items-center justify-end gap-1">Target 2 Hit <Target className="w-3 h-3 text-primary" /></div>
                                     </div>
 
                                     <div className="bg-white/5 border border-white/10 rounded-xl p-4 opacity-60">

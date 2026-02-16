@@ -20,6 +20,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
             columns: [
                 {
                     title: 'Stock Trading Signals',
+                    href: '/products/stock-signals',
                     items: [
                         { label: 'Day Trading Stocks', href: '/products/stock-signals/day-trading' },
                         { label: 'Momentum Stock Signals', href: '/products/stock-signals/momentum' },
@@ -30,12 +31,14 @@ const MobileMenu = ({ isOpen, onClose }) => {
                 },
                 {
                     title: 'Swing Trading Signals',
+                    href: '/products/swing-trading-signals',
                     items: [
                         { label: 'View Swing Signals', href: '/products/swing-trading-signals' },
                     ]
                 },
                 {
                     title: 'Trading Education',
+                    href: '/education',
                     items: [
                         { label: 'View All Education', href: '/education' },
                         { label: 'What Are Trading Signals', href: '/education/what-are-trading-signals' },
@@ -47,6 +50,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
                 },
                 {
                     title: 'Compare Trading Signals',
+                    href: '/compare',
                     items: [
                         { label: 'View Comparison', href: '/compare' },
                         { label: 'Best Options Trading Signals', href: '/compare/best-options-trading-signals' },
@@ -57,6 +61,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
                 },
                 {
                     title: 'Trading Tools & Access',
+                    href: '/tools',
                     items: [
                         { label: 'View All Tools', href: '/tools' },
                         { label: 'Trading Signals For Beginners', href: '/tools/beginners' },
@@ -115,8 +120,8 @@ const MobileMenu = ({ isOpen, onClose }) => {
                                 </button>
                             </div>
 
-                            <div className="flex-1 overflow-y-auto py-6 relative z-10 custom-scrollbar">
-                                <nav className="flex flex-col space-y-1 px-4">
+                            <div className="flex-1 overflow-y-auto relative z-10 custom-scrollbar">
+                                <nav className="flex flex-col space-y-1 px-4 py-6">
                                     {menuItems.map((item, index) => (
                                         <div key={item.label}>
                                             {item.megaMenu ? (
@@ -141,11 +146,22 @@ const MobileMenu = ({ isOpen, onClose }) => {
                                                                 <div className="flex flex-col py-4 gap-6 px-6">
                                                                     {item.columns.map((col, cIdx) => (
                                                                         <div key={cIdx} className="space-y-2">
-                                                                            <h5 className="text-xs font-black uppercase tracking-wider text-text-muted">{col.title}</h5>
+                                                                            {col.href ? (
+                                                                                <Link
+                                                                                    to={col.href}
+                                                                                    onClick={onClose}
+                                                                                    className="text-xs font-black uppercase tracking-wider text-text-muted hover:text-primary transition-colors block mb-2"
+                                                                                >
+                                                                                    {col.title}
+                                                                                </Link>
+                                                                            ) : (
+                                                                                <h5 className="text-xs font-black uppercase tracking-wider text-text-muted">{col.title}</h5>
+                                                                            )}
                                                                             <div className="flex flex-col gap-1 border-l-2 border-primary/20 pl-4">
                                                                                 {col.items.map((child) => (
                                                                                     <Link
                                                                                         key={child.label}
+                                                                                        href={child.href}
                                                                                         to={child.href}
                                                                                         onClick={onClose}
                                                                                         className="py-1.5 text-sm font-medium text-text-secondary hover:text-white hover:translate-x-1 transition-all"
@@ -174,17 +190,17 @@ const MobileMenu = ({ isOpen, onClose }) => {
                                         </div>
                                     ))}
                                 </nav>
-                            </div>
 
-                            <div className="p-8 border-t border-white/5 bg-background-secondary/50 relative z-10 space-y-6">
-                                <Link to="/pricing" onClick={onClose} className="block">
-                                    <Button className="w-full py-6 text-xl shadow-neon" size="lg">Start Free Trial</Button>
-                                </Link>
-                                <div className="text-center">
-                                    <span className="text-text-muted font-medium">Already a member? </span>
-                                    <Link to="/pricing" onClick={onClose} className="font-bold text-primary hover:text-primary-hover transition-colors">
-                                        Log in
+                                <div className="p-6 border-t border-white/10 bg-background-secondary/50 relative z-10 space-y-4">
+                                    <Link to="/pricing" onClick={onClose} className="block">
+                                        <Button className="w-full py-6 text-xl shadow-neon" size="lg">Start Free Trial</Button>
                                     </Link>
+                                    <div className="text-center">
+                                        <span className="text-text-muted font-medium">Already a member? </span>
+                                        <Link to="/pricing" onClick={onClose} className="font-bold text-primary hover:text-primary-hover transition-colors">
+                                            Log in
+                                        </Link>
+                                    </div>
                                 </div>
                             </div>
                         </div>

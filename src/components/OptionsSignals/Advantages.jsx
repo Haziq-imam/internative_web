@@ -1,31 +1,38 @@
 import React from 'react';
+import { Brain, Zap, ClipboardList, Shield, CheckCircle2, BookOpen } from 'lucide-react';
 import Section from '../ui/Section';
 import GlassCard from '../ui/GlassCard';
 
 const Advantages = () => {
     const advantages = [
         {
-            title: "Multi-Factor Analysis 🧠",
+            title: "Multi-Factor Analysis",
+            icon: Brain,
             desc: "We combine technical indicators, dark pool activity, IV surfaces, and fundamental catalysts for high-probability setups."
         },
         {
-            title: "Real-Time Delivery ⚡",
+            title: "Real-Time Delivery",
+            icon: Zap,
             desc: "Options move fast. Our mobile-first architecture delivers alerts in 1-2 seconds, ensuring you get the same entry prices."
         },
         {
-            title: "Complete Trade Plans 📋",
+            title: "Complete Trade Plans",
+            icon: ClipboardList,
             desc: "No ambiguity. Exact strike, expiration, entry range, 3 profit targets, and stop-loss with detailed reasoning."
         },
         {
-            title: "Risk Management First 🛡️",
+            title: "Risk Management First",
+            icon: Shield,
             desc: "We protect capital aggressively with specified stop-losses, position sizing, and no averaging down on losers."
         },
         {
-            title: "Verified Track Record ✅",
+            title: "Verified Track Record",
+            icon: CheckCircle2,
             desc: "Full transparency with every win and loss logged publicly. Trust built on proven results, not marketing hype."
         },
         {
-            title: "Educational Value 📚",
+            title: "Educational Value",
+            icon: BookOpen,
             desc: "Learn while you trade. Every signal explains the 'why' with Greeks breakdowns to build your own skills."
         }
     ];
@@ -40,7 +47,7 @@ const Advantages = () => {
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {advantages.map((adv, i) => (
                         <GlassCard key={i} className="p-8 rounded-3xl flex flex-col h-full" hoverEffect>
-                            <h3 className="text-xl font-bold text-white mb-4">{adv.title}</h3>
+                            <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2"><adv.icon className="w-6 h-6 text-primary" />{adv.title}</h3>
                             <p className="text-sm text-text-secondary leading-relaxed flex-grow">{adv.desc}</p>
                         </GlassCard>
                     ))}

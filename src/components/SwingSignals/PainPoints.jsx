@@ -1,26 +1,27 @@
 import React from 'react';
+import { Clock, TrendingDown, Lightbulb } from 'lucide-react';
 import Section from '../ui/Section';
 import GlassCard from '../ui/GlassCard';
 
 const PainPoints = () => {
     const problems = [
         {
-            emoji: "⏰",
-            problem: "Can't Day Trade - You Have a Life",
-            desc: "The Problem: You have a full-time job. Kids. Responsibilities. You can't stare at screens from 9:30am to 4pm watching every tick. Day trading requires constant monitoring - one distraction and you miss your exit, turning a winner into a loser. You need a strategy that works around your life, not consumes it.",
-            solution: "Swing trading signals hold positions for 3-21 days. You check your phone twice daily - morning and evening - not 50 times per hour. Our alerts include wide entry windows (hours, not minutes) so you can execute during lunch break. Perfect for professionals, parents, and anyone with actual responsibilities."
+            icon: Clock,
+            problem: "No Time to Day Trade",
+            desc: "The Problem: You have a full-time job. You can't watch the screen all day. Day trading signals expire in minutes. By the time you see the alert, the opportunity is gone.",
+            solution: "Swing signals have WIDE entry windows (hours or even days). Check your phone twice a day. Enter when it fits YOUR schedule. No screen-watching required."
         },
         {
-            emoji: "😰",
-            problem: "Hold Too Long or Exit Too Soon",
-            desc: "The Problem: You enter a great stock, it goes up 8%, you panic-sell thinking \"take profits before it reverses.\" Two weeks later it's up 40% without you. Or worse: you hold a loser hoping it recovers, turning a manageable -6% into a painful -25% loss. You lack a systematic exit plan.",
-            solution: "Every swing signal includes three predetermined profit targets (take 40% at TP1, 40% at TP2, trail final 20%) AND a strict stop-loss level. You know BEFORE entering when you'll exit both wins and losses. Emotion removed, math applied, profits maximized."
+            icon: TrendingDown,
+            problem: "Inconsistent Results",
+            desc: "The Problem: You win 3 trades, then lose 2 big ones and you're back to zero. No clear system. Chasing tips from Twitter and Reddit. Profits disappear as fast as they come.",
+            solution: "Every swing signal follows a proven 3-target exit system. Lock in 40% at TP1, 40% at TP2, trail 20%. Consistent process = consistent results."
         },
         {
-            emoji: "🤯",
-            problem: "Analysis Paralysis Kills Opportunity",
-            desc: "The Problem: Should you trade stocks or options? Crypto or futures? Large-cap tech or small-cap growth? Breakout or pullback? By the time you finish researching, the setup is gone. Too many choices, not enough clarity, opportunity cost mounting.",
-            solution: "We do the analysis across ALL markets. You get 2-4 handpicked swing setups daily - best opportunities from stocks, options, crypto, and futures. No scanning 5,000 tickers. No decision paralysis. Just the highest-probability swings ready to execute."
+            icon: Lightbulb, // Assuming Lightbulb for the third item based on the original emoji and common sense, as the instruction provided a partial third item with TrendingDown again.
+            problem: "Overwhelmed by Choices",
+            desc: "The Problem: Stocks? Options? Crypto? Futures? Which asset class? Which timeframe? Analysis paralysis keeps you on the sidelines while opportunities pass.",
+            solution: "We deliver the BEST swing setups across ALL asset classes daily. Diversified opportunities. You pick what fits your risk tolerance and account size."
         }
     ];
 
@@ -34,7 +35,7 @@ const PainPoints = () => {
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {problems.map((item, i) => (
                         <GlassCard key={i} className={`p-8 rounded-[2rem] bg-background/50 h-full flex flex-col ${i === 2 ? 'md:col-span-2 lg:col-span-1 md:w-3/4 md:mx-auto lg:w-full' : ''}`}>
-                            <div className="text-4xl mb-6">{item.emoji}</div>
+                            <div className="text-4xl mb-6 text-primary"><item.icon className="w-12 h-12" /></div>
                             <h3 className="text-xl font-bold text-white mb-3">{item.problem}</h3>
                             <p className="text-text-secondary text-sm leading-relaxed mb-6 flex-grow">{item.desc}</p>
                             <div className="pt-6 border-t border-white/5 bg-primary/5 -mx-8 -mb-8 p-8 mt-auto">
@@ -42,7 +43,7 @@ const PainPoints = () => {
                                     <div className="w-5 h-5 rounded-full bg-primary/20 flex items-center justify-center shrink-0 mt-0.5">
                                         <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
                                     </div>
-                                    <p className="text-sm font-medium text-white"><span className="font-bold text-primary">💡 Our Solution:</span> {item.solution}</p>
+                                    <p className="text-sm font-medium text-white"><span className="font-bold text-primary flex items-center gap-1.5"><Lightbulb className="w-4 h-4" /> Our Solution:</span> {item.solution}</p>
                                 </div>
                             </div>
                         </GlassCard>

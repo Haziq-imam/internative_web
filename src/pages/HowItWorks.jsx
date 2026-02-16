@@ -4,6 +4,7 @@ import HowItWorks from '../components/OptionsSignals/HowItWorks';
 import TrustBadges from '../components/sections/TrustBadges';
 import FinalCTA from '../components/sections/FinalCTA';
 import { motion } from 'framer-motion';
+import { Brain, CheckCircle2 } from 'lucide-react';
 
 const HowItWorksPage = () => {
     return (
@@ -53,7 +54,7 @@ const HowItWorksPage = () => {
                                         {/* Abstract representation of analysis */}
                                         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1611974765270-ca12586343bb?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-20 mix-blend-overlay transition-opacity duration-500 group-hover:opacity-30" />
                                         <div className="relative z-10 text-center p-6">
-                                            <div className="text-6xl mb-4">🧠</div>
+                                            <div className="text-6xl mb-4 text-primary"><Brain className="w-16 h-16 mx-auto" /></div>
                                             <div className="font-bold text-white">Institutional Scan</div>
                                         </div>
                                     </div>
@@ -80,7 +81,7 @@ const HowItWorksPage = () => {
                                     <div className="w-full h-full rounded-[20px] bg-background-secondary flex items-center justify-center border border-white/5 relative overflow-hidden group">
                                         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1642790106117-e829e14a795f?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-20 mix-blend-overlay transition-opacity duration-500 group-hover:opacity-30" />
                                         <div className="relative z-10 text-center p-6">
-                                            <div className="text-6xl mb-4">✅</div>
+                                            <div className="text-6xl mb-4 text-primary"><CheckCircle2 className="w-16 h-16 mx-auto" /></div>
                                             <div className="font-bold text-white">Manual Verification</div>
                                         </div>
                                     </div>

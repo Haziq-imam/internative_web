@@ -1,23 +1,24 @@
 import React from 'react';
+import { AlertCircle, Clock, TrendingDown } from 'lucide-react';
 import Section from '../ui/Section';
 import GlassCard from '../ui/GlassCard';
 
 const PainPoints = () => {
     const points = [
         {
-            icon: "🤯",
+            icon: AlertCircle,
             title: "Information Overload",
             problem: "Scanning hundreds of charts, checking unusual activity, analyzing Greeks... by the time you find a setup, it's moved.",
             solution: "We do the heavy lifting. Our analysts monitor 5,000+ stocks 24/7, alerting you only to the highest-probability setups."
         },
         {
-            icon: "⏰",
+            icon: Clock,
             title: "Poor Timing = Dead Options",
             problem: "Bought too early? Decay kills you. Too late? You overpaid. Options timing is everything.",
             solution: "Every alert includes optimal entry windows and real-time adjustments. We tell you exactly when to enter."
         },
         {
-            icon: "📉",
+            icon: TrendingDown,
             title: "No Risk Management",
             problem: "One bad trade wipes out five winners. Without clear stops, your account bleeds.",
             solution: "Every signal includes calculated stop-loss levels and position sizing. We protect your capital first, profits second."
@@ -34,7 +35,7 @@ const PainPoints = () => {
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {points.map((item, idx) => (
                         <GlassCard key={idx} className={`p-8 rounded-3xl h-full flex flex-col ${idx === 2 ? 'md:col-span-2 lg:col-span-1 md:w-3/4 md:mx-auto lg:w-full' : ''}`} hoverEffect>
-                            <div className="text-4xl mb-6">{item.icon}</div>
+                            <div className="text-4xl mb-6 text-primary"><item.icon className="w-12 h-12" /></div>
                             <h3 className="text-xl font-bold text-white mb-4">{item.title}</h3>
                             <div className="bg-red-500/10 p-4 rounded-xl border border-red-500/20 mb-4 flex-1">
                                 <span className="text-xs font-bold text-red-400 uppercase tracking-wider block mb-2">The Problem</span>

@@ -7,7 +7,7 @@ import GradientText from '../ui/GradientText';
 const Benefits = () => {
     const benefits = [
         {
-            title: "Learn FROM Real Signals 📊",
+            title: "Learn FROM Real Signals",
             icon: BarChart2,
             items: [
                 "Every lesson uses ACTUAL signals we've sent",
@@ -19,7 +19,7 @@ const Benefits = () => {
             color: "text-blue-500"
         },
         {
-            title: "Progress While Trading 📈",
+            title: "Progress While Trading",
             icon: TrendingUp,
             items: [
                 "Learn concepts, then apply immediately",
@@ -31,7 +31,7 @@ const Benefits = () => {
             color: "text-emerald-500"
         },
         {
-            title: "No Useless Theory 🎯",
+            title: "No Useless Theory",
             icon: Target,
             items: [
                 "Skip the academic textbook nonsense",

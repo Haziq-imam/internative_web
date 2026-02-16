@@ -1,26 +1,31 @@
 import React from 'react';
+import { Settings, Smartphone, Briefcase, Target } from 'lucide-react';
 import Section from '../ui/Section';
 
 const HowItWorks = () => {
     const steps = [
         {
             step: "1",
-            title: "We Analyze ⚙️",
+            title: "We Analyze",
+            icon: Settings,
             desc: "Expert analysts scan 5,000+ stocks and options chains using technicals, unusual activity, and Greeks analysis."
         },
         {
             step: "2",
-            title: "You Receive Alert 📱",
+            title: "You Receive Alert",
+            icon: Smartphone,
             desc: "Instant push notifications with ticker, strike, expiration, entry range, 3 targets, and stop-loss."
         },
         {
             step: "3",
-            title: "You Execute 💼",
+            title: "You Execute",
+            icon: Briefcase,
             desc: "Open your broker app, find the exact strike, and enter your limit order within our specified range."
         },
         {
             step: "4",
-            title: "We Guide You to Exit 🎯",
+            title: "We Guide You to Exit",
+            icon: Target,
             desc: "Receive real-time alerts when profit targets are hit or if the setup is invalidated to protect capital."
         }
     ];
@@ -41,7 +46,7 @@ const HowItWorks = () => {
                             <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-white/5 border border-white/10 text-2xl font-black text-primary mb-8 group-hover:bg-primary group-hover:text-black transition-all duration-300 shadow-neon">
                                 {s.step}
                             </div>
-                            <h3 className="text-xl font-bold text-white mb-4">{s.title}</h3>
+                            <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2"><s.icon className="w-6 h-6 text-primary" />{s.title}</h3>
                             <p className="text-sm text-text-secondary leading-relaxed">{s.desc}</p>
                         </div>
                     ))}

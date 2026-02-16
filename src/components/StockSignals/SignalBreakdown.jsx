@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckCircle2 } from 'lucide-react';
+import { CheckCircle2, Bell, Zap, BarChart3, DollarSign, Target, Shield } from 'lucide-react';
 import Section from '../ui/Section';
 import GlassCard from '../ui/GlassCard';
 
@@ -31,7 +31,7 @@ const SignalBreakdown = () => {
                                     NVDA
                                 </div>
                                 <div>
-                                    <h4 className="text-white font-bold text-lg leading-none">🔔 NEW SIGNAL - NVIDIA (NVDA)</h4>
+                                    <h4 className="text-white font-bold text-lg leading-none flex items-center gap-2"><Bell className="w-5 h-5 text-primary" /> NEW SIGNAL - NVIDIA (NVDA)</h4>
                                     <div className="text-primary text-xs font-black uppercase tracking-wider mt-1">Swing Trade - Momentum Breakout</div>
                                 </div>
                             </div>
@@ -40,18 +40,18 @@ const SignalBreakdown = () => {
                         {/* Signal Body */}
                         <div className="p-6 space-y-6 bg-background/50 backdrop-blur-md text-sm">
                             <div className="grid grid-cols-2 gap-4 mb-4">
-                                <div className="bg-white/5 p-3 rounded-lg"><span className="text-text-muted">Risk:</span> <span className="text-white font-bold">⚡ Medium Risk / High Reward</span></div>
+                                <div className="bg-white/5 p-3 rounded-lg"><span className="text-text-muted">Risk:</span> <span className="text-white font-bold flex items-center gap-1.5"><Zap className="w-4 h-4 text-primary" /> Medium Risk / High Reward</span></div>
                                 <div className="bg-white/5 p-3 rounded-lg"><span className="text-text-muted">Win Prob:</span> <span className="text-success font-bold">74%</span></div>
                                 <div className="bg-white/5 p-3 rounded-lg"><span className="text-text-muted">Sector:</span> <span className="text-white font-bold">Technology - Semiconductors</span></div>
                             </div>
 
                             <div className="space-y-4">
                                 <div>
-                                    <h5 className="text-primary font-black uppercase text-xs mb-2">📊 SETUP</h5>
+                                    <h5 className="text-primary font-black uppercase text-xs mb-2 flex items-center gap-1.5"><BarChart3 className="w-4 h-4" /> SETUP</h5>
                                     <p className="text-text-secondary">Signal: BUY (Long Position)<br />Entry Strategy: Breakout confirmation above resistance</p>
                                 </div>
                                 <div>
-                                    <h5 className="text-primary font-black uppercase text-xs mb-2">💰 ENTRY</h5>
+                                    <h5 className="text-primary font-black uppercase text-xs mb-2 flex items-center gap-1.5"><DollarSign className="w-4 h-4" /> ENTRY</h5>
                                     <p className="text-text-secondary">
                                         Entry Zone: <span className="text-white font-bold">$520 - $528</span> (optimal accumulation range)<br />
                                         Ideal Entry: $524 (mid-zone on volume confirmation)<br />
@@ -60,7 +60,7 @@ const SignalBreakdown = () => {
                                     </p>
                                 </div>
                                 <div>
-                                    <h5 className="text-primary font-black uppercase text-xs mb-2">🎯 PROFIT TARGETS</h5>
+                                    <h5 className="text-primary font-black uppercase text-xs mb-2 flex items-center gap-1.5"><Target className="w-4 h-4" /> PROFIT TARGETS</h5>
                                     <ul className="text-text-secondary space-y-1">
                                         <li>TP1 (40%): <span className="text-success font-bold">$565</span> (+7.8% gain) - SELL 40% OF POSITION</li>
                                         <li>TP2 (40%): <span className="text-success font-bold">$610</span> (+16.4% gain) - SELL 40% OF POSITION</li>
@@ -68,7 +68,7 @@ const SignalBreakdown = () => {
                                     </ul>
                                 </div>
                                 <div>
-                                    <h5 className="text-primary font-black uppercase text-xs mb-2">🛡️ NOTES</h5>
+                                    <h5 className="text-primary font-black uppercase text-xs mb-2 flex items-center gap-1.5"><Shield className="w-4 h-4" /> NOTES</h5>
                                     <p className="text-text-secondary text-xs leading-relaxed italic">Moving stop to breakeven after TP1 is hit. Expecting 2-3 week hold time. NVDA has strong institutional buying support at $515 level.</p>
                                 </div>
                             </div>
