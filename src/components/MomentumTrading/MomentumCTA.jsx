@@ -27,7 +27,7 @@ const MomentumCTA = () => {
                                 Start 14-Day Free Trial
                             </Button>
                         </Link>
-                        <Link to="/products/stock-signals">
+                        <Link to="/signals/stock-trading-signals">
                             <Button size="lg" variant="outline" className="border-blue-500/30 text-blue-300 hover:bg-blue-500/10">
                                 View Performance Log
                             </Button>

@@ -8,12 +8,15 @@ import Contact from './pages/Contact';
 import FAQ from './pages/FAQ';
 import RiskDisclosure from './pages/RiskDisclosure';
 import HowItWorksPage from './pages/HowItWorks';
+import TermsOfService from './pages/TermsOfService';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import RefundPolicy from './pages/RefundPolicy';
 
 // Signals
 import OptionsTradingSignals from './pages/Signals/OptionsTradingSignals';
 import StockTradingSignals from './pages/Signals/StockTradingSignals';
 import SwingTradingSignals from './pages/Signals/SwingTradingSignals';
-import TradingEducation from './pages/Signals/TradingEducation';
+import TradingEducationPage from './pages/Signals/TradingEducationPage';
 import CompareTradingSignals from './pages/Signals/CompareTradingSignals';
 import TradingToolsAndAccess from './pages/Signals/TradingToolsAndAccess';
 
@@ -56,41 +59,44 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/risk-disclosure" element={<RiskDisclosure />} />
+        <Route path="/terms" element={<TermsOfService />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
+        <Route path="/refund" element={<RefundPolicy />} />
 
         {/* Signals - Main Categories */}
-        <Route path="/products/options-signals" element={<OptionsTradingSignals />} />
-        <Route path="/products/stock-signals" element={<StockTradingSignals />} />
-        <Route path="/products/swing-trading-signals" element={<SwingTradingSignals />} />
-        <Route path="/education" element={<TradingEducation />} />
-        <Route path="/compare" element={<CompareTradingSignals />} />
-        <Route path="/tools" element={<TradingToolsAndAccess />} />
+        <Route path="/signals/options-trading-signals" element={<OptionsTradingSignals />} />
+        <Route path="/signals/stock-trading-signals" element={<StockTradingSignals />} />
+        <Route path="/signals/swing-trading-signals" element={<SwingTradingSignals />} />
+        <Route path="/trading-education" element={<TradingEducationPage />} />
+        <Route path="/compare-trading-signals" element={<CompareTradingSignals />} />
+        <Route path="/trading-tools-access" element={<TradingToolsAndAccess />} />
 
         {/* Signals - Stock Sub-pages */}
-        <Route path="/products/stock-signals/day-trading" element={<DayTradingStocks />} />
-        <Route path="/products/stock-signals/momentum" element={<MomentumStockSignals />} />
-        <Route path="/products/stock-signals/swing" element={<SwingTradingStocks />} />
-        <Route path="/products/stock-signals/earnings" element={<EarningsTradingStrategy />} />
-        <Route path="/products/stock-signals/gap" element={<GapUpGapDownStocks />} />
+        <Route path="/signals/day-trading-stocks" element={<DayTradingStocks />} />
+        <Route path="/signals/momentum-stock-signals" element={<MomentumStockSignals />} />
+        <Route path="/signals/swing-trading-stocks" element={<SwingTradingStocks />} />
+        <Route path="/signals/earnings-trading-strategy" element={<EarningsTradingStrategy />} />
+        <Route path="/signals/gap-up-gap-down-stocks" element={<GapUpGapDownStocks />} />
 
         {/* Signals - Education Sub-pages */}
-        <Route path="/education/what-are-trading-signals" element={<WhatAreTradingSignals />} />
-        <Route path="/education/how-options-trading-works" element={<HowOptionsTradingWorks />} />
-        <Route path="/education/what-is-lotto-options" element={<WhatIsLottoOptions />} />
-        <Route path="/education/0dte-options-explained" element={<ZeroDTEOptionsExplained />} />
-        <Route path="/education/how-to-use-trading-signals" element={<HowToUseSignals />} />
+        <Route path="/trading-education/what-are-trading-signals" element={<WhatAreTradingSignals />} />
+        <Route path="/trading-education/how-options-trading-works" element={<HowOptionsTradingWorks />} />
+        <Route path="/trading-education/what-is-lotto-options" element={<WhatIsLottoOptions />} />
+        <Route path="/trading-education/0dte-options-explained" element={<ZeroDTEOptionsExplained />} />
+        <Route path="/trading-education/how-to-use-trading-signals" element={<HowToUseSignals />} />
 
         {/* Signals - Compare Sub-pages */}
-        <Route path="/compare/best-options-trading-signals" element={<BestOptionsTradingSignals />} />
-        <Route path="/compare/best-trading-signals-platform" element={<BestTradingSignalsPlatform />} />
-        <Route path="/compare/options-trading-signals-vs-copy-trading" element={<OptionsTradingSignalsVsCopyTrading />} />
-        <Route path="/compare/free-vs-paid-trading-signals" element={<FreeVsPaidTradingSignals />} />
+        <Route path="/compare-trading-signals/best-options-trading-signals" element={<BestOptionsTradingSignals />} />
+        <Route path="/compare-trading-signals/best-trading-signals-platform" element={<BestTradingSignalsPlatform />} />
+        <Route path="/compare-trading-signals/options-trading-signals-vs-copy-trading" element={<OptionsTradingSignalsVsCopyTrading />} />
+        <Route path="/compare-trading-signals/free-vs-paid-trading-signals" element={<FreeVsPaidTradingSignals />} />
 
         {/* Signals - Tools Sub-pages */}
-        <Route path="/tools/beginners" element={<TradingSignalsForBeginners />} />
-        <Route path="/tools/advanced-options" element={<AdvancedOptionsTrading />} />
-        <Route path="/tools/risk-guide" element={<TradingSignalsRiskGuide />} />
-        <Route path="/tools/app" element={<TradingSignalsApp />} />
-        <Route path="/tools/real-time-alerts" element={<RealTimeTradingAlerts />} />
+        <Route path="/trading-tools-access/risk-guide" element={<TradingSignalsRiskGuide />} />
+        <Route path="/trading-tools-access/trading-signals-app" element={<TradingSignalsApp />} />
+        <Route path="/trading-tools-access/real-time-alerts" element={<RealTimeTradingAlerts />} />
+        <Route path="/trading-tools-access/beginners" element={<TradingSignalsForBeginners />} />
+        <Route path="/trading-tools-access/advanced-options" element={<AdvancedOptionsTrading />} />
 
         {/* Legacy Routes for Compatibility */}
         <Route path="/beginners" element={<TradingSignalsForBeginners />} />

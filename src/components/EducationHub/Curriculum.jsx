@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Section from '../ui/Section';
 import GlassCard from '../ui/GlassCard';
 import GradientText from '../ui/GradientText';
@@ -118,10 +119,12 @@ const Curriculum = () => {
                                 </div>
 
                                 <div className="mt-10 pt-6 border-t border-white/5">
-                                    <button className="text-[10px] font-black text-text-muted hover:text-primary transition-colors uppercase tracking-[0.2em] flex items-center gap-2 group/btn">
-                                        View Curriculum
-                                        <ChevronRight size={14} className="group-hover/btn:translate-x-1 transition-transform" />
-                                    </button>
+                                    <Link to="/pricing">
+                                        <button className="text-[10px] font-black text-text-muted hover:text-primary transition-colors uppercase tracking-[0.2em] flex items-center gap-2 group/btn">
+                                            View Curriculum
+                                            <ChevronRight size={14} className="group-hover/btn:translate-x-1 transition-transform" />
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

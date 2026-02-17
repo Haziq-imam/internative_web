@@ -16,7 +16,7 @@ const PerformanceSection = () => {
                             We track every signal we send. Here's our recent performance across all signal types.
                         </p>
                     </div>
-                    <Link to="/performance" className="px-6 py-3 bg-white/5 border border-white/10 rounded-lg font-medium text-white hover:bg-white/10 transition-colors flex items-center gap-2">
+                    <Link to="/#performance" className="px-6 py-3 bg-white/5 border border-white/10 rounded-lg font-medium text-white hover:bg-white/10 transition-colors flex items-center gap-2">
                         View Full Track Record
                         <ArrowUpRight className="w-4 h-4" />
                     </Link>

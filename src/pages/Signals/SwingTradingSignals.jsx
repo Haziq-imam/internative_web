@@ -16,13 +16,13 @@ import RiskDisclosure from '../../components/SwingSignals/RiskDisclosure';
 import FinalCTA from '../../components/SwingSignals/FinalCTA';
 
 const SwingSignals = () => {
-    return (
-        <div className="min-h-screen bg-background text-white selection:bg-primary/30">
-            <Helmet>
-                <title>Swing Trading Signals - 79% Win Rate | Part-Time Profits | InterNative Traders</title>
-                <meta name="description" content="Get professional swing trading signals for stocks, options, crypto, futures. Hold 3-21 days. 79% win rate. Perfect for busy traders. Try free 7 days." />
-                <script type="application/ld+json">
-                    {`
+  return (
+    <div className="min-h-screen bg-background text-white selection:bg-primary/30">
+      <Helmet>
+        <title>Swing Trading Signals - 79% Win Rate | Part-Time Profits | InterNative Traders</title>
+        <meta name="description" content="Get professional swing trading signals for stocks, options, crypto, futures. Hold 3-21 days. 79% win rate. Perfect for busy traders. Try free 7 days." />
+        <script type="application/ld+json">
+          {`
                     {
                       "@context": "https://schema.org",
                       "@type": "Product",
@@ -34,7 +34,7 @@ const SwingSignals = () => {
                       },
                       "offers": {
                         "@type": "Offer",
-                        "url": "https://internativetraders.com/products/swing-trading-signals",
+                        "url": "https://internativetraders.com/signals/swing-trading-signals",
                         "priceCurrency": "USD",
                         "price": "97.00",
                         "availability": "https://schema.org/InStock"
@@ -46,23 +46,23 @@ const SwingSignals = () => {
                       }
                     }
                     `}
-                </script>
-            </Helmet>
+        </script>
+      </Helmet>
 
-            <Hero />
-            <PainPoints />
-            <SignalBreakdown />
-            <SignalTabs />
-            <ComparisonTable />
-            <HowItWorks />
-            <PerformanceDashboard />
-            <AnalystProfiles />
-            <Pricing />
-            <FAQ />
-            <RiskDisclosure />
-            <FinalCTA />
-        </div>
-    );
+      <Hero />
+      <PainPoints />
+      <SignalBreakdown />
+      <SignalTabs />
+      <ComparisonTable />
+      <HowItWorks />
+      <PerformanceDashboard />
+      <AnalystProfiles />
+      <Pricing />
+      <FAQ />
+      <RiskDisclosure />
+      <FinalCTA />
+    </div>
+  );
 };
 
 export default SwingSignals;

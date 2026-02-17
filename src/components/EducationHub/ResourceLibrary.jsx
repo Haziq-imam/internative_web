@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Section from '../ui/Section';
 import GlassCard from '../ui/GlassCard';
 import GradientText from '../ui/GradientText';
@@ -63,10 +64,12 @@ const ResourceLibrary = () => {
                         </p>
                     </div>
                     <div>
-                        <Button size="lg" className="px-10 py-6 text-sm font-black uppercase tracking-widest shadow-neon group">
-                            Access Full Library
-                            <Download className="ml-2 w-5 h-5 group-hover:translate-y-1 transition-transform" />
-                        </Button>
+                        <Link to="/pricing">
+                            <Button size="lg" className="px-10 py-6 text-sm font-black uppercase tracking-widest shadow-neon group">
+                                Access Full Library
+                                <Download className="ml-2 w-5 h-5 group-hover:translate-y-1 transition-transform" />
+                            </Button>
+                        </Link>
                     </div>
                 </div>
 

@@ -15,60 +15,60 @@ const MobileMenu = ({ isOpen, onClose }) => {
     const menuItems = [
         {
             label: 'Signals',
-            href: '/#signals',
+            href: '/signals/options-trading-signals',
             megaMenu: true,
             columns: [
                 {
                     title: 'Stock Trading Signals',
-                    href: '/products/stock-signals',
+                    href: '/signals/stock-trading-signals',
                     items: [
-                        { label: 'Day Trading Stocks', href: '/products/stock-signals/day-trading' },
-                        { label: 'Momentum Stock Signals', href: '/products/stock-signals/momentum' },
-                        { label: 'Swing Trading Stocks', href: '/products/stock-signals/swing' },
-                        { label: 'Earnings Trading Strategy', href: '/products/stock-signals/earnings' },
-                        { label: 'Gap Up / Gap Down Stocks', href: '/products/stock-signals/gap' },
+                        { label: 'Day Trading Stocks', href: '/signals/day-trading-stocks' },
+                        { label: 'Momentum Stock Signals', href: '/signals/momentum-stock-signals' },
+                        { label: 'Swing Trading Stocks', href: '/signals/swing-trading-stocks' },
+                        { label: 'Earnings Trading Strategy', href: '/signals/earnings-trading-strategy' },
+                        { label: 'Gap Up / Gap Down Stocks', href: '/signals/gap-up-gap-down-stocks' },
                     ]
                 },
                 {
                     title: 'Swing Trading Signals',
-                    href: '/products/swing-trading-signals',
+                    href: '/signals/swing-trading-signals',
                     items: [
-                        { label: 'View Swing Signals', href: '/products/swing-trading-signals' },
+                        { label: 'View Swing Signals', href: '/signals/swing-trading-signals' },
                     ]
                 },
                 {
                     title: 'Trading Education',
-                    href: '/education',
+                    href: '/trading-education',
                     items: [
-                        { label: 'View All Education', href: '/education' },
-                        { label: 'What Are Trading Signals', href: '/education/what-are-trading-signals' },
-                        { label: 'How Options Trading Works', href: '/education/how-options-trading-works' },
-                        { label: 'What Is Lotto Options', href: '/education/what-is-lotto-options' },
-                        { label: '0DTE Options Explained', href: '/education/0dte-options-explained' },
-                        { label: 'How To Use Trading Signals', href: '/education/how-to-use-trading-signals' },
+                        { label: 'View All Education', href: '/trading-education' },
+                        { label: 'What Are Trading Signals', href: '/trading-education/what-are-trading-signals' },
+                        { label: 'How Options Trading Works', href: '/trading-education/how-options-trading-works' },
+                        { label: 'What Is Lotto Options', href: '/trading-education/what-is-lotto-options' },
+                        { label: '0DTE Options Explained', href: '/trading-education/0dte-options-explained' },
+                        { label: 'How To Use Trading Signals', href: '/trading-education/how-to-use-trading-signals' },
                     ]
                 },
                 {
                     title: 'Compare Trading Signals',
-                    href: '/compare',
+                    href: '/compare-trading-signals',
                     items: [
-                        { label: 'View Comparison', href: '/compare' },
-                        { label: 'Best Options Trading Signals', href: '/compare/best-options-trading-signals' },
-                        { label: 'Best Trading Signals Platform', href: '/compare/best-trading-signals-platform' },
-                        { label: 'Options Trading Signals vs Copy Trading', href: '/compare/options-trading-signals-vs-copy-trading' },
-                        { label: 'Free vs Paid Trading Signals', href: '/compare/free-vs-paid-trading-signals' },
+                        { label: 'View Comparison', href: '/compare-trading-signals' },
+                        { label: 'Best Options Trading Signals', href: '/compare-trading-signals/best-options-trading-signals' },
+                        { label: 'Best Trading Signals Platform', href: '/compare-trading-signals/best-trading-signals-platform' },
+                        { label: 'Options Trading Signals vs Copy Trading', href: '/compare-trading-signals/options-trading-signals-vs-copy-trading' },
+                        { label: 'Free vs Paid Trading Signals', href: '/compare-trading-signals/free-vs-paid-trading-signals' },
                     ]
                 },
                 {
                     title: 'Trading Tools & Access',
-                    href: '/tools',
+                    href: '/trading-tools-access',
                     items: [
-                        { label: 'View All Tools', href: '/tools' },
-                        { label: 'Trading Signals For Beginners', href: '/tools/beginners' },
-                        { label: 'Advanced Options Trading', href: '/tools/advanced-options' },
-                        { label: 'Trading Signals Risk Guide', href: '/tools/risk-guide' },
-                        { label: 'Trading Signals App', href: '/tools/app' },
-                        { label: 'Real-Time Trading Alerts', href: '/tools/real-time-alerts' },
+                        { label: 'View All Tools', href: '/trading-tools-access' },
+                        { label: 'Trading Signals For Beginners', href: '/trading-tools-access/beginners' },
+                        { label: 'Advanced Options Trading', href: '/trading-tools-access/advanced-options' },
+                        { label: 'Trading Signals Risk Guide', href: '/trading-tools-access/risk-guide' },
+                        { label: 'Trading Signals App', href: '/trading-tools-access/trading-signals-app' },
+                        { label: 'Real-Time Trading Alerts', href: '/trading-tools-access/real-time-alerts' },
                     ]
                 }
             ]

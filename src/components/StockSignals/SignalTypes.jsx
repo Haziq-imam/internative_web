@@ -24,7 +24,7 @@ const SignalTypes = () => {
                             rating: "84% Win Rate",
                             features: ["Low monitoring required", "Perfect for small accounts", "NYSE & NASDAQ focuses"],
                             color: "text-primary",
-                            link: "/products/stock-signals/swing"
+                            link: "/signals/swing-trading-stocks"
                         },
                         {
                             title: "Day Trade Scalps",
@@ -33,7 +33,7 @@ const SignalTypes = () => {
                             rating: "76% Win Rate",
                             features: ["High frequency alerts", "Precise entry/exit windows", "Momentum & Gap focus"],
                             color: "text-secondary",
-                            link: "/products/stock-signals/day-trading"
+                            link: "/signals/day-trading-stocks"
                         },
                         {
                             title: "Momentum Signals",
@@ -42,7 +42,7 @@ const SignalTypes = () => {
                             rating: "312% Avg Annual Return",
                             features: ["Trend following strategy", "Focus on 10X potential", "Breakout & Gap setups"],
                             color: "text-success",
-                            link: "/products/stock-signals/momentum"
+                            link: "/signals/momentum-stock-signals"
                         }
                     ].map((tier, i) => (
                         <GlassCard key={i} className="p-8 flex flex-col items-center text-center hoverEffect group">

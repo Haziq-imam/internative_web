@@ -11,35 +11,35 @@ const TradingToolsAndAccess = () => {
         {
             title: 'Trading Signals For Beginners',
             desc: 'Getting started',
-            href: '/tools/beginners',
+            href: '/trading-tools-access/beginners',
             icon: BookOpen,
             color: 'text-blue-500'
         },
         {
             title: 'Advanced Options Trading',
             desc: 'Expert techniques',
-            href: '/tools/advanced-options',
+            href: '/trading-tools-access/advanced-options',
             icon: Target,
             color: 'text-purple-500'
         },
         {
             title: 'Trading Signals Risk Guide',
             desc: 'Capital protection',
-            href: '/tools/risk-guide',
+            href: '/trading-tools-access/risk-guide',
             icon: Shield,
             color: 'text-emerald-500'
         },
         {
             title: 'Trading Signals App',
             desc: 'Portable alerts',
-            href: '/tools/app',
+            href: '/trading-tools-access/trading-signals-app',
             icon: AppWindow,
             color: 'text-orange-500'
         },
         {
             title: 'Real-Time Trading Alerts',
             desc: 'Instant delivery',
-            href: '/tools/real-time-alerts',
+            href: '/trading-tools-access/real-time-alerts',
             icon: Zap,
             color: 'text-yellow-500'
         }

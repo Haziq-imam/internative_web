@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 import { ChevronDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import GlassCard from '../components/ui/GlassCard';
@@ -136,12 +137,12 @@ const FAQ = () => {
                             <p className="text-text-secondary mb-6">
                                 Our support team is here to help. Contact us anytime.
                             </p>
-                            <a
-                                href="/contact"
+                            <Link
+                                to="/contact"
                                 className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-primary text-white font-bold hover:bg-primary-hover transition-colors shadow-neon"
                             >
                                 Contact Support
-                            </a>
+                            </Link>
                         </GlassCard>
                     </div>
                 </div>

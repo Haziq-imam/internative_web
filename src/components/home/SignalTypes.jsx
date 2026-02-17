@@ -21,8 +21,8 @@ const SignalTypes = () => {
                 "Precise stop-loss to limit downside",
                 "82% historical win rate"
             ],
-            cta: "See Options Performance",
-            link: "/products/options-signals",
+            cta: "View Options Signals",
+            link: "/signals/options-trading-signals",
             color: "from-primary to-secondary",
             badge: "High Leverage"
         },
@@ -35,8 +35,8 @@ const SignalTypes = () => {
                 "Fundamental and technical catalysts",
                 "81% success rate on stock alerts"
             ],
-            cta: "View Stock Track Record",
-            link: "/products/stock-signals",
+            cta: "View Stock Signals",
+            link: "/signals/stock-trading-signals",
             color: "from-violet-500 to-fuchsia-600",
             badge: "Consistent Gains"
         },
@@ -49,8 +49,8 @@ const SignalTypes = () => {
                 "Perfect for part-time traders",
                 "Multi-asset: Stocks, Options, Crypto"
             ],
-            cta: "Explore Swing Signals",
-            link: "/products/swing-trading-signals",
+            cta: "View Swing Trading Signals",
+            link: "/signals/swing-trading-signals",
             color: "from-emerald-500 to-teal-600",
             badge: "Time Efficient"
         }

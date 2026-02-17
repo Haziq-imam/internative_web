@@ -41,7 +41,7 @@ const GapHero = () => {
                             <Link to="/pricing">
                                 <Button size="lg" className="w-full sm:w-auto px-8 py-4 text-base shadow-neon">Get Gap Signals Now - Try Free 7 Days</Button>
                             </Link>
-                            <Link to="/products/stock-signals">
+                            <Link to="/signals/stock-trading-signals">
                                 <Button size="lg" variant="outline" className="w-full sm:w-auto px-8 py-4 text-base">View Gap Trading Guide</Button>
                             </Link>
                         </div>

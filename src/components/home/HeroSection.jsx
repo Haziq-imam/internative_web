@@ -48,7 +48,7 @@ const HeroSection = () => {
                                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                             </Link>
 
-                            <Link to="/performance" className="w-full sm:w-auto px-8 py-4 bg-surface border border-white/10 hover:border-primary/50 text-white font-medium rounded-xl transition-all duration-300 hover:bg-white/5 flex items-center justify-center gap-2">
+                            <Link to="/#performance" className="w-full sm:w-auto px-8 py-4 bg-surface border border-white/10 hover:border-primary/50 text-white font-medium rounded-xl transition-all duration-300 hover:bg-white/5 flex items-center justify-center gap-2">
                                 See Live Performance
                             </Link>
                         </div>

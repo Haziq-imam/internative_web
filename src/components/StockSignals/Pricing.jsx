@@ -1,5 +1,6 @@
 import React from 'react';
 import Section from '../ui/Section';
+import { Link } from 'react-router-dom';
 import GlassCard from '../ui/GlassCard';
 import Button from '../ui/Button';
 
@@ -18,7 +19,9 @@ const Pricing = () => {
                         <div className="text-xs font-black text-text-muted uppercase tracking-widest mb-4">Monthly Subscription</div>
                         <h3 className="text-3xl font-black text-white mb-2">DELUXE</h3>
                         <div className="text-5xl font-black text-white mb-8">$89.99<span className="text-lg text-text-muted font-medium">/mo</span></div>
-                        <Button variant="outline" className="w-full mb-10 py-4 text-base">Start 7-Day Free Trial</Button>
+                        <Link to="/pricing" className="w-full">
+                            <Button variant="outline" className="w-full mb-10 py-4 text-base">Start 7-Day Free Trial</Button>
+                        </Link>
                         <div className="space-y-4 w-full">
                             {[
                                 "3-5 Stock signals per day",
@@ -42,7 +45,9 @@ const Pricing = () => {
                         <div className="text-xs font-black text-primary uppercase tracking-widest mb-4">Yearly Access</div>
                         <h3 className="text-3xl font-black text-white mb-2">ULTIMATE</h3>
                         <div className="text-5xl font-black text-white mb-8">$699.99<span className="text-lg text-text-muted font-medium">/yr</span></div>
-                        <Button className="w-full mb-10 py-4 text-base shadow-neon">Start Free Trial & Save</Button>
+                        <Link to="/pricing" className="w-full">
+                            <Button className="w-full mb-10 py-4 text-base shadow-neon">Start Free Trial & Save</Button>
+                        </Link>
                         <div className="space-y-4 w-full">
                             {[
                                 "Everything in DELUXE plan",

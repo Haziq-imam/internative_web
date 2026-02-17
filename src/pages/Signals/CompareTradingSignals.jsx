@@ -11,25 +11,25 @@ const CompareTradingSignals = () => {
         {
             title: 'Best Options Trading Signals',
             desc: 'Top-rated picks',
-            href: '/compare/best-options-trading-signals',
+            href: '/compare-trading-signals/best-options-trading-signals',
             icon: Scale
         },
         {
             title: 'Best Trading Signals Platform',
             desc: 'Tool comparison',
-            href: '/compare/best-trading-signals-platform',
+            href: '/compare-trading-signals/best-trading-signals-platform',
             icon: ShieldCheck
         },
         {
             title: 'Options Trading Signals vs Copy Trading',
             desc: 'Strategy choice',
-            href: '/compare/options-trading-signals-vs-copy-trading',
+            href: '/compare-trading-signals/options-trading-signals-vs-copy-trading',
             icon: BarChart3
         },
         {
             title: 'Free vs Paid Trading Signals',
             desc: 'Value analysis',
-            href: '/compare/free-vs-paid-trading-signals',
+            href: '/compare-trading-signals/free-vs-paid-trading-signals',
             icon: Zap
         }
     ];

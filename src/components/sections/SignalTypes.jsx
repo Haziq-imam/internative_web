@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import Section from '../ui/Section';
 import GlassCard from '../ui/GlassCard';
 import Button from '../ui/Button';
@@ -14,7 +15,7 @@ const SignalTypes = () => {
             description: "High-leverage plays on major indices and tech stocks (SPY, QQQ, NVDA, TSLA).",
             strategies: ["Scalps (10-30%)", "Day Trades (20-50%)", "Swings (50-200%+)"],
             color: "text-primary",
-            link: "/products/options-signals"
+            link: "/signals/options-trading-signals"
         },
         {
             icon: Hash,
@@ -22,7 +23,7 @@ const SignalTypes = () => {
             description: "Equity trades for steady growth without expiration pressure.",
             strategies: ["Momentum Breakouts", "Earnings Plays", "Gap Ups/Down"],
             color: "text-success",
-            link: "/products/stock-signals"
+            link: "/signals/stock-trading-signals"
         }
     ];
 
@@ -44,10 +45,12 @@ const SignalTypes = () => {
                     </p>
                 </div>
                 <div className="flex justify-start lg:justify-end">
-                    <Button size="lg" className="px-12 group text-xl shadow-neon">
-                        Explore Signals
-                        <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                    </Button>
+                    <Link to="/pricing">
+                        <Button size="lg" className="px-12 group text-xl shadow-neon">
+                            Explore Signals
+                            <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                        </Button>
+                    </Link>
                 </div>
             </div>
 
@@ -72,9 +75,11 @@ const SignalTypes = () => {
                             ))}
                         </div>
 
-                        <Button variant="secondary" className="w-full text-lg py-4">
-                            Learn Strategy
-                        </Button>
+                        <Link to={type.link} className="w-full">
+                            <Button variant="secondary" className="w-full text-lg py-4">
+                                Learn Strategy
+                            </Button>
+                        </Link>
                     </GlassCard>
                 ))}
             </div>

@@ -14,7 +14,7 @@ import FAQ from '../../components/EducationHub/FAQ';
 import Community from '../../components/EducationHub/Community';
 import FinalCTA from '../../components/EducationHub/FinalCTA';
 
-const TradingEducation = () => {
+const TradingEducationPage = () => {
     return (
         <div className="min-h-screen bg-background text-white selection:bg-primary/30">
             <Helmet>
@@ -39,4 +39,4 @@ const TradingEducation = () => {
     );
 };
 
-export default TradingEducation;
+export default TradingEducationPage;

@@ -2,6 +2,8 @@ import React from 'react';
 import Section from '../ui/Section';
 import GlassCard from '../ui/GlassCard';
 import Button from '../ui/Button';
+import { Link } from 'react-router-dom';
+
 
 const Pricing = () => {
     return (
@@ -16,7 +18,9 @@ const Pricing = () => {
                     <GlassCard className="p-10 rounded-[2.5rem] flex flex-col">
                         <h3 className="text-2xl font-black text-white mb-2">DELUXE</h3>
                         <div className="text-4xl font-black text-white mb-6">$59.99<span className="text-lg text-text-muted font-medium">/month</span></div>
-                        <Button variant="outline" className="w-full mb-8">Start Free 7-Day Trial</Button>
+                        <Link to="/pricing">
+                            <Button variant="outline" className="w-full mb-8">Start Free 7-Day Trial</Button>
+                        </Link>
                         <div className="space-y-4 flex-1 text-sm">
                             {[
                                 "All swing signals (Stocks, Options, Crypto, Futures)",
@@ -42,7 +46,9 @@ const Pricing = () => {
                         <h3 className="text-2xl font-black text-white mb-2">ULTIMATE</h3>
                         <div className="text-4xl font-black text-white mb-2">$599.99<span className="text-lg text-text-muted font-medium">/year</span></div>
                         <p className="text-success font-bold text-sm mb-6">Savings: $120/year vs monthly</p>
-                        <Button className="w-full mb-8 shadow-neon">Start Free 7-Day Trial</Button>
+                        <Link to="/pricing">
+                            <Button className="w-full mb-8 shadow-neon">Start Free 7-Day Trial</Button>
+                        </Link>
                         <div className="space-y-4 flex-1 text-sm">
                             <p className="font-bold text-white mb-2">Everything in Deluxe, PLUS:</p>
                             {[

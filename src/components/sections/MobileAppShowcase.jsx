@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Section from '../ui/Section';
 import Button from '../ui/Button';
 import { homepageContent } from '../../data/homepageContent';
@@ -31,9 +32,11 @@ const MobileAppShowcase = () => {
                             </div>
                         ))}
                     </div>
-                    <Button size="lg" className="px-12 py-4 text-xl shadow-neon">
-                        {mobileApp.cta}
-                    </Button>
+                    <Link to="/trading-tools-access/trading-signals-app">
+                        <Button size="lg" className="px-12 py-4 text-xl shadow-neon">
+                            {mobileApp.cta}
+                        </Button>
+                    </Link>
                 </div>
 
                 {/* Visual - Floating Angle Phone */}

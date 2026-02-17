@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import Section from '../ui/Section';
+import { Link } from 'react-router-dom';
 import Button from '../ui/Button';
 
 const FinalCTA = () => {
@@ -19,7 +20,9 @@ const FinalCTA = () => {
                     <span className="px-4 py-2 rounded-lg bg-white/5 border border-white/10">3. Profit Part-Time</span>
                 </div>
 
-                <Button size="lg" className="px-16 py-6 text-xl shadow-neon rounded-full mb-12">Get 7-Day Free Trial - No Credit Card Required</Button>
+                <Link to="/pricing">
+                    <Button size="lg" className="px-16 py-6 text-xl shadow-neon rounded-full mb-12">Get 7-Day Free Trial - No Credit Card Required</Button>
+                </Link>
 
                 <div className="flex flex-wrap justify-center gap-8 text-[10px] font-black text-text-muted uppercase tracking-[0.2em]">
                     <span>✓ Cancel Anytime</span>

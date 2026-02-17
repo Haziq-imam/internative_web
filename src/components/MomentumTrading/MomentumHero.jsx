@@ -50,7 +50,7 @@ const MomentumHero = () => {
                                     Get Momentum Signals
                                 </Button>
                             </Link>
-                            <Link to="/products/stock-signals">
+                            <Link to="/signals/stock-trading-signals">
                                 <Button size="lg" variant="outline">
                                     View Recent Winners
                                 </Button>

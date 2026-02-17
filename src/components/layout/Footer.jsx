@@ -12,28 +12,28 @@ const Footer = () => {
             links: [
                 { label: "How It Works", href: "/#how-it-works" },
                 { label: "Pricing", href: "/pricing" },
-                { label: "Performance", href: "/performance" },
+                { label: "Performance", href: "/#performance" },
                 { label: "Mobile App", href: "/#app" },
-                { label: "Free Trial", href: "/signup" },
+                { label: "Free Trial", href: "/pricing" },
             ]
         },
         {
             title: "Signal Types",
             links: [
-                { label: "Options Signals", href: "/products/options-signals" },
-                { label: "Stock Signals", href: "/products/stock-signals" },
-                { label: "Swing Trading", href: "/products/swing-trading-signals" },
-                { label: "Day Trading", href: "/signals/day-trading" },
+                { label: "Options Signals", href: "/signals/options-trading-signals" },
+                { label: "Stock Signals", href: "/signals/stock-trading-signals" },
+                { label: "Swing Trading", href: "/signals/swing-trading-signals" },
+                { label: "Day Trading", href: "/signals/day-trading-stocks" },
             ]
         },
         {
             title: "Resources",
             links: [
-                { label: "Trading Guides", href: "/education" },
-                { label: "Blog", href: "/blog" },
+                { label: "Trading Guides", href: "/trading-education" },
+                { label: "Blog", href: "/#blog" },
                 { label: "Success Stories", href: "/#testimonials" },
-                { label: "FAQs", href: "/#faq" },
-                { label: "Help Center", href: "/help" },
+                { label: "FAQs", href: "/faq" },
+                { label: "Help Center", href: "/faq" },
             ]
         },
         {
@@ -41,9 +41,9 @@ const Footer = () => {
             links: [
                 { label: "About Us", href: "/about" },
                 { label: "Contact Us", href: "/contact" },
-                { label: "Careers", href: "/careers" },
-                { label: "Press", href: "/press" },
-                { label: "Legal", href: "/legal" },
+                { label: "Careers", href: "/contact" },
+                { label: "Press", href: "/contact" },
+                { label: "Legal", href: "/risk-disclosure" },
             ]
         }
     ];

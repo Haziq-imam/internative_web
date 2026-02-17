@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Section from '../ui/Section';
 import GlassCard from '../ui/GlassCard';
 import GradientText from '../ui/GradientText';
@@ -50,10 +51,12 @@ const Community = () => {
                             <p className="text-sm font-medium text-text-secondary mb-10 leading-relaxed">
                                 {feature.desc}
                             </p>
-                            <button className="text-[10px] font-black text-white uppercase tracking-[0.2em] flex items-center gap-2 group/btn hover:text-primary transition-colors">
-                                {feature.link}
-                                <ArrowRight size={14} className="group-hover/btn:translate-x-1 transition-transform" />
-                            </button>
+                            <Link to="/pricing">
+                                <button className="text-[10px] font-black text-white uppercase tracking-[0.2em] flex items-center gap-2 group/btn hover:text-primary transition-colors">
+                                    {feature.link}
+                                    <ArrowRight size={14} className="group-hover/btn:translate-x-1 transition-transform" />
+                                </button>
+                            </Link>
                         </GlassCard>
                     ))}
                 </div>
@@ -65,10 +68,12 @@ const Community = () => {
                             <h4 className="text-2xl md:text-3xl font-black text-white mb-2">Ready to Start Learning?</h4>
                             <p className="text-text-secondary font-semibold">Join the most active trading community on the web.</p>
                         </div>
-                        <Button size="lg" className="px-12 py-6 text-sm font-black uppercase tracking-widest shadow-neon group">
-                            <MessageSquare className="mr-2 w-5 h-5" />
-                            Launch Discord Hub
-                        </Button>
+                        <Link to="/pricing">
+                            <Button size="lg" className="px-12 py-6 text-sm font-black uppercase tracking-widest shadow-neon group">
+                                <MessageSquare className="mr-2 w-5 h-5" />
+                                Launch Discord Hub
+                            </Button>
+                        </Link>
                     </div>
                 </GlassCard>
             </div>

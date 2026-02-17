@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { PlayCircle, GraduationCap, CheckCircle2, Users, Calendar, ArrowRight } from 'lucide-react';
 import Button from '../ui/Button';
 import Section from '../ui/Section';
@@ -34,10 +35,12 @@ const Hero = () => {
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
-                            <Button size="lg" className="px-8 py-6 text-lg shadow-neon group">
-                                Start Learning Free
-                                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                            </Button>
+                            <Link to="/pricing">
+                                <Button size="lg" className="px-8 py-6 text-lg shadow-neon group">
+                                    Start Learning Free
+                                    <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                                </Button>
+                            </Link>
                             <Button variant="outline" size="lg" className="px-8 py-6 text-lg group">
                                 <PlayCircle className="mr-2 w-5 h-5 text-primary" />
                                 Watch Intro Video

@@ -4,6 +4,8 @@ import Section from '../ui/Section';
 import GlassCard from '../ui/GlassCard';
 import Button from '../ui/Button';
 
+import { Link } from 'react-router-dom';
+
 const FinalCTA = () => {
     return (
         <Section className="py-32 relative overflow-hidden">
@@ -22,8 +24,12 @@ const FinalCTA = () => {
 
                     <div className="flex flex-col items-center gap-8">
                         <div className="flex flex-col sm:flex-row gap-4 w-full justify-center">
-                            <Button size="lg" className="px-12 h-16 text-xl shadow-neon">Start Free 7-Day Trial</Button>
-                            <Button variant="outline" size="lg" className="px-12 h-16 text-xl">View Sample Signals</Button>
+                            <Link to="/pricing">
+                                <Button size="lg" className="px-12 h-16 text-xl shadow-neon">Start Free 7-Day Trial</Button>
+                            </Link>
+                            <Link to="/signals/options-trading-signals">
+                                <Button variant="outline" size="lg" className="px-12 h-16 text-xl">View Sample Signals</Button>
+                            </Link>
                         </div>
 
                         <div className="grid grid-cols-3 gap-8 w-full max-w-2xl pt-8 border-t border-white/10">

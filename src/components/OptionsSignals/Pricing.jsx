@@ -1,5 +1,5 @@
-import React from 'react';
 import { CheckCircle, Zap, Lock } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import Section from '../ui/Section';
 import GlassCard from '../ui/GlassCard';
 import Button from '../ui/Button';
@@ -21,7 +21,9 @@ const Pricing = () => {
                             <span className="text-text-muted mb-2 font-bold lowercase">/month</span>
                         </div>
                         <p className="text-text-secondary text-sm mb-8">Best For: Individual traders seeking consistent options flow.</p>
-                        <Button variant="outline" className="w-full mb-8 h-14 text-lg font-bold" size="lg">Start Free 7-Day Trial</Button>
+                        <Link to="/pricing" className="w-full">
+                            <Button variant="outline" className="w-full mb-8 h-14 text-lg font-bold" size="lg">Start Free 7-Day Trial</Button>
+                        </Link>
                         <div className="space-y-4">
                             {[
                                 "All options signals (Lottos, Swings, Index)",
@@ -54,7 +56,9 @@ const Pricing = () => {
                         </div>
                         <div className="text-primary font-black text-xs uppercase tracking-widest mb-6">Savings: $120/year vs monthly</div>
                         <p className="text-text-secondary text-sm mb-8">Best For: Serious options traders maximizing edge.</p>
-                        <Button className="w-full mb-8 h-14 text-lg font-bold shadow-neon" size="lg">Start Free 7-Day Trial</Button>
+                        <Link to="/pricing" className="w-full">
+                            <Button className="w-full mb-8 h-14 text-lg font-bold shadow-neon" size="lg">Start Free 7-Day Trial</Button>
+                        </Link>
                         <div className="space-y-4">
                             <div className="text-[10px] font-black text-primary uppercase tracking-widest">Everything in Deluxe, PLUS:</div>
                             {[

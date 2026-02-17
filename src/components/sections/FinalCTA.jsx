@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Star } from 'lucide-react';
 import Section from '../ui/Section';
+import { Link } from 'react-router-dom';
 import Button from '../ui/Button';
 import GlassCard from '../ui/GlassCard';
 
@@ -26,12 +27,16 @@ const FinalCTA = () => {
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-16">
-                        <Button size="lg" className="px-16 py-6 text-2xl shadow-neon w-full sm:w-auto">
-                            Get Access Now
-                        </Button>
-                        <Button variant="outline" size="lg" className="px-16 py-6 text-2xl border-white/10 hover:bg-white/5 w-full sm:w-auto">
-                            View Performance
-                        </Button>
+                        <Link to="/pricing" className="w-full sm:w-auto">
+                            <Button size="lg" className="px-16 py-6 text-2xl shadow-neon w-full">
+                                Get Access Now
+                            </Button>
+                        </Link>
+                        <Link to="/#performance" className="w-full sm:w-auto">
+                            <Button variant="outline" size="lg" className="px-16 py-6 text-2xl border-white/10 hover:bg-white/5 w-full">
+                                View Performance
+                            </Button>
+                        </Link>
                     </div>
 
                     <div className="flex items-center justify-center gap-3">

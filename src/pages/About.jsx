@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 import { TrendingUp, Bell, Users } from 'lucide-react';
 import GlassCard from '../components/ui/GlassCard';
 import Button from '../components/ui/Button';
@@ -131,9 +132,11 @@ const About = () => {
                         <p className="text-xl text-text-secondary mb-8">
                             Join thousands of traders who trust InterNative for accurate, real-time trading signals.
                         </p>
-                        <Button size="lg" className="shadow-neon">
-                            Get Started Today
-                        </Button>
+                        <Link to="/pricing">
+                            <Button size="lg" className="shadow-neon">
+                                Get Started Today
+                            </Button>
+                        </Link>
                     </div>
                 </div>
             </section>

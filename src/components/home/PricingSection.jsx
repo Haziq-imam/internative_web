@@ -95,10 +95,10 @@ const PricingSection = () => {
                             </ul>
 
                             <Link
-                                to="/signup"
+                                to="/pricing"
                                 className={`block w-full py-4 rounded-xl text-center font-bold transition-all duration-300 ${plan.popular
-                                        ? 'bg-brand-gradient text-white hover:shadow-neon shadow-lg'
-                                        : 'bg-white/10 text-white hover:bg-white/20'
+                                    ? 'bg-brand-gradient text-white hover:shadow-neon shadow-lg'
+                                    : 'bg-white/10 text-white hover:bg-white/20'
                                     }`}
                             >
                                 {plan.cta}

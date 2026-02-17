@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Section from '../ui/Section';
 import GlassCard from '../ui/GlassCard';
 import Button from '../ui/Button';
@@ -67,7 +68,9 @@ const ComparisonTable = () => {
             </GlassCard>
 
             <div className="mt-24 text-center">
-                <Button size="lg" className="px-16 py-6 text-2xl shadow-neon">{comparison.cta}</Button>
+                <Link to="/pricing">
+                    <Button size="lg" className="px-16 py-6 text-2xl shadow-neon">{comparison.cta}</Button>
+                </Link>
             </div>
         </Section>
     );

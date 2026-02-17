@@ -44,9 +44,9 @@ const SwingHero = () => {
                             <Link to="/pricing">
                                 <Button size="lg" className="shadow-neon">
                                     Get Swing Trading Signals
-                                   </Button>
+                                </Button>
                             </Link>
-                            <Link to="/products/stock-signals">
+                            <Link to="/signals/stock-trading-signals">
                                 <Button size="lg" variant="outline">
                                     View Sample Setups
                                 </Button>

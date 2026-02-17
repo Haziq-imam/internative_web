@@ -2,6 +2,8 @@ import React from 'react';
 import { TrendingUp, CheckCircle, ArrowRight, Target } from 'lucide-react';
 import Button from '../ui/Button';
 
+import { Link } from 'react-router-dom';
+
 const Hero = () => {
     return (
         <div className="relative pt-48 pb-20 overflow-hidden bg-background">
@@ -30,14 +32,18 @@ const Hero = () => {
                         </div>
 
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <Button size="lg" className="px-8 py-4 text-lg shadow-neon group">
-                                Get Options Signals Now
-                                <span className="text-xs font-normal ml-2 opacity-80">(Try Free 7 Days)</span>
-                                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                            </Button>
-                            <Button size="lg" variant="outline" className="px-8 py-4 text-lg">
-                                View Performance Report
-                            </Button>
+                            <Link to="/pricing">
+                                <Button size="lg" className="px-8 py-4 text-lg shadow-neon group">
+                                    Get Options Signals Now
+                                    <span className="text-xs font-normal ml-2 opacity-80">(Try Free 7 Days)</span>
+                                    <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                                </Button>
+                            </Link>
+                            <Link to="/#performance">
+                                <Button size="lg" variant="outline" className="px-8 py-4 text-lg">
+                                    View Performance Report
+                                </Button>
+                            </Link>
                         </div>
                     </div>
 

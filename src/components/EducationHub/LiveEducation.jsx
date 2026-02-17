@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Section from '../ui/Section';
 import GlassCard from '../ui/GlassCard';
 import GradientText from '../ui/GradientText';
@@ -64,10 +65,12 @@ const LiveEducation = () => {
                             </div>
                         </div>
 
-                        <Button variant="outline" className="w-full group py-4 text-xs font-black uppercase tracking-widest">
-                            View Webinar Schedule
-                            <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                        </Button>
+                        <Link to="/pricing">
+                            <Button variant="outline" className="w-full group py-4 text-xs font-black uppercase tracking-widest">
+                                View Webinar Schedule
+                                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                            </Button>
+                        </Link>
                     </GlassCard>
 
                     {/* Weekly Live Trading Room */}
@@ -115,10 +118,12 @@ const LiveEducation = () => {
                             </div>
                         </div>
 
-                        <Button className="w-full group py-4 text-xs font-black uppercase tracking-widest shadow-neon">
-                            Upgrade to Ultimate
-                            <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                        </Button>
+                        <Link to="/pricing">
+                            <Button className="w-full group py-4 text-xs font-black uppercase tracking-widest shadow-neon">
+                                Upgrade to Ultimate
+                                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                            </Button>
+                        </Link>
                     </GlassCard>
                 </div>
             </div>

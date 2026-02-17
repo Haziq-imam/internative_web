@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Check } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import Button from '../ui/Button';
 import { homepageContent } from '../../data/homepageContent';
 
@@ -57,13 +58,17 @@ const HeroSection = () => {
                             transition={{ duration: 0.8, delay: 0.4 }}
                             className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6 mb-16"
                         >
-                            <Button size="lg" className="w-full sm:w-auto text-xl px-12 group">
-                                {hero.primaryCTA}
-                                <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
-                            </Button>
-                            <Button size="lg" variant="secondary" className="w-full sm:w-auto text-xl px-12">
-                                {hero.secondaryCTA}
-                            </Button>
+                            <Link to="/pricing" className="w-full sm:w-auto">
+                                <Button size="lg" className="w-full text-xl px-12 group">
+                                    {hero.primaryCTA}
+                                    <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
+                                </Button>
+                            </Link>
+                            <Link to="/#performance" className="w-full sm:w-auto">
+                                <Button size="lg" variant="secondary" className="w-full text-xl px-12">
+                                    {hero.secondaryCTA}
+                                </Button>
+                            </Link>
                         </motion.div>
 
                         <motion.div

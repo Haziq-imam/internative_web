@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Section from '../ui/Section';
 import GlassCard from '../ui/GlassCard';
 import GradientText from '../ui/GradientText';
@@ -15,7 +16,7 @@ const FeaturedGuides = () => {
             description: "Definition of trading signals and how they work. How professional traders use signals and debunking common misconceptions.",
             for: "Complete beginners new to trading signals",
             time: "15-minute read + 10-minute video",
-            link: "/education/what-are-trading-signals",
+            link: "/trading-education/what-are-trading-signals",
             points: ["Definition & Mechanics", "Types of Signals", "Quality Evaluation"]
         },
         {
@@ -26,7 +27,7 @@ const FeaturedGuides = () => {
             description: "What options contracts are (calls vs puts). How options pricing works, strike prices, and risks vs rewards explained.",
             for: "Traders wanting to understand options basics",
             time: "25-minute read + 20-minute video",
-            link: "/education/how-options-trading-works",
+            link: "/trading-education/how-options-trading-works",
             points: ["Calls vs Puts", "Pricing & Expiration", "Leverage Mechanics"]
         },
         {
@@ -37,7 +38,7 @@ const FeaturedGuides = () => {
             description: "Definition of 'lotto' or 'lottery' options. 0-3 DTE strategies and when to use them for explosive returns.",
             for: "Intermediate traders seeking leveraged gains",
             time: "20-minute read + 15-minute video",
-            link: "/education/what-is-lotto-options",
+            link: "/trading-education/what-is-lotto-options",
             points: ["Short-dated Strategies", "Sizing High-Risk Plays", "Real Trade Examples"]
         },
         {
@@ -48,7 +49,7 @@ const FeaturedGuides = () => {
             description: "Zero Days to Expiration (0DTE) strategies. Extreme risk and reward explained with professional execution protocols.",
             for: "Advanced options traders only",
             time: "30-minute read + 25-minute video",
-            link: "/education/0dte-options-explained",
+            link: "/trading-education/0dte-options-explained",
             points: ["Intraday Mechanics", "SPX/SPY Opportunities", "Professional Protocols"]
         },
         {
@@ -59,7 +60,7 @@ const FeaturedGuides = () => {
             description: "Step-by-step signal execution process. How to read our signal format, entry timing, and position sizing strategies.",
             for: "New InterNative members",
             time: "20-minute read + 30-minute walkthrough video",
-            link: "/education/how-to-use-trading-signals",
+            link: "/trading-education/how-to-use-trading-signals",
             points: ["Execution Workflow", "Scaling Out Targets", "Broker Integration"]
         }
     ];
@@ -115,10 +116,12 @@ const FeaturedGuides = () => {
                                         For: {guide.for}
                                     </div>
                                 </div>
-                                <Button className="w-full group py-4 text-xs font-black uppercase tracking-widest">
-                                    Start Learning
-                                    <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                                </Button>
+                                <Link to={guide.link}>
+                                    <Button className="w-full group py-4 text-xs font-black uppercase tracking-widest">
+                                        Start Learning
+                                        <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                                    </Button>
+                                </Link>
                             </div>
                         </GlassCard>
                     ))}
