@@ -22,7 +22,7 @@ const Header = () => {
     const navLinks = [
         {
             label: 'Signals',
-            href: '/signals/options-trading-signals',
+            href: '#',
             megaMenu: true,
             columns: [
                 {
@@ -39,7 +39,12 @@ const Header = () => {
                 {
                     title: 'Swing Trading Signals',
                     href: '/signals/swing-trading-signals',
-                    items: []
+                    items: [],
+                    secondarySection: {
+                        title: 'Options Trading Signals',
+                        href: '/signals/options-trading-signals',
+                        items: []
+                    }
                 },
                 {
                     title: 'Trading Education',
@@ -106,15 +111,22 @@ const Header = () => {
                         <nav className="hidden xl:flex items-center gap-1 2xl:gap-2">
                             {navLinks.map((link) => (
                                 <div key={link.label} className="group">
-                                    <Link
-                                        to={link.href}
-                                        className="relative px-3 py-2 text-xs 2xl:text-sm font-semibold text-text-secondary hover:text-white transition-all duration-300 flex items-center gap-1 hover:bg-white/5 rounded-full"
-                                    >
-                                        <span className="relative z-10 whitespace-nowrap">{link.label}</span>
-                                        {link.columns && (
+                                    {link.megaMenu ? (
+                                        <div className="relative px-3 py-2 text-xs 2xl:text-sm font-semibold text-text-secondary hover:text-white transition-all duration-300 flex items-center gap-1 hover:bg-white/5 rounded-full cursor-pointer">
+                                            <span className="relative z-10 whitespace-nowrap">{link.label}</span>
                                             <ChevronDown className="w-3 h-3 transition-transform duration-300 group-hover:rotate-180 text-primary" />
-                                        )}
-                                    </Link>
+                                        </div>
+                                    ) : (
+                                        <Link
+                                            to={link.href}
+                                            className="relative px-3 py-2 text-xs 2xl:text-sm font-semibold text-text-secondary hover:text-white transition-all duration-300 flex items-center gap-1 hover:bg-white/5 rounded-full"
+                                        >
+                                            <span className="relative z-10 whitespace-nowrap">{link.label}</span>
+                                            {link.columns && (
+                                                <ChevronDown className="w-3 h-3 transition-transform duration-300 group-hover:rotate-180 text-primary" />
+                                            )}
+                                        </Link>
+                                    )}
 
                                     {/* Mega Menu Dropdown */}
                                     {link.columns && (
@@ -124,29 +136,59 @@ const Header = () => {
                                                 <div className="p-8 grid grid-cols-5 gap-6 bg-gradient-to-b from-white/[0.02] to-transparent rounded-[20px]">
                                                     {link.columns.map((col, idx) => (
                                                         <div key={idx} className="relative z-10 flex flex-col gap-4">
-                                                            <Link to={col.href} className="block group/title">
-                                                                <h4 className="text-sm font-bold text-white mb-2 flex items-center gap-2 group-hover/title:text-primary transition-colors whitespace-nowrap">
-                                                                    {col.title}
-                                                                </h4>
-                                                            </Link>
-                                                            <div className="flex flex-col gap-1">
-                                                                {col.items.map((item) => (
-                                                                    <Link
-                                                                        key={item.label}
-                                                                        to={item.href}
-                                                                        className="group/item flex flex-col py-1.5 px-3 -mx-3 rounded-lg hover:bg-white/5 transition-all duration-300"
-                                                                    >
-                                                                        <span className="text-sm font-medium text-text-secondary group-hover/item:text-white transition-colors">
-                                                                            {item.label}
-                                                                        </span>
-                                                                        {item.desc && (
-                                                                            <span className="text-xs text-text-muted mt-0.5 group-hover/item:text-text-secondary transition-colors line-clamp-1">
-                                                                                {item.desc}
+                                                            <div>
+                                                                <Link to={col.href} className="block group/title mb-2">
+                                                                    <h4 className="text-sm font-bold text-white flex items-center gap-2 group-hover/title:text-primary transition-colors whitespace-nowrap">
+                                                                        {col.title}
+                                                                    </h4>
+                                                                </Link>
+                                                                <div className="flex flex-col gap-1">
+                                                                    {col.items.map((item) => (
+                                                                        <Link
+                                                                            key={item.label}
+                                                                            to={item.href}
+                                                                            className="group/item flex flex-col py-1.5 px-3 -mx-3 rounded-lg hover:bg-white/5 transition-all duration-300"
+                                                                        >
+                                                                            <span className="text-sm font-medium text-text-secondary group-hover/item:text-white transition-colors">
+                                                                                {item.label}
                                                                             </span>
-                                                                        )}
-                                                                    </Link>
-                                                                ))}
+                                                                            {item.desc && (
+                                                                                <span className="text-xs text-text-muted mt-0.5 group-hover/item:text-text-secondary transition-colors line-clamp-1">
+                                                                                    {item.desc}
+                                                                                </span>
+                                                                            )}
+                                                                        </Link>
+                                                                    ))}
+                                                                </div>
                                                             </div>
+
+                                                            {col.secondarySection && (
+                                                                <div className="mt-2">
+                                                                    <Link to={col.secondarySection.href} className="block group/title mb-2">
+                                                                        <h4 className="text-sm font-bold text-white flex items-center gap-2 group-hover/title:text-primary transition-colors whitespace-nowrap">
+                                                                            {col.secondarySection.title}
+                                                                        </h4>
+                                                                    </Link>
+                                                                    <div className="flex flex-col gap-1">
+                                                                        {col.secondarySection.items.map((item) => (
+                                                                            <Link
+                                                                                key={item.label}
+                                                                                to={item.href}
+                                                                                className="group/item flex flex-col py-1.5 px-3 -mx-3 rounded-lg hover:bg-white/5 transition-all duration-300"
+                                                                            >
+                                                                                <span className="text-sm font-medium text-text-secondary group-hover/item:text-white transition-colors">
+                                                                                    {item.label}
+                                                                                </span>
+                                                                                {item.desc && (
+                                                                                    <span className="text-xs text-text-muted mt-0.5 group-hover/item:text-text-secondary transition-colors line-clamp-1">
+                                                                                        {item.desc}
+                                                                                    </span>
+                                                                                )}
+                                                                            </Link>
+                                                                        ))}
+                                                                    </div>
+                                                                </div>
+                                                            )}
                                                         </div>
                                                     ))}
                                                 </div>

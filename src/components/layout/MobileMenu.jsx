@@ -15,7 +15,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
     const menuItems = [
         {
             label: 'Signals',
-            href: '/signals/options-trading-signals',
+            href: '#',
             megaMenu: true,
             columns: [
                 {
@@ -32,9 +32,12 @@ const MobileMenu = ({ isOpen, onClose }) => {
                 {
                     title: 'Swing Trading Signals',
                     href: '/signals/swing-trading-signals',
-                    items: [
-                        { label: 'View Swing Signals', href: '/signals/swing-trading-signals' },
-                    ]
+                    items: []
+                },
+                {
+                    title: 'Options Trading Signals',
+                    href: '/signals/options-trading-signals',
+                    items: []
                 },
                 {
                     title: 'Trading Education',
@@ -157,19 +160,21 @@ const MobileMenu = ({ isOpen, onClose }) => {
                                                                             ) : (
                                                                                 <h5 className="text-xs font-black uppercase tracking-wider text-text-muted">{col.title}</h5>
                                                                             )}
-                                                                            <div className="flex flex-col gap-1 border-l-2 border-primary/20 pl-4">
-                                                                                {col.items.map((child) => (
-                                                                                    <Link
-                                                                                        key={child.label}
-                                                                                        href={child.href}
-                                                                                        to={child.href}
-                                                                                        onClick={onClose}
-                                                                                        className="py-1.5 text-sm font-medium text-text-secondary hover:text-white hover:translate-x-1 transition-all"
-                                                                                    >
-                                                                                        {child.label}
-                                                                                    </Link>
-                                                                                ))}
-                                                                            </div>
+                                                                            {col.items.length > 0 && (
+                                                                                <div className="flex flex-col gap-1 border-l-2 border-primary/20 pl-4">
+                                                                                    {col.items.map((child) => (
+                                                                                        <Link
+                                                                                            key={child.label}
+                                                                                            href={child.href}
+                                                                                            to={child.href}
+                                                                                            onClick={onClose}
+                                                                                            className="py-1.5 text-sm font-medium text-text-secondary hover:text-white hover:translate-x-1 transition-all"
+                                                                                        >
+                                                                                            {child.label}
+                                                                                        </Link>
+                                                                                    ))}
+                                                                                </div>
+                                                                            )}
                                                                         </div>
                                                                     ))}
                                                                 </div>
