@@ -8,25 +8,25 @@ const HowItWorks = () => {
             icon: Download,
             step: "Step 1",
             title: "Download & Sign Up",
-            description: "Get the app on iOS or Android in 60 seconds. No complicated setup, no hidden fees."
+            description: "Get the app on iOS or Android in 60 seconds. No complicated setup, no hidden fees. Just quick registration and you're ready."
         },
         {
             icon: Target,
             step: "Step 2",
-            title: "Choose Your Signals",
-            description: "Select what you want to trade: options, stocks, crypto, or all three. Customize your alerts."
+            title: "Choose Your Signal Types",
+            description: "Select which signals you want: options, stocks, crypto, or all three. Customize your alert preferences to match your trading style."
         },
         {
             icon: Zap,
             step: "Step 3",
-            title: "Get Instant Alerts",
-            description: "When our analysts find a trade, you get a push notification with entry, stop-loss, and targets."
+            title: "Receive Instant Notifications",
+            description: "When our expert analysts identify a high-probability trade, you get an instant push notification with complete details: entry, stop-loss, and profit targets."
         },
         {
             icon: DollarSign,
             step: "Step 4",
             title: "Execute & Profit",
-            description: "Follow the signal with your broker, manage the trade, and watch your portfolio grow."
+            description: "Follow the signal with your broker, manage the trade according to our guidance, and watch your portfolio grow. That simple."
         }
     ];
 
@@ -35,7 +35,7 @@ const HowItWorks = () => {
             <div className="container mx-auto px-4">
                 <div className="text-center max-w-3xl mx-auto mb-20">
                     <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-6">
-                        Simple. Fast. <span className="text-transparent bg-clip-text bg-brand-gradient">Profitable.</span>
+                        Simple. Fast. Profitable. <span className="text-transparent bg-clip-text bg-brand-gradient">Here's How It Works:</span>
                     </h2>
                     <p className="text-lg text-text-secondary">
                         From download to your first profit in four simple steps.

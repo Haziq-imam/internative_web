@@ -39,12 +39,12 @@ const HeroSection = () => {
                         </h1>
 
                         <p className="text-xl text-text-secondary leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slide-up bg-opacity-0" style={{ animationDelay: '0.1s' }}>
-                            Get precise entry points, exit signals, and stop-loss alerts sent directly to your phone. Join 10,000+ traders making smarter decisions.
+                            Get precise entry points, exit signals, and stop-loss alerts sent directly to your phone. Join 10,000+ traders making smarter decisions with our expert-analyzed signals for S&P 500, Nasdaq, Dow Jones, Russell 2000, and crypto markets.
                         </p>
 
                         <div className="flex flex-col sm:flex-row items-center gap-4 pt-4 animate-slide-up" style={{ animationDelay: '0.2s' }}>
                             <Link to="/pricing" className="w-full sm:w-auto px-8 py-4 bg-primary hover:bg-primary-hover text-white font-semibold rounded-xl transition-all duration-300 shadow-neon hover:shadow-neon-hover flex items-center justify-center gap-2 group">
-                                Start Free Trial
+                                Start Free Trial - 7 Days
                                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                             </Link>
 
@@ -64,7 +64,11 @@ const HeroSection = () => {
                             </div>
                             <div className="flex items-center gap-2">
                                 <CheckCircle className="w-5 h-5 text-accent-green" />
-                                <span>iOS & Android App</span>
+                                <span>Real-Time Push Notifications</span>
+                            </div>
+                            <div className="flex items-center gap-2">
+                                <CheckCircle className="w-5 h-5 text-accent-green" />
+                                <span>Available on iOS & Android</span>
                             </div>
                         </div>
                     </div>

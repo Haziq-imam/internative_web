@@ -15,43 +15,31 @@ const FinalCTA = () => {
                     <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent" />
 
                     <h2 className="text-4xl md:text-6xl font-black text-white mb-8 tracking-tighter">
-                        Ready to Trade with <br /><span className="text-gradient">Institutional Edge?</span>
+                        Start Receiving Profitable <br /><span className="text-gradient">Options Signals Today</span>
                     </h2>
 
                     <p className="text-xl text-text-secondary mb-12 max-w-2xl mx-auto">
-                        Join 5,000+ traders receiving the industry's most accurate options alerts. Start your 7-day free trial now.
+                        Join thousands of traders receiving expert options alerts with complete entry/exit plans. No risk try free for 7 days.
                     </p>
 
                     <div className="flex flex-col items-center gap-8">
+                        <div className="text-sm font-bold text-white uppercase tracking-widest mb-4">
+                            1. Start Free Trial <span className="text-primary mx-2">→</span> 2. Receive Your First Signal <span className="text-primary mx-2">→</span> 3. Follow & Profit
+                        </div>
                         <div className="flex flex-col sm:flex-row gap-4 w-full justify-center">
                             <Link to="/pricing">
-                                <Button size="lg" className="px-12 h-16 text-xl shadow-neon">Start Free 7-Day Trial</Button>
+                                <Button size="lg" className="px-12 h-16 text-xl shadow-neon">Get 7-Day Free Trial - No Credit Card Required</Button>
                             </Link>
-                            <Link to="/signals/options-trading-signals">
-                                <Button variant="outline" size="lg" className="px-12 h-16 text-xl">View Sample Signals</Button>
-                            </Link>
-                        </div>
-
-                        <div className="grid grid-cols-3 gap-8 w-full max-w-2xl pt-8 border-t border-white/10">
-                            <div>
-                                <div className="text-2xl font-black text-white">82%</div>
-                                <div className="text-[10px] text-text-muted uppercase tracking-widest">Win Rate</div>
-                            </div>
-                            <div>
-                                <div className="text-2xl font-black text-white">5k+</div>
-                                <div className="text-[10px] text-text-muted uppercase tracking-widest">Traders</div>
-                            </div>
-                            <div>
-                                <div className="text-2xl font-black text-white">24/7</div>
-                                <div className="text-[10px] text-text-muted uppercase tracking-widest">Support</div>
-                            </div>
                         </div>
                     </div>
 
-                    <p className="mt-12 text-sm text-text-muted flex items-center justify-center gap-2">
-                        <Shield size={14} className="text-primary" />
-                        No credit card required for trial • Cancel anytime • 30-day money-back guarantee
-                    </p>
+                    <div className="mt-12 grid grid-cols-2 md:grid-cols-5 gap-4 text-xs text-text-muted">
+                        <div className="flex items-center justify-center gap-2"><Shield size={14} className="text-primary" /> No credit card to start trial</div>
+                        <div className="flex items-center justify-center gap-2"><Shield size={14} className="text-primary" /> Cancel anytime, no contracts</div>
+                        <div className="flex items-center justify-center gap-2"><Shield size={14} className="text-primary" /> 30-day money-back guarantee</div>
+                        <div className="flex items-center justify-center gap-2"><Shield size={14} className="text-primary" /> Instant access to all signal types</div>
+                        <div className="flex items-center justify-center gap-2"><Shield size={14} className="text-primary" /> 10,000+ active members</div>
+                    </div>
                 </GlassCard>
             </div>
         </Section>

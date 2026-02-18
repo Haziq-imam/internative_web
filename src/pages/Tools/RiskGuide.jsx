@@ -2,18 +2,18 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
 // Extracted Components
-import Hero from '../../../components/RiskGuide/Hero';
-import CoreUnderstanding from '../../../components/RiskGuide/CoreUnderstanding';
-import PositionSizing from '../../../components/RiskGuide/PositionSizing';
-import SurvivalGuide from '../../../components/RiskGuide/SurvivalGuide';
-import ImplementationControls from '../../../components/RiskGuide/ImplementationControls';
-import RiskAdjustment from '../../../components/RiskGuide/RiskAdjustment';
-import WhoNeedsThis from '../../../components/RiskGuide/WhoNeedsThis';
-import RiskFAQ from '../../../components/RiskGuide/RiskFAQ';
-import RiskSummary from '../../../components/RiskGuide/RiskSummary';
-import KeyTakeaways from '../../../components/RiskGuide/KeyTakeaways';
-import NextSteps from '../../../components/RiskGuide/NextSteps';
-import RiskDisclosure from '../../../components/RiskGuide/RiskDisclosure';
+import Hero from '../../components/RiskGuide/Hero';
+import CoreUnderstanding from '../../components/RiskGuide/CoreUnderstanding';
+import PositionSizing from '../../components/RiskGuide/PositionSizing';
+import SurvivalGuide from '../../components/RiskGuide/SurvivalGuide';
+import ImplementationControls from '../../components/RiskGuide/ImplementationControls';
+import RiskAdjustment from '../../components/RiskGuide/RiskAdjustment';
+import WhoNeedsThis from '../../components/RiskGuide/WhoNeedsThis';
+import RiskFAQ from '../../components/RiskGuide/RiskFAQ';
+import RiskSummary from '../../components/RiskGuide/RiskSummary';
+import KeyTakeaways from '../../components/RiskGuide/KeyTakeaways';
+import NextSteps from '../../components/RiskGuide/NextSteps';
+import RiskDisclosure from '../../components/RiskGuide/RiskDisclosure';
 
 const TradingSignalsRiskGuide = () => {
     return (

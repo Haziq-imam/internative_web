@@ -20,7 +20,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
             columns: [
                 {
                     title: 'Stock Trading Signals',
-                    href: '/signals/stock-trading-signals',
+                    href: '/products/stock-signals',
                     items: [
                         { label: 'Day Trading Stocks', href: '/signals/day-trading-stocks' },
                         { label: 'Momentum Stock Signals', href: '/signals/momentum-stock-signals' },
@@ -31,12 +31,12 @@ const MobileMenu = ({ isOpen, onClose }) => {
                 },
                 {
                     title: 'Swing Trading Signals',
-                    href: '/signals/swing-trading-signals',
+                    href: '/products/swing-trading-signals',
                     items: []
                 },
                 {
                     title: 'Options Trading Signals',
-                    href: '/signals/options-trading-signals',
+                    href: '/signals/options-signals',
                     items: []
                 },
                 {
@@ -67,17 +67,17 @@ const MobileMenu = ({ isOpen, onClose }) => {
                     href: '/trading-tools-access',
                     items: [
                         { label: 'View All Tools', href: '/trading-tools-access' },
-                        { label: 'Trading Signals For Beginners', href: '/trading-tools-access/beginners' },
-                        { label: 'Advanced Options Trading', href: '/trading-tools-access/advanced-options' },
-                        { label: 'Trading Signals Risk Guide', href: '/trading-tools-access/risk-guide' },
+                        { label: 'Trading Signals For Beginners', href: '/trading-tools-access/trading-signals-for-beginners' },
+                        { label: 'Advanced Options Trading', href: '/trading-tools-access/advanced-options-trading' },
+                        { label: 'Trading Signals Risk Guide', href: '/trading-tools-access/trading-signals-risk-guide' },
                         { label: 'Trading Signals App', href: '/trading-tools-access/trading-signals-app' },
-                        { label: 'Real-Time Trading Alerts', href: '/trading-tools-access/real-time-alerts' },
+                        { label: 'Real-Time Trading Alerts', href: '/trading-tools-access/real-time-trading-alerts' },
                     ]
                 }
             ]
         },
         { label: 'About', href: '/about' },
-        { label: 'How It Works', href: '/#how-it-works' },
+        { label: 'How It Works', href: '/how-it-works' },
         { label: 'Pricing', href: '/pricing' },
         { label: 'FAQ', href: '/faq' },
         { label: 'Contact', href: '/contact' },

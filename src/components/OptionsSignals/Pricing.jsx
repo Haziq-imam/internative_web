@@ -88,15 +88,15 @@ const Pricing = () => {
                         <div className="space-y-4">
                             <div className="flex justify-between items-center text-sm p-4 bg-white/5 rounded-2xl">
                                 <span className="text-text-secondary">One 100% winner pays for</span>
-                                <span className="text-primary font-black">1.7 months</span>
+                                <span className="text-primary font-black">1.7 months of Deluxe</span>
                             </div>
                             <div className="flex justify-between items-center text-sm p-4 bg-white/5 rounded-2xl">
                                 <span className="text-text-secondary">One 200% winner pays for</span>
-                                <span className="text-primary font-black">4 months</span>
+                                <span className="text-primary font-black">4 months of Deluxe</span>
                             </div>
                             <div className="flex justify-between items-center text-sm p-4 bg-primary/10 border border-primary/20 rounded-2xl">
-                                <span className="text-white font-bold">NVDA 347% Winner pays for</span>
-                                <span className="text-primary font-black">7 months</span>
+                                <span className="text-white font-bold">One 347% winner (like NVDA) pays for</span>
+                                <span className="text-primary font-black">7 months of Deluxe</span>
                             </div>
                         </div>
                     </GlassCard>

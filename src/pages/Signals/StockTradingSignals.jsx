@@ -6,12 +6,14 @@ import Hero from '../../components/StockSignals/Hero';
 import PainPoints from '../../components/StockSignals/PainPoints';
 import SignalBreakdown from '../../components/StockSignals/SignalBreakdown';
 import SignalTypes from '../../components/StockSignals/SignalTypes';
-import ComparisonTable from '../../components/StockSignals/ComparisonTable';
-import FeaturesGrid from '../../components/StockSignals/FeaturesGrid';
+import MarketsAndSectors from '../../components/StockSignals/MarketsAndSectors';
+import HowItWorks from '../../components/StockSignals/HowItWorks';
+import WhyOurSignalsWin from '../../components/StockSignals/WhyOurSignalsWin';
 import PerformanceStats from '../../components/StockSignals/PerformanceStats';
 import AnalystTeam from '../../components/StockSignals/AnalystTeam';
 import Pricing from '../../components/StockSignals/Pricing';
 import FAQ from '../../components/StockSignals/FAQ';
+import RiskDisclosure from '../../components/StockSignals/RiskDisclosure';
 import FinalCTA from '../../components/StockSignals/FinalCTA';
 
 const StockSignals = () => {
@@ -26,12 +28,14 @@ const StockSignals = () => {
             <PainPoints />
             <SignalBreakdown />
             <SignalTypes />
-            <ComparisonTable />
-            <FeaturesGrid />
+            <MarketsAndSectors />
+            <HowItWorks />
+            <WhyOurSignalsWin />
             <PerformanceStats />
             <AnalystTeam />
             <Pricing />
             <FAQ />
+            <RiskDisclosure />
             <FinalCTA />
         </div>
     );

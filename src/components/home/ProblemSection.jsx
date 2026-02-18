@@ -10,13 +10,13 @@ const ProblemSection = () => {
         },
         {
             icon: TrendingDown,
-            title: "Paying Professional Prices?",
-            description: "Premium signal services charge $200-$400/month but deliver generic alerts you could get for a fraction of the cost."
+            title: "Paying $200-$400/Month for Signals?",
+            description: "Premium signal services charge professional prices but deliver the same alerts you could get for a fraction of the cost."
         },
         {
             icon: Layers,
-            title: "Juggling Multiple Apps?",
-            description: "One app for options, another for stocks, a third for crypto. Managing your portfolio shouldn't require constant switching."
+            title: "Switching Between Multiple Apps?",
+            description: "One app for options, another for stocks, a third for crypto. Managing your portfolio shouldn't require juggling platforms."
         }
     ];
 
@@ -26,7 +26,7 @@ const ProblemSection = () => {
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-6">
                         Trading Doesn't Have to Be <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-red to-primary-light">Complicated or Expensive</span>
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-red to-primary-light">Complicated. Or Expensive.</span>
                     </h2>
                     <p className="text-lg text-text-secondary">
                         Most traders fail because of information overload and execution delays. We solve that.

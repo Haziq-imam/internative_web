@@ -27,7 +27,7 @@ const Header = () => {
             columns: [
                 {
                     title: 'Stock Trading Signals',
-                    href: '/signals/stock-trading-signals',
+                    href: '/products/stock-signals',
                     items: [
                         { label: 'Day Trading Stocks', href: '/signals/day-trading-stocks', desc: 'Intraday volatility' },
                         { label: 'Momentum Stock Signals', href: '/signals/momentum-stock-signals', desc: 'High-velocity moves' },
@@ -38,11 +38,13 @@ const Header = () => {
                 },
                 {
                     title: 'Swing Trading Signals',
-                    href: '/signals/swing-trading-signals',
-                    items: [],
+                    href: '/products/swing-trading-signals',
+                    items: [
+                        { label: 'Crypto Trading Signals', href: '/signals/crypto-trading-signals', desc: 'Bitcoin & Altcoin swings' }
+                    ],
                     secondarySection: {
                         title: 'Options Trading Signals',
-                        href: '/signals/options-trading-signals',
+                        href: '/signals/options-signals',
                         items: []
                     }
                 },
@@ -71,11 +73,11 @@ const Header = () => {
                     title: 'Trading Tools & Access',
                     href: '/trading-tools-access',
                     items: [
-                        { label: 'Trading Signals For Beginners', href: '/trading-tools-access/beginners', desc: 'Getting started' },
-                        { label: 'Advanced Options Trading', href: '/trading-tools-access/advanced-options', desc: 'Expert techniques' },
-                        { label: 'Trading Signals Risk Guide', href: '/trading-tools-access/risk-guide', desc: 'Capital protection' },
+                        { label: 'Trading Signals For Beginners', href: '/trading-tools-access/trading-signals-for-beginners', desc: 'Getting started' },
+                        { label: 'Advanced Options Trading', href: '/trading-tools-access/advanced-options-trading', desc: 'Expert techniques' },
+                        { label: 'Trading Signals Risk Guide', href: '/trading-tools-access/trading-signals-risk-guide', desc: 'Capital protection' },
                         { label: 'Trading Signals App', href: '/trading-tools-access/trading-signals-app', desc: 'Portable alerts' },
-                        { label: 'Real-Time Trading Alerts', href: '/trading-tools-access/real-time-alerts', desc: 'Instant delivery' },
+                        { label: 'Real-Time Trading Alerts', href: '/trading-tools-access/real-time-trading-alerts', desc: 'Instant delivery' },
                     ]
                 }
             ]

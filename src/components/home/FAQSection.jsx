@@ -27,7 +27,7 @@ const FAQSection = () => {
         },
         {
             question: "Is there a free trial?",
-            answer: "Yes! We offer a 7-day free trial with full access to all signals. No credit card required to start."
+            answer: "Yes! We offer a 7-day free trial on our monthly plan. You get full access to all signals. No commitment required."
         }
     ];
 

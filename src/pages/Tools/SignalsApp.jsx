@@ -2,16 +2,16 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
 // Extracted Components
-import Hero from '../../../components/SignalsApp/Hero';
-import AppOverview from '../../../components/SignalsApp/AppOverview';
-import EssentialFeatures from '../../../components/SignalsApp/EssentialFeatures';
-import ScamRedFlags from '../../../components/SignalsApp/ScamRedFlags';
-import EvaluationGuide from '../../../components/SignalsApp/EvaluationGuide';
-import UserProfiles from '../../../components/SignalsApp/UserProfiles';
-import AppFAQ from '../../../components/SignalsApp/AppFAQ';
-import AppSummary from '../../../components/SignalsApp/AppSummary';
-import KeyTakeaways from '../../../components/SignalsApp/KeyTakeaways';
-import RiskDisclosure from '../../../components/SignalsApp/RiskDisclosure';
+import Hero from '../../components/SignalsApp/Hero';
+import AppOverview from '../../components/SignalsApp/AppOverview';
+import EssentialFeatures from '../../components/SignalsApp/EssentialFeatures';
+import ScamRedFlags from '../../components/SignalsApp/ScamRedFlags';
+import EvaluationGuide from '../../components/SignalsApp/EvaluationGuide';
+import UserProfiles from '../../components/SignalsApp/UserProfiles';
+import AppFAQ from '../../components/SignalsApp/AppFAQ';
+import AppSummary from '../../components/SignalsApp/AppSummary';
+import KeyTakeaways from '../../components/SignalsApp/KeyTakeaways';
+import RiskDisclosure from '../../components/SignalsApp/RiskDisclosure';
 
 const TradingSignalsApp = () => {
     return (

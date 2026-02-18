@@ -1,30 +1,21 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import Section from '../../../components/ui/Section';
-import GradientText from '../../../components/ui/GradientText';
+import Hero from '../../components/FreeVsPaid/Hero';
+import Comparison from '../../components/FreeVsPaid/Comparison';
+import FAQ from '../../components/FreeVsPaid/FAQ';
 
-const FreeVsPaidTradingSignals = () => {
+const FreeVsPaid = () => {
     return (
-        <div className="min-h-screen bg-[#030014] text-white pt-32">
+        <div className="min-h-screen bg-background text-white">
             <Helmet>
-                <title>Free vs Paid Signals | InterNative Traders</title>
+                <title>Free vs Paid Trading Signals: Is It Worth Paying? | InterNative Traders</title>
+                <meta name="description" content="Compare free vs paid trading signals. Learn the real differences in quality, speed, support, and ROI. Is paying for signals worth it?" />
             </Helmet>
-            <Section>
-                <div className="container mx-auto px-4 text-center">
-                    <h1 className="text-5xl md:text-7xl font-black mb-8 leading-tight">
-                        Free vs Paid Signals <br />
-                        <GradientText>Coming Soon</GradientText>
-                    </h1>
-                    <p className="text-xl text-text-secondary max-w-2xl mx-auto mb-12">
-                        We are currently preparing full documentation and expert insights for this value analysis. Stay tuned for institutional-grade trading content.
-                    </p>
-                    <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/5 border border-white/10 text-primary font-bold uppercase tracking-widest animate-pulse">
-                        Analyzing Market Data...
-                    </div>
-                </div>
-            </Section>
+            <Hero />
+            <Comparison />
+            <FAQ />
         </div>
     );
 };
 
-export default FreeVsPaidTradingSignals;
+export default FreeVsPaid;

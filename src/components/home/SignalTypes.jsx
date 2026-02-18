@@ -22,7 +22,7 @@ const SignalTypes = () => {
                 "82% historical win rate"
             ],
             cta: "View Options Signals",
-            link: "/signals/options-trading-signals",
+            link: "/signals/options-signals",
             color: "from-primary to-secondary",
             badge: "High Leverage"
         },
@@ -36,7 +36,7 @@ const SignalTypes = () => {
                 "81% success rate on stock alerts"
             ],
             cta: "View Stock Signals",
-            link: "/signals/stock-trading-signals",
+            link: "/products/stock-signals",
             color: "from-violet-500 to-fuchsia-600",
             badge: "Consistent Gains"
         },
@@ -47,10 +47,10 @@ const SignalTypes = () => {
                 "3-21 Day average hold time",
                 "79% win rate on swing positions",
                 "Perfect for part-time traders",
-                "Multi-asset: Stocks, Options, Crypto"
+                "Multi-asset coverage"
             ],
             cta: "View Swing Trading Signals",
-            link: "/signals/swing-trading-signals",
+            link: "/products/swing-trading-signals",
             color: "from-emerald-500 to-teal-600",
             badge: "Time Efficient"
         }

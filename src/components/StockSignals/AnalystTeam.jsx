@@ -14,25 +14,25 @@ const AnalystTeam = () => {
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {[
                         {
-                            name: "Sarah J. - Lead Equity Analyst",
-                            exp: "15 Years Experience",
-                            focus: "Tech & Disruptive Growth",
-                            track: "92% Accuracy on Sector Rotation",
-                            quote: "I focus on the intersection of technical breakouts and fundamental shifts. That's where the real wealth is made."
+                            name: "Jennifer L. - Chief Stock Strategist",
+                            exp: "18 Years Wall Street Experience",
+                            focus: "Growth Stocks & Earnings",
+                            track: "83% Win Rate (Swing Trades)",
+                            quote: "I look for the perfect storm: accelerating earnings, technical breakouts, and institutional accumulation."
                         },
                         {
-                            name: "Michael R. - Momentum Specialist",
-                            exp: "12 Years Experience",
-                            focus: "Small Cap Breakouts & Gaps",
-                            track: "$4.2M+ Personal Trading Profit",
-                            quote: "Market psychology is my edge. I find where the most emotion is trapped and trade the release of that energy."
+                            name: "Robert M. - Technical Analysis Lead",
+                            exp: "14 Years Professional Trading",
+                            focus: "Momentum & Chart Patterns",
+                            track: "Identified 31/37 Sector Rotations",
+                            quote: "Price pays. I ignore the noise and focus entirely on volume, momentum, and key structural levels."
                         },
                         {
-                            name: "David T. - Value & Dividend Strategist",
-                            exp: "20 Years Experience",
-                            focus: "Large Cap Compounders",
-                            track: "8.4% Avg Monthly Return (Portfolios)",
-                            quote: "Wealth is built through consistency. I find high-conviction dividend growth plays with technical support."
+                            name: "Amanda K. - Fundamental Research",
+                            exp: "12 Years Investment Analysis",
+                            focus: "Catalysts & Valuation",
+                            track: "76% Accuracy on Earnings",
+                            quote: "Great companies eventually make great stocks. My job is to find them before the rest of the market does."
                         }
                     ].map((member, i) => (
                         <GlassCard key={i} className="p-8 h-full flex flex-col items-center text-center hoverEffect">

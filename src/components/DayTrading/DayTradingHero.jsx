@@ -50,7 +50,7 @@ const DayTradingHero = () => {
                                     Start Day Trading
                                 </Button>
                             </Link>
-                            <Link to="/trading-tools-access/beginners">
+                            <Link to="/trading-tools-access/trading-signals-for-beginners">
                                 <Button size="lg" variant="outline">
                                     View Requirements
                                 </Button>

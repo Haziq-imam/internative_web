@@ -18,31 +18,34 @@ const SignalTypes = () => {
                 <div className="grid lg:grid-cols-3 gap-8">
                     {[
                         {
-                            title: "Swing Trade Alerts",
+                            title: "Swing Trade Signals",
                             icon: Activity,
-                            desc: "Multi-day positions holding for 3-14 days. Designed to capture 10-25% moves in high-momentum stocks.",
-                            rating: "84% Win Rate",
-                            features: ["Low monitoring required", "Perfect for small accounts", "NYSE & NASDAQ focuses"],
+                            desc: "Multi-day positions held for 3-30 days to capture intermediate trends. Lower stress than day trading, higher returns than buy-and-hold.",
+                            rating: "79% Win Rate",
+                            features: ["Traders with full-time jobs", "Building wealth gradually", "Anyone under $25k account"],
                             color: "text-primary",
-                            link: "/signals/swing-trading-stocks"
+                            link: "/signals/swing-trading-stocks",
+                            stats: { win: "79%", avg: "+18.3%" }
                         },
                         {
-                            title: "Day Trade Scalps",
+                            title: "Day Trade Signals",
                             icon: Zap,
-                            desc: "In-and-out trades held for minutes to hours. High frequency alerts for active traders during market hours.",
-                            rating: "76% Win Rate",
-                            features: ["High frequency alerts", "Precise entry/exit windows", "Momentum & Gap focus"],
+                            desc: "Intraday momentum & breakout plays. Positions opened and closed within the same trading day.",
+                            rating: "68% Win Rate",
+                            features: ["Active market hours traders", "PDT status ($25k+ account)", "Quick 2-8% intraday moves"],
                             color: "text-secondary",
-                            link: "/signals/day-trading-stocks"
+                            link: "/signals/day-trading-stocks",
+                            stats: { win: "68%", avg: "+4.9%" }
                         },
                         {
-                            title: "Momentum Signals",
+                            title: "Growth Stock Signals",
                             icon: TrendingUp,
-                            desc: "High-velocity breakout trades focusing on massive winners in emerging sectors and news catalysts.",
-                            rating: "312% Avg Annual Return",
-                            features: ["Trend following strategy", "Focus on 10X potential", "Breakout & Gap setups"],
+                            desc: "High-growth companies for longer-term gains. Held for weeks to months to capture major trend moves.",
+                            rating: "71% Win Rate",
+                            features: ["Investors seeking larger size", "Comfortable with 4-12 week holds", "Targeting 30-100%+ returns"],
                             color: "text-success",
-                            link: "/signals/momentum-stock-signals"
+                            link: "/signals/growth-stock-signals",
+                            stats: { win: "71%", avg: "+34.6%" }
                         }
                     ].map((tier, i) => (
                         <GlassCard key={i} className="p-8 flex flex-col items-center text-center hoverEffect group">

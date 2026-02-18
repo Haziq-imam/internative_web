@@ -10,6 +10,7 @@ import ComparisonTable from '../../components/SwingSignals/ComparisonTable';
 import HowItWorks from '../../components/SwingSignals/HowItWorks';
 import PerformanceDashboard from '../../components/SwingSignals/PerformanceDashboard';
 import AnalystProfiles from '../../components/SwingSignals/AnalystProfiles';
+import SocialProof from '../../components/SwingSignals/SocialProof';
 import Pricing from '../../components/SwingSignals/Pricing';
 import FAQ from '../../components/SwingSignals/FAQ';
 import RiskDisclosure from '../../components/SwingSignals/RiskDisclosure';
@@ -57,6 +58,7 @@ const SwingSignals = () => {
       <HowItWorks />
       <PerformanceDashboard />
       <AnalystProfiles />
+      <SocialProof />
       <Pricing />
       <FAQ />
       <RiskDisclosure />

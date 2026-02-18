@@ -16,7 +16,7 @@ const SolutionSection = () => {
         {
             icon: TrendingUp,
             title: "Expert Analysis",
-            description: "Signals crafted by professional traders, not bots.",
+            description: "Signals crafted by professional traders",
             points: [
                 "Technical and fundamental analysis combined",
                 "Clear reasoning behind every trade",
@@ -26,7 +26,7 @@ const SolutionSection = () => {
         {
             icon: Wallet,
             title: "Multi-Asset Coverage",
-            description: "Options, stocks, and crypto on one platform.",
+            description: "Options, stocks, crypto one platform",
             points: [
                 "Lotto signals for high-risk, high-reward plays",
                 "Swing trading signals for medium-term holds",
@@ -50,7 +50,7 @@ const SolutionSection = () => {
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent-gold">Maximum Profit Potential.</span>
                     </h2>
                     <p className="text-lg text-text-secondary">
-                        InterNative Traders delivers professional-grade trading signals across options, stocks, and crypto all in one mobile-first platform.
+                        InterNative Traders delivers professional-grade trading signals across options, stocks, and crypto all in one mobile-first platform. Get the insights you need, when you need them, without the professional price tag.
                     </p>
                 </div>
 

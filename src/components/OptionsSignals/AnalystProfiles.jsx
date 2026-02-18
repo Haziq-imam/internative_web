@@ -9,24 +9,24 @@ const AnalystProfiles = () => {
             name: "David M.",
             role: "Lead Options Strategist",
             exp: "15 Years Experience",
-            bio: "Former institutional options trader at major Wall Street firm. Specialized in volatility arbitrage and gamma scalping.",
-            expertise: ["Complex Strategies", "Volatility Analysis", "Index Specialist"],
+            bio: "Former institutional options trader at major Wall Street firm. Specialized in volatility arbitrage and gamma scalping strategies.",
+            expertise: ["Complex options strategies", "Volatility surface analysis", "Risk management protocols", "Index options specialist"],
             stats: "78% Career Win Rate"
         },
         {
             name: "Sarah K.",
             role: "Technical Analysis Expert",
             exp: "12 Years Experience",
-            bio: "Technical analyst focusing on breakout identification. CMT (Chartered Market Technician) certified.",
-            expertise: ["Chart Patterns", "Volume Profile", "Momentum Strategy"],
-            stats: "Identified 23/28 Index Moves in '25"
+            bio: "Technical analyst focusing on chart patterns, momentum strategies, and breakout identification. CMT (Chartered Market Technician) certified.",
+            expertise: ["Multi-timeframe analysis", "Support/resistance identification", "Volume profile analysis", "Momentum indicators"],
+            stats: "Identified 23 of 28 Index Moves"
         },
         {
             name: "Michael R.",
             role: "Options Flow Specialist",
             exp: "10 Years Experience",
-            bio: "Previously traded proprietary desk focusing on unusual activity and dark pool flow. Brings institutional insights.",
-            expertise: ["Flow Interpretation", "Dark Pool Activity", "Smart Money Tracking"],
+            bio: "Previously traded proprietary desk focusing on unusual options activity and dark pool flow. Now brings institutional insights to retail traders.",
+            expertise: ["Options flow interpretation", "Dark pool activity tracking", "Smart money following", "Institutional order detection"],
             stats: "85% Accuracy on Flow Signals"
         }
     ];

@@ -21,7 +21,12 @@ const PerformanceDashboard = () => {
         { t: "SPY $467 Put (3DTE)", r: "+224%", d: "2 days" },
         { t: "TSLA $425 Call (2DTE)", r: "+198%", d: "6 hours" },
         { t: "QQQ $410 Call (7DTE)", r: "+167%", d: "3 days" },
-        { t: "AAPL $190 Call (14DTE)", r: "+142%", d: "5 days" }
+        { t: "AAPL $190 Call (14DTE)", r: "+142%", d: "5 days" },
+        { t: "AMD $145 Put (5DTE)", r: "+129%", d: "2 days" },
+        { t: "META $390 Call (21DTE)", r: "+118%", d: "9 days" },
+        { t: "MSFT $380 Call (10DTE)", r: "+107%", d: "4 days" },
+        { t: "IWM $217 Put (7DTE)", r: "+94%", d: "3 days" },
+        { t: "GOOGL $145 Call (28DTE)", r: "+87%", d: "11 days" }
     ];
 
     return (
