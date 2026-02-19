@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import Section from '../../../components/ui/Section';
 import { ShieldCheck, Target, TrendingDown, Shield, AlertCircle, Bookmark } from 'lucide-react';
@@ -8,7 +8,6 @@ import OptionsCTA from '../../../components/OptionsSecondary/OptionsCTA';
 import RiskOptimizerVisual from '../../../components/OptionsSecondary/visuals/RiskOptimizerVisual';
 
 const OptionsRiskManagement = () => {
-    const [openFaq, setOpenFaq] = useState(0);
 
     const faqs = [
         {
@@ -158,8 +157,6 @@ const OptionsRiskManagement = () => {
 
             <OptionsFAQ
                 faqs={faqs}
-                openFaq={openFaq}
-                setOpenFaq={setOpenFaq}
             />
 
             {/* Checklist Section */}

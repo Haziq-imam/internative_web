@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Plus, Minus } from 'lucide-react';
 import Section from '../ui/Section';
 
-const OptionsFAQ = ({ title = "FREQUENTLY ASKED QUESTIONS", faqs, openFaq, setOpenFaq }) => {
+const OptionsFAQ = ({ title = "FREQUENTLY ASKED QUESTIONS", faqs }) => {
+    const [openFaq, setOpenFaq] = useState(0);
+
     return (
         <Section className="py-24">
             <div className="container mx-auto px-4 max-w-3xl">

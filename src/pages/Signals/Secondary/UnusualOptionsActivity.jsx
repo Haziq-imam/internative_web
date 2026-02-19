@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import Section from '../../../components/ui/Section';
 import { Search, AlertTriangle, TrendingUp, BarChart, ArrowRight, Eye, Target, Activity } from 'lucide-react';
@@ -8,7 +8,6 @@ import OptionsCTA from '../../../components/OptionsSecondary/OptionsCTA';
 import RadarVisual from '../../../components/OptionsSecondary/visuals/RadarVisual';
 
 const UnusualOptionsActivity = () => {
-    const [openFaq, setOpenFaq] = useState(0);
 
     const faqs = [
         {
@@ -131,8 +130,6 @@ const UnusualOptionsActivity = () => {
 
             <OptionsFAQ
                 faqs={faqs}
-                openFaq={openFaq}
-                setOpenFaq={setOpenFaq}
             />
 
             {/* Warnings/Risk Section */}

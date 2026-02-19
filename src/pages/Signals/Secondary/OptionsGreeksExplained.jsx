@@ -1,14 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import Section from '../../../components/ui/Section';
-import { Calculator, Timer, Zap, BarChart, ArrowRight, Info } from 'lucide-react';
+import { Calculator, Timer, Zap, BarChart, Info } from 'lucide-react';
 import OptionsHero from '../../../components/OptionsSecondary/OptionsHero';
 import OptionsFAQ from '../../../components/OptionsSecondary/OptionsFAQ';
 import OptionsCTA from '../../../components/OptionsSecondary/OptionsCTA';
 import ProbabilityMatrixVisual from '../../../components/OptionsSecondary/visuals/ProbabilityMatrixVisual';
 
 const OptionsGreeksExplained = () => {
-    const [openFaq, setOpenFaq] = useState(0);
 
     const faqs = [
         {
@@ -170,8 +169,6 @@ const OptionsGreeksExplained = () => {
 
             <OptionsFAQ
                 faqs={faqs}
-                openFaq={openFaq}
-                setOpenFaq={setOpenFaq}
             />
 
             <OptionsCTA

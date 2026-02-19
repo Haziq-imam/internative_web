@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import Section from '../../../components/ui/Section';
 import { TrendingUp, Clock, Target, Shield, ArrowRight } from 'lucide-react';
@@ -8,7 +8,6 @@ import OptionsCTA from '../../../components/OptionsSecondary/OptionsCTA';
 import SwingLogicVisual from '../../../components/OptionsSecondary/visuals/SwingLogicVisual';
 
 const OptionsSwingTrading = () => {
-    const [openFaq, setOpenFaq] = useState(0);
 
     const faqs = [
         {
@@ -131,8 +130,6 @@ const OptionsSwingTrading = () => {
 
             <OptionsFAQ
                 faqs={faqs}
-                openFaq={openFaq}
-                setOpenFaq={setOpenFaq}
             />
 
             <OptionsCTA

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import Section from '../../../components/ui/Section';
 import { Waves, Activity, Zap, ArrowRight, BarChart3, Lock } from 'lucide-react';
@@ -8,7 +8,6 @@ import OptionsCTA from '../../../components/OptionsSecondary/OptionsCTA';
 import FlowFeedVisual from '../../../components/OptionsSecondary/visuals/FlowFeedVisual';
 
 const OptionsFlowSignals = () => {
-    const [openFaq, setOpenFaq] = useState(0);
 
     const faqs = [
         {
@@ -134,8 +133,6 @@ const OptionsFlowSignals = () => {
 
             <OptionsFAQ
                 faqs={faqs}
-                openFaq={openFaq}
-                setOpenFaq={setOpenFaq}
             />
 
             <OptionsCTA

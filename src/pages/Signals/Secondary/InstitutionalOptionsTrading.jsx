@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import Section from '../../../components/ui/Section';
 import { Building2, Landmark, BarChart3, ArrowRight } from 'lucide-react';
@@ -8,7 +8,6 @@ import OptionsCTA from '../../../components/OptionsSecondary/OptionsCTA';
 import WhaleWatchVisual from '../../../components/OptionsSecondary/visuals/WhaleWatchVisual';
 
 const InstitutionalOptionsTrading = () => {
-    const [openFaq, setOpenFaq] = useState(0);
 
     const faqs = [
         {
@@ -134,8 +133,6 @@ const InstitutionalOptionsTrading = () => {
 
             <OptionsFAQ
                 faqs={faqs}
-                openFaq={openFaq}
-                setOpenFaq={setOpenFaq}
             />
 
             <OptionsCTA

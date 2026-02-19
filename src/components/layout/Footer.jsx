@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Twitter, Instagram, Facebook, Linkedin, Mail, MessageCircle } from 'lucide-react';
+import { Twitter, Instagram, Facebook, Linkedin, Mail } from 'lucide-react';
 import Logo from '../../assets/internative logo.svg';
 
 const Footer = () => {

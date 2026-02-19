@@ -2,8 +2,10 @@ import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronRight, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { cn } from '../../lib/utils';
 import Button from '../ui/Button';
 import Logo from '../../assets/internative logo.svg';
+import { navigationLinks } from '../../data/navigation';
 
 const MobileMenu = ({ isOpen, onClose }) => {
     const [openSubmenu, setOpenSubmenu] = React.useState(null);
@@ -12,77 +14,6 @@ const MobileMenu = ({ isOpen, onClose }) => {
         setOpenSubmenu(openSubmenu === index ? null : index);
     };
 
-    const menuItems = [
-        {
-            label: 'Signals',
-            href: '#',
-            megaMenu: true,
-            columns: [
-                {
-                    title: 'Stock Trading Signals',
-                    href: '/products/stock-signals',
-                    items: [
-                        { label: 'Day Trading Stocks', href: '/signals/day-trading-stocks' },
-                        { label: 'Momentum Stock Signals', href: '/signals/momentum-stock-signals' },
-                        { label: 'Swing Trading Stocks', href: '/signals/swing-trading-stocks' },
-                        { label: 'Earnings Trading Strategy', href: '/signals/earnings-trading-strategy' },
-                        { label: 'Gap Up / Gap Down Stocks', href: '/signals/gap-up-gap-down-stocks' },
-                    ]
-                },
-                {
-                    title: 'Swing Trading Signals',
-                    href: '/products/swing-trading-signals',
-                    items: []
-                },
-                {
-                    title: 'Options Trading Signals',
-                    href: '/signals/options-signals',
-                    items: []
-                },
-                {
-                    title: 'Trading Education',
-                    href: '/trading-education',
-                    items: [
-                        { label: 'View All Education', href: '/trading-education' },
-                        { label: 'What Are Trading Signals', href: '/trading-education/what-are-trading-signals' },
-                        { label: 'How Options Trading Works', href: '/trading-education/how-options-trading-works' },
-                        { label: 'What Is Lotto Options', href: '/trading-education/what-is-lotto-options' },
-                        { label: '0DTE Options Explained', href: '/trading-education/0dte-options-explained' },
-                        { label: 'How To Use Trading Signals', href: '/trading-education/how-to-use-trading-signals' },
-                    ]
-                },
-                {
-                    title: 'Compare Trading Signals',
-                    href: '/compare-trading-signals',
-                    items: [
-                        { label: 'View Comparison', href: '/compare-trading-signals' },
-                        { label: 'Best Options Trading Signals', href: '/compare-trading-signals/best-options-trading-signals' },
-                        { label: 'Best Trading Signals Platform', href: '/compare-trading-signals/best-trading-signals-platform' },
-                        { label: 'Options Trading Signals vs Copy Trading', href: '/compare-trading-signals/options-trading-signals-vs-copy-trading' },
-                        { label: 'Free vs Paid Trading Signals', href: '/compare-trading-signals/free-vs-paid-trading-signals' },
-                    ]
-                },
-                {
-                    title: 'Trading Tools & Access',
-                    href: '/trading-tools-access',
-                    items: [
-                        { label: 'View All Tools', href: '/trading-tools-access' },
-                        { label: 'Trading Signals For Beginners', href: '/trading-tools-access/trading-signals-for-beginners' },
-                        { label: 'Advanced Options Trading', href: '/trading-tools-access/advanced-options-trading' },
-                        { label: 'Trading Signals Risk Guide', href: '/trading-tools-access/trading-signals-risk-guide' },
-                        { label: 'Trading Signals App', href: '/trading-tools-access/trading-signals-app' },
-                        { label: 'Real-Time Trading Alerts', href: '/trading-tools-access/real-time-trading-alerts' },
-                    ]
-                }
-            ]
-        },
-        { label: 'About', href: '/about' },
-        { label: 'How It Works', href: '/how-it-works' },
-        { label: 'Pricing', href: '/pricing' },
-        { label: 'FAQ', href: '/faq' },
-        { label: 'Contact', href: '/contact' },
-        { label: 'Risk Disclosure', href: '/risk-disclosure' },
-    ];
 
     return (
         <AnimatePresence>
@@ -125,16 +56,22 @@ const MobileMenu = ({ isOpen, onClose }) => {
 
                             <div className="flex-1 overflow-y-auto relative z-10 custom-scrollbar">
                                 <nav className="flex flex-col space-y-1 px-4 py-6">
-                                    {menuItems.map((item, index) => (
+                                    {navigationLinks.map((item, index) => (
                                         <div key={item.label}>
                                             {item.megaMenu ? (
                                                 <div className="rounded-xl overflow-hidden border border-transparent transition-all duration-300">
                                                     <button
                                                         onClick={() => toggleSubmenu(index)}
-                                                        className={`w-full flex items-center justify-between px-4 py-4 text-base font-bold text-text-secondary hover:text-white hover:bg-white/5 transition-all rounded-xl ${openSubmenu === index ? 'bg-primary/10 text-primary' : ''}`}
+                                                        className={cn(
+                                                            "w-full flex items-center justify-between px-4 py-4 text-base font-bold text-text-secondary hover:text-white hover:bg-white/5 transition-all rounded-xl",
+                                                            openSubmenu === index && "bg-primary/10 text-primary"
+                                                        )}
                                                     >
                                                         {item.label}
-                                                        <ChevronDown className={`h-4 w-4 text-text-muted transition-transform duration-300 ${openSubmenu === index ? 'rotate-180 text-primary' : ''}`} />
+                                                        <ChevronDown className={cn(
+                                                            "h-4 w-4 text-text-muted transition-transform duration-300",
+                                                            openSubmenu === index && "rotate-180 text-primary"
+                                                        )} />
                                                     </button>
 
                                                     <AnimatePresence>
