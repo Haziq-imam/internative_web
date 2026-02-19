@@ -2,18 +2,20 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Layout from './components/layout/Layout';
 
-// Core Pages
-import Home from './pages/Home';
-import About from './pages/About';
-import PricingPage from './pages/Pricing';
-import Contact from './pages/Contact';
-import FAQ from './pages/FAQ';
-import RiskDisclosure from './pages/RiskDisclosure';
-import HowItWorksPage from './pages/HowItWorks';
-import TermsOfService from './pages/TermsOfService';
-import PrivacyPolicy from './pages/PrivacyPolicy';
-import RefundPolicy from './pages/RefundPolicy';
-import PerformancePage from './pages/Performance';
+// Core Pages (Main)
+import Home from './pages/Main/Home';
+import About from './pages/Main/About';
+import PricingPage from './pages/Main/Pricing';
+import Contact from './pages/Main/Contact';
+import FAQ from './pages/Main/FAQ';
+import HowItWorksPage from './pages/Main/HowItWorks';
+import PerformancePage from './pages/Main/Performance';
+
+// Legal Pages
+import RiskDisclosure from './pages/Legal/RiskDisclosure';
+import TermsOfService from './pages/Legal/TermsOfService';
+import PrivacyPolicy from './pages/Legal/PrivacyPolicy';
+import RefundPolicy from './pages/Legal/RefundPolicy';
 
 // Signals - Main Categories
 import OptionsTradingSignals from './pages/Signals/OptionsTradingSignals';
@@ -23,48 +25,43 @@ import SwingTradingSignals from './pages/Signals/SwingTradingSignals';
 import DayTradingSignals from './pages/Signals/DayTradingSignals';
 import FuturesTradingSignals from './pages/Signals/FuturesTradingSignals';
 
-// Signals - Stock Sub-pages
-import DayTradingStocks from './pages/Signals/StockTradingSignals/DayTradingStocks';
-import MomentumStockSignals from './pages/Signals/StockTradingSignals/MomentumStockSignals';
-import SwingTradingStocks from './pages/Signals/StockTradingSignals/SwingTradingStocks';
-import EarningsTradingStrategy from './pages/Signals/StockTradingSignals/EarningsTradingStrategy';
-import GapUpGapDownStocks from './pages/Signals/StockTradingSignals/GapUpGapDownStocks';
+// Signals - Stock Sub-pages (Secondary)
+import DayTradingStocks from './pages/Signals/Secondary/DayTradingStocks';
+import MomentumStockSignals from './pages/Signals/Secondary/MomentumStockSignals';
+import SwingTradingStocks from './pages/Signals/Secondary/SwingTradingStocks';
+import EarningsTradingStrategy from './pages/Signals/Secondary/EarningsTradingStrategy';
+import GapUpGapDownStocks from './pages/Signals/Secondary/GapUpGapDownStocks';
 
-// Signals - Options Sub-pages (Guides)
-import OptionsSwingTrading from './pages/Signals/OptionsSwingTrading';
-import OptionsFlowSignals from './pages/Signals/OptionsFlowSignals';
-import UnusualOptionsActivity from './pages/Signals/UnusualOptionsActivity';
-import OptionsGreeksExplained from './pages/Signals/OptionsGreeksExplained';
-import OptionsRiskManagement from './pages/Signals/OptionsRiskManagement';
-import InstitutionalOptionsTrading from './pages/Signals/InstitutionalOptionsTrading';
+// Signals - Options Sub-pages (Secondary)
+import OptionsSwingTrading from './pages/Signals/Secondary/OptionsSwingTrading';
+import OptionsFlowSignals from './pages/Signals/Secondary/OptionsFlowSignals';
+import UnusualOptionsActivity from './pages/Signals/Secondary/UnusualOptionsActivity';
+import OptionsGreeksExplained from './pages/Signals/Secondary/OptionsGreeksExplained';
+import OptionsRiskManagement from './pages/Signals/Secondary/OptionsRiskManagement';
+import InstitutionalOptionsTrading from './pages/Signals/Secondary/InstitutionalOptionsTrading';
 
 // Education Pages
 import EducationHub from './pages/Education/EducationHub';
-import WhatAreTradingSignals from './pages/Education/WhatAreTradingSignals';
-import HowOptionsTradingWorks from './pages/Education/HowOptionsTradingWorks';
-import WhatIsLottoOptions from './pages/Education/WhatIsLottoOptions';
-import ZeroDTEOptionsExplained from './pages/Education/ZeroDTEOptionsExplained';
-import HowToUseSignals from './pages/Education/HowToUseTradingSignals';
-import HowStockTradingWorks from './pages/Education/HowStockTradingWorks';
-import IntroductionToOptions from './pages/Education/IntroductionToOptions';
-import CryptoTradingBasics from './pages/Education/CryptoTradingBasics';
-import Futures101 from './pages/Education/Futures101';
-import ReadingChartsPatterns from './pages/Education/ReadingChartsPatterns';
+import WhatAreTradingSignals from './pages/Education/Secondary/WhatAreTradingSignals';
+import HowOptionsTradingWorks from './pages/Education/Secondary/HowOptionsTradingWorks';
+import WhatIsLottoOptions from './pages/Education/Secondary/WhatIsLottoOptions';
+import ZeroDTEOptionsExplained from './pages/Education/Secondary/ZeroDTEOptionsExplained';
+import HowToUseSignals from './pages/Education/Secondary/HowToUseTradingSignals';
 
 // Compare Pages
 import CompareHub from './pages/Compare/CompareHub';
-import BestOptionsSignals from './pages/Compare/BestOptionsSignals';
-import BestPlatform from './pages/Compare/BestPlatform';
-import OptionsVsCopy from './pages/Compare/OptionsVsCopy';
-import FreeVsPaid from './pages/Compare/FreeVsPaid';
+import BestOptionsSignals from './pages/Compare/Secondary/BestOptionsSignals';
+import BestPlatform from './pages/Compare/Secondary/BestPlatform';
+import OptionsVsCopy from './pages/Compare/Secondary/OptionsVsCopy';
+import FreeVsPaid from './pages/Compare/Secondary/FreeVsPaid';
 
 // Tools Pages
 import ToolsHub from './pages/Tools/ToolsHub';
-import TradingSignalsForBeginners from './pages/Tools/TradingSignalsForBeginners';
-import AdvancedOptionsTrading from './pages/Tools/AdvancedOptions';
-import RiskGuide from './pages/Tools/RiskGuide';
-import SignalsApp from './pages/Tools/SignalsApp';
-import RealTimeAlerts from './pages/Tools/RealTimeAlerts';
+import TradingSignalsForBeginners from './pages/Tools/Secondary/TradingSignalsForBeginners';
+import AdvancedOptionsTrading from './pages/Tools/Secondary/AdvancedOptionsTrading';
+import RiskGuide from './pages/Tools/Secondary/RiskGuide';
+import SignalsApp from './pages/Tools/Secondary/SignalsApp';
+import RealTimeAlerts from './pages/Tools/Secondary/RealTimeAlerts';
 
 function App() {
   return (
@@ -113,11 +110,6 @@ function App() {
         <Route path="/trading-education/what-is-lotto-options" element={<WhatIsLottoOptions />} />
         <Route path="/trading-education/0dte-options-explained" element={<ZeroDTEOptionsExplained />} />
         <Route path="/trading-education/how-to-use-trading-signals" element={<HowToUseSignals />} />
-        <Route path="/trading-education/how-stock-trading-works" element={<HowStockTradingWorks />} />
-        <Route path="/trading-education/introduction-to-options" element={<IntroductionToOptions />} />
-        <Route path="/trading-education/crypto-trading-basics" element={<CryptoTradingBasics />} />
-        <Route path="/trading-education/futures-101" element={<Futures101 />} />
-        <Route path="/trading-education/reading-charts-patterns" element={<ReadingChartsPatterns />} />
 
         {/* Compare Sub-pages */}
         <Route path="/compare-trading-signals" element={<CompareHub />} />
@@ -134,14 +126,6 @@ function App() {
         <Route path="/trading-tools-access/trading-signals-app" element={<SignalsApp />} />
         <Route path="/trading-tools-access/real-time-trading-alerts" element={<RealTimeAlerts />} />
 
-        {/* Legacy / Sitemap Aliases for Compatibility */}
-        <Route path="/signals/options-signals" element={<OptionsTradingSignals />} />
-        <Route path="/products/stock-signals" element={<StockTradingSignals />} />
-        <Route path="/products/swing-trading-signals" element={<SwingTradingSignals />} />
-        <Route path="/education" element={<EducationHub />} />
-        <Route path="/beginners" element={<TradingSignalsForBeginners />} />
-        <Route path="/advanced-options" element={<AdvancedOptionsTrading />} />
-
         {/* Fallback */}
         <Route path="*" element={<Home />} />
       </Routes>
@@ -150,3 +134,4 @@ function App() {
 }
 
 export default App;
+

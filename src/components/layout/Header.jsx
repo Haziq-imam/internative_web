@@ -27,7 +27,7 @@ const Header = () => {
             columns: [
                 {
                     title: 'Stock Trading Signals',
-                    href: '/products/stock-signals',
+                    href: '/signals/stock-trading-signals',
                     items: [
                         { label: 'Day Trading Stocks', href: '/signals/day-trading-stocks', desc: 'Intraday volatility' },
                         { label: 'Momentum Stock Signals', href: '/signals/momentum-stock-signals', desc: 'High-velocity moves' },
@@ -38,14 +38,21 @@ const Header = () => {
                 },
                 {
                     title: 'Swing Trading Signals',
-                    href: '/products/swing-trading-signals',
+                    href: '/signals/swing-trading-signals',
                     items: [
                         { label: 'Crypto Trading Signals', href: '/signals/crypto-trading-signals', desc: 'Bitcoin & Altcoin swings' }
                     ],
                     secondarySection: {
                         title: 'Options Trading Signals',
-                        href: '/signals/options-signals',
-                        items: []
+                        href: '/signals/options-trading-signals',
+                        items: [
+                            { label: 'Options Swing Trading', href: '/signals/options-swing-trading', desc: 'Strategic weekly plays' },
+                            { label: 'Options Flow Signals', href: '/signals/options-flow-signals', desc: 'Smart money tracking' },
+                            { label: 'Unusual Options Activity', href: '/signals/unusual-options-activity', desc: 'Whale alerts' },
+                            { label: 'Options Greeks Explained', href: '/signals/options-greeks-explained', desc: 'Delta, Theta, Gamma' },
+                            { label: 'Options Risk Management', href: '/signals/options-risk-management', desc: 'Capital protection' },
+                            { label: 'Institutional Options', href: '/signals/institutional-options-trading', desc: 'Elite hedge fund moves' },
+                        ]
                     }
                 },
                 {

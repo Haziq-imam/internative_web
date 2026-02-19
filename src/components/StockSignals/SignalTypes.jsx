@@ -44,7 +44,7 @@ const SignalTypes = () => {
                             rating: "71% Win Rate",
                             features: ["Investors seeking larger size", "Comfortable with 4-12 week holds", "Targeting 30-100%+ returns"],
                             color: "text-success",
-                            link: "/signals/growth-stock-signals",
+                            link: "/signals/stock-trading-signals",
                             stats: { win: "71%", avg: "+34.6%" }
                         }
                     ].map((tier, i) => (

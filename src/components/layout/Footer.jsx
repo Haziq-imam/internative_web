@@ -10,10 +10,10 @@ const Footer = () => {
         {
             title: "Product",
             links: [
-                { label: "How It Works", href: "/#how-it-works" },
+                { label: "How It Works", href: "/how-it-works" },
                 { label: "Pricing", href: "/pricing" },
-                { label: "Performance", href: "/#performance" },
-                { label: "Mobile App", href: "/#app" },
+                { label: "Performance", href: "/performance" },
+                { label: "Mobile App", href: "/trading-tools-access/trading-signals-app" },
                 { label: "Free Trial", href: "/pricing" },
             ]
         },
@@ -23,14 +23,14 @@ const Footer = () => {
                 { label: "Options Signals", href: "/signals/options-trading-signals" },
                 { label: "Stock Signals", href: "/signals/stock-trading-signals" },
                 { label: "Swing Trading", href: "/signals/swing-trading-signals" },
-                { label: "Day Trading", href: "/signals/day-trading-stocks" },
+                { label: "Day Trading", href: "/signals/day-trading-signals" },
             ]
         },
         {
             title: "Resources",
             links: [
                 { label: "Trading Guides", href: "/trading-education" },
-                { label: "Blog", href: "/#blog" },
+                { label: "Blog", href: "/trading-education" },
                 { label: "Success Stories", href: "/#testimonials" },
                 { label: "FAQs", href: "/faq" },
                 { label: "Help Center", href: "/faq" },

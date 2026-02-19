@@ -25,7 +25,7 @@ const TradingEducationPage = () => {
             <Hero />
             <Benefits />
             <Curriculum />
-            <FeaturedGuides />
+            <FeaturedGuides id="featured-guides" />
             <LearningFormats />
             <BeginnerPath />
             <IntermediateAdvanced />
@@ -33,7 +33,7 @@ const TradingEducationPage = () => {
             <Certification />
             <ResourceLibrary />
             <FAQ />
-            <Community />
+            <Community id="community" />
             <FinalCTA />
         </div>
     );

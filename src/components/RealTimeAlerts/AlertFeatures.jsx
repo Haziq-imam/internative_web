@@ -1,7 +1,7 @@
 import React from 'react';
 import Section from '../ui/Section';
 import GradientText from '../ui/GradientText';
-import { CheckCircle2, Clock, TrendingUp, Shield } from 'lucide-react';
+import { Zap, Bell, Smartphone, CheckCircle2, Clock, TrendingUp, Shield } from 'lucide-react';
 
 const AlertFeatures = () => {
     const features = [
